@@ -8056,7 +8056,6 @@ relationships:
       level: Day1
 
 dimensions:
-  - Degen Time Hierarchy
   - Degen_Location
   - Degen_Mvndr
   - Degen_Product
