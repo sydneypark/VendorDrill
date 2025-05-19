@@ -1,0 +1,68 @@
+unique_name: Product Attribute
+object_type: dimension
+label: Product Attribute
+type: standard
+
+hierarchies:
+
+  - unique_name: product_attribute
+    label: Product Attribute
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_product_attribute
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_brand
+            label: Brand
+            dataset: Product Attribute.dataset
+            key_columns:
+              - MVNDR_NBR
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: BRAND
+            sort_column: BRAND
+
+          - unique_name: d_manuf_part_number
+            label: Manuf Part Number
+            dataset: Product Attribute.dataset
+            key_columns:
+              - MVNDR_NBR
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: MANUF_PART_NUMBER
+            sort_column: MANUF_PART_NUMBER
+
+          - unique_name: d_model_number
+            label: Model Number
+            dataset: Product Attribute.dataset
+            key_columns:
+              - MVNDR_NBR
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: MODEL_NUMBER
+            sort_column: MODEL_NUMBER
+
+          - unique_name: d_upc_cd
+            label: UPC CD
+            dataset: Product Attribute.dataset
+            key_columns:
+              - MVNDR_NBR
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: UPC_CD
+            sort_column: UPC_CD
+
+level_attributes:
+
+  - unique_name: h_product_attribute
+    label: Product Attribute
+    dataset: Product Attribute.dataset
+    key_columns:
+      - MVNDR_NBR
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: UPC_CD

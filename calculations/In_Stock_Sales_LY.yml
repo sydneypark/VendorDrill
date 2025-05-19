@@ -1,0 +1,11 @@
+unique_name: In_Stock_Sales_LY
+object_type: metric_calc
+label: In Stock to Sales % LY
+expression: |-
+  IIF(([Measures].[m_ly_iss_cap_sls_sum_wkly] = 0) OR IsEmpty([Measures].[m_ly_iss_cap_sls_sum_wkly])
+        , IIF(IsEmpty([Measures].[m_ly_iss_tgt_sls_sum] ), NULL
+        , IIF(([Measures].[m_ly_iss_tgt_sls_sum] = 0),0
+        ,  ( [Measures].[m_ly_iss_cap_sls_sum] / [Measures].[m_ly_iss_tgt_sls_sum] )))
+        ,  ( [Measures].[m_ly_iss_cap_sls_sum_wkly] / [Measures].[m_ly_iss_tgt_sls_sum_wkly] )
+        )
+format: 0.00%;(0.00%)

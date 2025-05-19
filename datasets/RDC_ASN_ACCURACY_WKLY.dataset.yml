@@ -1,0 +1,35 @@
+unique_name: RDC_ASN_ACCURACY_WKLY.dataset
+object_type: dataset
+label: RDC_ASN_ACCURACY_WKLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: RDC_ASN_ACCURACY_WKLY
+
+columns:
+  - name: ASN_LINE_ACCURACY
+    data_type: long
+  - name: ASN_QTY_VAR
+    data_type: double
+  - name: ASN_SHP_QTY
+    data_type: double
+  - name: DC_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: PO_NBR
+    data_type: string
+  - name: PO_TYPE
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: RCVD_QTY_FOR_ASN
+    data_type: long
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

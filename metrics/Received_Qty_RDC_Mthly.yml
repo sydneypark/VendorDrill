@@ -1,0 +1,7 @@
+unique_name: Received_Qty_RDC_Mthly
+object_type: metric
+label: Received Qty RDC Mthly +
+calculation_method: sum
+format: "#,###0"
+dataset: RDC_FILL_RATE_MONTHLY.dataset
+column: SKU_RECEIVED_QUANTITY

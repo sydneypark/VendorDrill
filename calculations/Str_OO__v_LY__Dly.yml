@@ -1,0 +1,6 @@
+unique_name: Str_OO__v_LY__Dly
+object_type: metric_calc
+label: Str OO $ v LY (%) Dly
+expression: "IIF ( [Measures].[Str_OO_LY_dly] +0=0,NULL, [Measures].[Str_OO__v_LY_Dly]\
+  \ / [Measures].[Str_OO_LY_dly] )"
+format: 0.00%;(0.00%)

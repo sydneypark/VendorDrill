@@ -1,0 +1,12 @@
+unique_name: m_str_oo_estimated_dly
+object_type: metric
+label: Str OO Estimated $ Dly (RDC)
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_INV_RDC_DLY.dataset_Time_Transformations_Internal
+    - VDRILL_INV_RDC_DLY.dataset_Time
+dataset: VDRILL_INV_RDC_DLY.dataset
+column: TY_EXPCTD_ALLOC_AMT

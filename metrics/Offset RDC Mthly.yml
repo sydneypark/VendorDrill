@@ -1,0 +1,7 @@
+unique_name: Offset RDC Mthly
+object_type: metric
+label: Offset RDC Mthly +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);$ #,##0.00;"
+dataset: RDC_FILL_RATE_MONTHLY.dataset
+column: FILL_RATE_OFFSET

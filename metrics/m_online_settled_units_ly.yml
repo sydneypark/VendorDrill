@@ -1,0 +1,7 @@
+unique_name: m_online_settled_units_ly
+object_type: metric
+label: Online Settled Units LY+
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: ONLINE_SALES.dataset
+column: LY_UNT_QTY

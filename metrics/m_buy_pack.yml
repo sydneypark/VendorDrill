@@ -1,0 +1,7 @@
+unique_name: m_buy_pack
+object_type: metric
+label: Buy Pack
+calculation_method: maximum
+format: "#,##0;(#,##0);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: BUY_UOM_QTY

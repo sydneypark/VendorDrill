@@ -1,0 +1,7 @@
+unique_name: m_LY_COMP_SLS_UNITS_2yr_sum
+object_type: metric
+label: Comp Units Base (2 Year)
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SALES.dataset
+column: LLY_COMP_SLS_UNITS_2YR

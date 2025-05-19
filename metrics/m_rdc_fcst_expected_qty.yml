@@ -1,0 +1,7 @@
+unique_name: m_rdc_fcst_expected_qty
+object_type: metric
+label: RDC Forecasted Expected Qty +
+calculation_method: sum
+format: "#,###"
+dataset: RDC_FCST_FILL_RATE_DLY.dataset
+column: ORD_QTY

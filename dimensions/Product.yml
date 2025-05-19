@@ -1,0 +1,473 @@
+unique_name: Product
+object_type: dimension
+label: Product
+type: standard
+
+hierarchies:
+
+  - unique_name: Finance_Product_Hierarchy
+    label: Finance Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: All_THD
+
+        secondary_attributes:
+
+          - unique_name: d_ALL_DEPT_DESC
+            label: All THD
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - ALL_DEPT_DESC
+            name_column: ALL_DEPT_DESC
+            sort_column: ALL_DEPT_DESC
+
+      - unique_name: Core_Dept_Ind
+
+      - unique_name: Dept
+
+        secondary_attributes:
+
+          - unique_name: dept_2
+            label: Dept
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - DEPT_NBR
+            name_column: DEPT_NM
+            sort_column: DEPT_NM
+
+          - unique_name: Dept_Name
+            label: Dept Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - DEPT_NBR
+            name_column: S_DEPT_NM
+            sort_column: S_DEPT_NM
+
+          - unique_name: Dept_Nbr
+            label: Dept Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - DEPT_NBR
+            name_column: DEPT_NBR
+            sort_column: DEPT_NBR
+
+      - unique_name: Class1
+
+        secondary_attributes:
+
+          - unique_name: Class1_2
+            label: Class
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: CLASS_DESC
+            sort_column: CLASS_DESC
+
+          - unique_name: Class_Name
+            label: Class Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: S_CLASS_DESC
+            sort_column: S_CLASS_DESC
+
+          - unique_name: Class_Nbr
+            label: Class Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: CLASS_NBR
+            sort_column: CLASS_NBR
+
+      - unique_name: Sub_Class
+
+        secondary_attributes:
+
+          - unique_name: Sub_Class_2
+            label: Sub Class
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: SC_DESC
+            sort_column: SC_DESC
+
+          - unique_name: Sub_Class_Name
+            label: Sub Class Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: S_SC_DESC
+            sort_column: S_SC_DESC
+
+          - unique_name: Sub_Class_Nbr
+            label: Sub Class Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: SUB_CLASS_NBR
+            sort_column: SUB_CLASS_NBR
+
+      - unique_name: SKU
+
+        secondary_attributes:
+
+          - unique_name: d_import_sku_indicator
+            label: Import Sku Indicator
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - IMP_SKU_IND
+            name_column: IMP_SKU_IND
+            sort_column: IMP_SKU_IND
+
+          - unique_name: d_REL_SKU
+            label: Rel SKU
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - REL_SKU
+            name_column: REL_SKU
+            sort_column: REL_SKU
+
+          - unique_name: d_Rel_SKU_Indicator
+            label: Rel SKU Indicator
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - REL_FLG
+            name_column: REL_FLG
+            sort_column: REL_FLG
+
+          - unique_name: sku1
+            label: 'SKU '
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: SKU_DESC
+            sort_column: SKU_DESC
+
+          - unique_name: SKU_Name
+            label: SKU Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: S_SKU_DESC
+            sort_column: S_SKU_DESC
+
+          - unique_name: SKU_Nbr
+            label: SKU Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: SKU_NBR
+            sort_column: SKU_NBR
+
+          - unique_name: SKU_Type
+            label: SKU Type
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SKU_TYP_CD
+            name_column: SKU_TYP_DESC
+            sort_column: SKU_TYP_DESC
+
+  - unique_name: Merchandising_Product_Hierarchy
+    label: Merchandising Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: All_THD1
+
+      - unique_name: SVP
+
+        secondary_attributes:
+
+          - unique_name: SVP_2
+            label: SVP
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SVP_DESC
+            name_column: SVP_DESC
+            sort_column: SVP_DESC
+
+      - unique_name: Merch_Dept
+
+        secondary_attributes:
+
+          - unique_name: Merch_Dept_2
+            label: Merch Dept
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - MER_DEPT_NBR
+            name_column: MER_DEPT_NAME
+            sort_column: MER_DEPT_NAME
+
+          - unique_name: Merch_Dept_Name
+            label: Merch Dept Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - MER_DEPT_NBR
+            name_column: S_MER_DEPT_NAME
+            sort_column: S_MER_DEPT_NAME
+
+          - unique_name: Merch_Dept_Nbr
+            label: Merch Dept Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - MER_DEPT_NBR
+            name_column: MER_DEPT_NBR
+            sort_column: MER_DEPT_NBR
+
+      - unique_name: Class1_1
+
+      - unique_name: Sub_Class1
+
+      - unique_name: SKU1_1
+
+  - unique_name: Merchandising_xtended_Product_Hierarchy
+    label: Merchandising xtended Product Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: All_THD1_1
+
+      - unique_name: SVP1
+
+      - unique_name: Merch_Dept1
+
+      - unique_name: Class1_3
+
+      - unique_name: Category
+
+        secondary_attributes:
+
+          - unique_name: Category_2
+            label: Category
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: CTG_DESC
+            sort_column: CTG_DESC
+
+          - unique_name: Category_Name
+            label: Category Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: S_CTG_DESC
+            sort_column: S_CTG_DESC
+
+          - unique_name: Category_Nbr
+            label: Category Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - CTG_NBR
+            name_column: CTG_NBR
+            sort_column: CTG_NBR
+
+      - unique_name: Sub_Class1_1
+
+      - unique_name: Sub_Sub_Class
+
+        secondary_attributes:
+
+          - unique_name: Sub_Sub_Class1
+            label: 'Sub Sub Class '
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: SUB_SC_DESC
+            sort_column: SUB_SC_DESC
+
+          - unique_name: Sub_Sub_Class_Name
+            label: Sub Sub Class Name
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: S_SUB_SC_DESC
+            sort_column: S_SUB_SC_DESC
+
+          - unique_name: Sub_Sub_Class_Nbr
+            label: Sub Sub Class Nbr
+            folder: More Fields
+            dataset: SKU_HIER.dataset
+            key_columns:
+              - SUB_SC_NBR
+            name_column: SUB_SC_NBR
+            sort_column: SUB_SC_NBR
+
+      - unique_name: SKU1_2
+
+level_attributes:
+
+  - unique_name: All_THD1
+    label: All THD
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - ALL_DEPT_DESC
+    name_column: ALL_DEPT_DESC
+
+  - unique_name: All_THD
+    label: All THD
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - ALL_DEPT_DESC
+    name_column: ALL_DEPT_DESC
+
+  - unique_name: All_THD1_1
+    label: All THD
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - ALL_DEPT_DESC
+    name_column: ALL_DEPT_DESC
+
+  - unique_name: Category
+    label: Category
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - CTG_NBR
+    name_column: CTG_DESC
+
+  - unique_name: Class1
+    label: Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS_DESC
+
+  - unique_name: Class1_1
+    label: 'Class '
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS_DESC
+
+  - unique_name: Class1_3
+    label: Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS_DESC
+
+  - unique_name: Core_Dept_Ind
+    label: Core Dept Ind
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - CORE_DEPT_DESC
+    name_column: CORE_DEPT_DESC
+
+  - unique_name: Dept
+    label: Dept
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - DEPT_NBR
+    name_column: DEPT_NM
+
+  - unique_name: Merch_Dept1
+    label: Merch Dept
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - MER_DEPT_NBR
+    name_column: MER_DEPT_NAME
+
+  - unique_name: Merch_Dept
+    label: Merch Dept
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - MER_DEPT_NBR
+    name_column: MER_DEPT_NAME
+
+  - unique_name: SKU
+    label: SKU
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_DESC
+
+  - unique_name: SKU1_1
+    label: SKU
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_DESC
+
+  - unique_name: SKU1_2
+    label: 'SKU '
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU_DESC
+
+  - unique_name: Sub_Class1
+    label: Sub Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SC_DESC
+
+  - unique_name: Sub_Class1_1
+    label: Sub Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SC_DESC
+
+  - unique_name: Sub_Class
+    label: Sub Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SC_DESC
+
+  - unique_name: Sub_Sub_Class
+    label: Sub Sub Class
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SUB_SC_NBR
+    name_column: SUB_SC_DESC
+
+  - unique_name: SVP1
+    label: SVP
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SVP_DESC
+    name_column: SVP_DESC
+
+  - unique_name: SVP
+    label: SVP
+    dataset: SKU_HIER.dataset
+    key_columns:
+      - SVP_DESC
+    name_column: SVP_DESC

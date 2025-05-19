@@ -1,0 +1,7 @@
+unique_name: Received Qty DTS Mthly
+object_type: metric
+label: Received Qty DTS Mthly +
+calculation_method: sum
+format: "#,###0"
+dataset: DTS_FILL_RATE_MONTHLY.dataset
+column: SKU_RECEIVED_QUANTITY

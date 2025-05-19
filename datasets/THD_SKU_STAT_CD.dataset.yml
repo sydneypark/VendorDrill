@@ -1,0 +1,13 @@
+unique_name: THD_SKU_STAT_CD.dataset
+object_type: dataset
+label: THD_SKU_STAT_CD.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: THD_SKU_STAT_CD
+
+columns:
+  - name: CRT_TS
+    data_type: datetime
+  - name: DESCR
+    data_type: string
+  - name: THD_SKU_STAT_CD
+    data_type: long

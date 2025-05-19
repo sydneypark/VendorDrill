@@ -1,0 +1,7 @@
+unique_name: Str_Rcpts_Cost
+object_type: metric
+label: Str Rcpts Cost $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_SLS_RECPT.dataset
+column: D_TY_RETL_AMT

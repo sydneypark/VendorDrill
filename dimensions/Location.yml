@@ -1,0 +1,414 @@
+unique_name: Location
+object_type: dimension
+label: Location
+type: standard
+
+hierarchies:
+
+  - unique_name: Operation_Location_hierarchy
+    label: Operation Location Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: All_THD2
+
+        secondary_attributes:
+
+          - unique_name: d_All_THD
+            label: All THD
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - ALL_THD_DESC
+            name_column: ALL_THD_DESC
+            sort_column: ALL_THD_DESC
+
+      - unique_name: LOB
+
+        secondary_attributes:
+
+          - unique_name: d_LOB
+            label: LOB
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - LOB_HQ_NM
+            name_column: LOB_HQ_NM
+            sort_column: LOB_HQ_NM
+
+      - unique_name: Geography2
+
+      - unique_name: Division
+
+        secondary_attributes:
+
+          - unique_name: d_Division
+            label: Division
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DIV_NBR
+            name_column: DIV_NM
+            sort_column: DIV_NM
+
+          - unique_name: d_Division_Name
+            label: Division Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DIV_NBR
+            name_column: S_DIV_NM
+            sort_column: S_DIV_NM
+
+          - unique_name: d_Division_Nbr
+            label: Division Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DIV_NBR
+            name_column: DIV_NBR
+            sort_column: DIV_NBR
+
+      - unique_name: Region
+
+        secondary_attributes:
+
+          - unique_name: d_Region
+            label: Region
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RGN_NBR
+            name_column: RGN_NM
+            sort_column: RGN_NM
+
+          - unique_name: d_Region_Name
+            label: Region Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RGN_NBR
+            name_column: S_RGN_NM
+            sort_column: S_RGN_NM
+
+          - unique_name: d_Region_Nbr
+            label: Region Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RGN_NBR
+            name_column: RGN_NBR
+            sort_column: RGN_NBR
+
+      - unique_name: District
+
+        secondary_attributes:
+
+          - unique_name: d_District
+            label: District
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DST_NBR
+            name_column: DST_NM
+            sort_column: DST_NM
+
+          - unique_name: d_District__Nbr
+            label: District Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DST_NBR
+            name_column: DST_NBR
+            sort_column: DST_NBR
+
+          - unique_name: d_District_Name
+            label: District Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - DST_NBR
+            name_column: S_DST_NM
+            sort_column: S_DST_NM
+
+      - unique_name: Store
+
+        secondary_attributes:
+
+          - unique_name: d_City
+            label: City
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - CITY_NM
+            name_column: CITY_NM
+            sort_column: CITY_NM
+
+          - unique_name: d_Country
+            label: County
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - CNTY_NM
+            name_column: CNTY_NM
+            sort_column: CNTY_NM
+
+          - unique_name: d_Latitude
+            label: Latitude
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - LAT_NBR
+            name_column: LAT_NBR
+            sort_column: LAT_NBR
+
+          - unique_name: d_Longitude
+            label: Longitude
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - LNG_NBR
+            name_column: LNG_NBR
+            sort_column: LNG_NBR
+
+          - unique_name: d_Postal_Code
+            label: Postal Code
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - PSTL_CD
+            name_column: PSTL_CD
+            sort_column: PSTL_CD
+
+          - unique_name: d_Store
+            label: Store
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RELO_TO_STR_NBR
+            name_column: STR_NM
+            sort_column: STR_NM
+
+          - unique_name: d_Store_Address
+            label: Store Address
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - ADDR_LINE1_TXT
+            name_column: ADDR_LINE1_TXT
+            sort_column: ADDR_LINE1_TXT
+
+          - unique_name: d_Store_Name
+            label: Store Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RELO_TO_STR_NBR
+            name_column: S_RELO_TO_STR_NM
+            sort_column: S_RELO_TO_STR_NM
+
+          - unique_name: d_Store_Nbr
+            label: Store Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - RELO_TO_STR_NBR
+            name_column: RELO_TO_STR_NBR
+            sort_column: RELO_TO_STR_NBR
+
+          - unique_name: d_Time_Zone
+            label: Time Zone
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - GMT_ADJ_HRS
+            name_column: S_TM_RGN_DESC
+            sort_column: S_TM_RGN_DESC
+
+          - unique_name: State_Territory_Code
+            label: State Territory Code
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - ST_CD
+            name_column: ST_CD
+            sort_column: ST_CD
+
+  - unique_name: Merchandising_Location_Hierarchy
+    label: Merchandising Location Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: All_THD_3
+
+      - unique_name: LOB2
+
+      - unique_name: Geography3
+
+      - unique_name: Division2
+
+      - unique_name: Buying_Office
+
+        secondary_attributes:
+
+          - unique_name: d_Buying_Office
+            label: Buying Office
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - BYO_NBR
+            name_column: BYO_NM
+            sort_column: BYO_NM
+
+          - unique_name: d_BYO_Name
+            label: BYO Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - BYO_NBR
+            name_column: S_BYO_NM
+            sort_column: S_BYO_NM
+
+          - unique_name: d_BYO_Nbr
+            label: BYO Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - BYO_NBR
+            name_column: BYO_NBR
+            sort_column: BYO_NBR
+
+      - unique_name: Market
+
+        secondary_attributes:
+
+          - unique_name: d_Market
+            label: Market
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - MKT_NBR
+            name_column: MKT_NM
+            sort_column: MKT_NM
+
+          - unique_name: d_Market_Name
+            label: Market Name
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - MKT_NBR
+            name_column: S_MKT_NM
+            sort_column: S_MKT_NM
+
+          - unique_name: d_Market_Nbr
+            label: Market Nbr
+            folder: More Fields
+            dataset: STR_HIER.dataset
+            key_columns:
+              - MKT_NBR
+            name_column: MKT_NBR
+            sort_column: MKT_NBR
+
+      - unique_name: Store3
+
+level_attributes:
+
+  - unique_name: All_THD2
+    label: All THD
+    dataset: STR_HIER.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: All_THD_3
+    label: All THD
+    dataset: STR_HIER.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: Buying_Office
+    label: Buying Office
+    dataset: STR_HIER.dataset
+    key_columns:
+      - BYO_NBR
+    name_column: BYO_NM
+
+  - unique_name: District
+    label: District
+    dataset: STR_HIER.dataset
+    key_columns:
+      - DST_NBR
+    name_column: DST_NM
+
+  - unique_name: Division
+    label: Division
+    dataset: STR_HIER.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+
+  - unique_name: Division2
+    label: Division
+    dataset: STR_HIER.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NM
+
+  - unique_name: Geography2
+    label: Geography
+    dataset: STR_HIER.dataset
+    key_columns:
+      - GEO_HQ_NM
+    name_column: GEO_HQ_NM
+
+  - unique_name: Geography3
+    label: Geography
+    dataset: STR_HIER.dataset
+    key_columns:
+      - GEO_HQ_NM
+    name_column: GEO_HQ_NM
+
+  - unique_name: LOB
+    label: LOB
+    dataset: STR_HIER.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: LOB2
+    label: LOB
+    dataset: STR_HIER.dataset
+    key_columns:
+      - LOB_HQ_NM
+    name_column: LOB_HQ_NM
+
+  - unique_name: Market
+    label: Market
+    dataset: STR_HIER.dataset
+    key_columns:
+      - MKT_NBR
+    name_column: MKT_NM
+
+  - unique_name: Region
+    label: Region
+    dataset: STR_HIER.dataset
+    key_columns:
+      - RGN_NBR
+    name_column: RGN_NM
+
+  - unique_name: Store3
+    label: Store
+    dataset: STR_HIER.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM
+
+  - unique_name: Store
+    label: Store
+    dataset: STR_HIER.dataset
+    key_columns:
+      - RELO_TO_STR_NBR
+    name_column: STR_NM

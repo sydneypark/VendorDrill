@@ -1,0 +1,95 @@
+unique_name: Fill Rate Dimensions and Flags +
+object_type: dimension
+label: Fill Rate Dimensions and Flags +
+type: standard
+
+hierarchies:
+
+  - unique_name: fill_rate_dimensions_and_flags
+    label: Fill Rate Dimensions and Flags +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_po_number
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_fill_po_number
+            label: PO Number +
+            dataset: Fill Rate Flags.dataset
+            key_columns:
+              - PO_NBR
+            name_column: PO_NBR
+            sort_column: PO_NBR
+
+  - unique_name: vendor_compliance
+    label: Vendor Compliance +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_vendor_compliance
+
+  - unique_name: perfect_po_flag
+    label: Perfect PO Flag +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_perfect_po_flag
+
+  - unique_name: perfect_sku_flag
+    label: Perfect SKU Flag +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_perfect_sku_flag
+
+  - unique_name: ship_indicator
+    label: Ship Indicator +
+    filter_empty: "yes"
+    folder: DTS Only Flags +
+
+    levels:
+
+      - unique_name: d_ship_indicator
+
+level_attributes:
+
+  - unique_name: d_perfect_po_flag
+    label: Perfect PO Flag +
+    dataset: Fill Rate Flags.dataset
+    key_columns:
+      - PERFECT_FR_PO_FLAG
+    name_column: PERFECT_FR_PO_FLAG
+
+  - unique_name: d_perfect_sku_flag
+    label: Perfect SKU Flag +
+    dataset: Fill Rate Flags.dataset
+    key_columns:
+      - PERFECT_FR_SKU_FLAG
+    name_column: PERFECT_FR_SKU_FLAG
+
+  - unique_name: d_po_number
+    label: PO Number +
+    dataset: Fill Rate Flags.dataset
+    key_columns:
+      - PO_NBR
+    name_column: PO_NBR
+
+  - unique_name: d_ship_indicator
+    label: Ship Indicator +
+    dataset: Fill Rate Flags.dataset
+    key_columns:
+      - SHIP_IND
+    name_column: SHIP_IND
+
+  - unique_name: d_vendor_compliance
+    label: Vendor Compliance +
+    dataset: Fill Rate Flags.dataset
+    key_columns:
+      - COMPLIANT_FR_MV_FLAG
+    name_column: COMPLIANT_FR_MV_FLAG

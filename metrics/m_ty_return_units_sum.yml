@@ -1,0 +1,7 @@
+unique_name: m_ty_return_units_sum
+object_type: metric
+label: Return Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SALES.dataset
+column: TY_RETURN_UNITS

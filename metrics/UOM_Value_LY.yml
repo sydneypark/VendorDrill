@@ -1,0 +1,7 @@
+unique_name: UOM_Value_LY
+object_type: metric
+label: UOM Value LY +
+calculation_method: maximum
+format: "#,##0.00;( #,##0.00);;"
+dataset: VDRILL_SALES.dataset
+column: LY_NET_CTNT_QTY

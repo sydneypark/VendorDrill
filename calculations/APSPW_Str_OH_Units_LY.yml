@@ -1,0 +1,5 @@
+unique_name: APSPW_Str_OH_Units_LY
+object_type: metric_calc
+label: APSPW Str OH Units LY
+expression: "IIF ([Measures].[store_weeks_ly]+0=0,NULL,( [Measures].[Str_OH_units_ly_wkly]/[Measures].[store_weeks_ly]))"
+format: "#,###,###,##0.00;(#,###,###,##0.00)"

@@ -1,0 +1,7 @@
+unique_name: 'm_count_of_1_star_reviews '
+object_type: metric
+label: Online Count of 1 Star Reviews +
+calculation_method: sum
+format: "#,##0"
+dataset: Online Rating Review.dataset
+column: COUNT_OF_1_STAR_REVIEWS

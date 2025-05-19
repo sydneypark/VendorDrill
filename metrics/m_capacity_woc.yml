@@ -1,0 +1,8 @@
+unique_name: m_capacity_woc
+object_type: metric
+label: Capacity WOC (Cal)
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: Weeks of Capacity.dataset
+column: CAPACITY_ADJ

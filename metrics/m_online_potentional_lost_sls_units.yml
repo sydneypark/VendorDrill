@@ -1,0 +1,7 @@
+unique_name: m_online_potentional_lost_sls_units
+object_type: metric
+label: Online Potential Lost Sales Units +
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: ONLINE_DIRECT_FULFILLMENT.dataset
+column: LOST_SLS_QTY

@@ -1,0 +1,7 @@
+unique_name: m_historical_scaled_competitor_retail
+object_type: metric
+label: Historical Scaled Competitor Retail $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: CPI_SKU_STR_COMPETITOR_HIST.dataset
+column: SCALED_COMPETITOR_RETAIL

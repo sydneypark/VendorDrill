@@ -1,0 +1,5 @@
+unique_name: m_online_settled_units_v_ly_percent
+object_type: metric_calc
+label: 'Online Settled Units v LY (%)+ '
+expression: "IIF ([Measures].[m_online_settled_units_ly]+0.00=0.00,NULL,([Measures].[m_online_settled_units_v_ly]/[Measures].[m_online_settled_units_ly]))"
+format: 0.00%;(0.00%)

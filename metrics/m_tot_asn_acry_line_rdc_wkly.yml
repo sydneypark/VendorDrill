@@ -1,0 +1,8 @@
+unique_name: m_tot_asn_acry_line_rdc_wkly
+object_type: metric
+label: Tot ASN ACRY Line RDC Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: RDC_ASN_ACCURACY_WKLY.dataset
+column: ASN_LINE_ACCURACY

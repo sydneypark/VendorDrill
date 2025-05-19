@@ -1,0 +1,8 @@
+unique_name: Comp %
+object_type: metric_calc
+label: Comp %
+description: Comparable $ this year vs last year (%)
+expression: |-
+  IIF ([Measures].[m_LY_COMP_SLS_sum] + 0.0 = 0.0, NULL,
+  [Measures].[Comp $ vs LY]/[Measures].[m_LY_COMP_SLS_sum])
+format: "#,##0.00%;(#,##0.00%)"

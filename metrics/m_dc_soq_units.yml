@@ -1,0 +1,7 @@
+unique_name: m_dc_soq_units
+object_type: metric
+label: DC SOQ Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: SUOF_DC.dataset
+column: SOQ_UNITS

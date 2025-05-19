@@ -1,0 +1,5 @@
+unique_name: m_ontime_dfc_mthly_p
+object_type: metric_calc
+label: DFC On Time % Mthly
+expression: "IIF([Measures].[m_sku_cnt_dfc_mthly]+0.0=0.0,NULL,([Measures].[m_tot_sku_ontime_dfc_mthly]/[Measures].[m_sku_cnt_dfc_mthly]))"
+format: 0.00%;(0.00%)

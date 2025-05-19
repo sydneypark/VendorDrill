@@ -1,0 +1,8 @@
+unique_name: m_LY_SIMPL_OOS_IND_sum
+object_type: metric
+label: Out of Stock LY W
+calculation_method: sum
+visible: false
+unrelated_dimensions_handling: empty
+dataset: In Stock / OOS - W.dataset
+column: LY_SIMPL_OOS_IND

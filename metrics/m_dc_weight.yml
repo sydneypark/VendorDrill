@@ -1,0 +1,7 @@
+unique_name: m_dc_weight
+object_type: metric
+label: DC Weight
+calculation_method: maximum
+format: "#,##0.00;(#,##0.00);;"
+dataset: DC_SKU_ATTRIBUTES_REPORT.dataset
+column: BUY_PK_WT

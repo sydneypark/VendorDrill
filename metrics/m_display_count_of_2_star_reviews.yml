@@ -1,0 +1,7 @@
+unique_name: m_display_count_of_2_star_reviews
+object_type: metric
+label: Online Display Count of 2 Star Reviews +
+calculation_method: sum
+format: "#,##0"
+dataset: Display Ratings Reviews.dataset
+column: DISPLAY_COUNT_OF_2_STAR_REVIEWS

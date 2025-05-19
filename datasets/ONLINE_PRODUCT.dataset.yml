@@ -1,0 +1,259 @@
+unique_name: ONLINE_PRODUCT.dataset
+object_type: dataset
+label: ONLINE_PRODUCT.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: ONLINE_PRODUCT
+
+columns:
+  - name: ALL_THD
+    data_type: string
+  - name: ALT_IMAGE_COUNT
+    data_type: long
+  - name: ASSEMBLED_HEIGHT_IN
+    data_type: string
+  - name: ASSEMBLED_WEIGHT_IN
+    data_type: string
+  - name: ASSEMBLED_WIDTH_IN
+    data_type: string
+  - name: AVAILABLE_IN_STORE
+    data_type: string
+  - name: AVG_RATING
+    data_type: double
+  - name: AVG_RATING_LAST_12_MONTHS
+    data_type: double
+  - name: AVG_RATINGS_RANGE
+    data_type: string
+  - name: BACKORDERS_ALLOWED
+    data_type: string
+  - name: BODFS_ELIGIBLE_FLAG
+    data_type: string
+  - name: BOPIS_ELIGIBLE_FLAG
+    data_type: string
+  - name: BOSS_ELIGIBLE_FLAG
+    data_type: string
+  - name: BROWSE_ONLY_FLAG
+    data_type: string
+  - name: CATEGORY
+    data_type: string
+  - name: CHANNEL_STATUS
+    data_type: string
+  - name: CLASS
+    data_type: string
+  - name: CLASS_NAME
+    data_type: string
+  - name: CLASS_NBR
+    data_type: string
+  - name: CLASS_VIEW_BAND
+    data_type: string
+  - name: COLOR_FINISH
+    data_type: string
+  - name: CORE_DEPT_IND
+    data_type: string
+  - name: COUNT_OF_REVIEWS_RANGE
+    data_type: string
+  - name: COUNTRY_OF_ORIGIN
+    data_type: string
+  - name: CTG_DESC
+    data_type: string
+  - name: CTG_NBR
+    data_type: string
+  - name: CURRENT_DISCOUNT_AMOUNT
+    data_type: double
+  - name: DEPT
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: DEPT_VIEW_BAND
+    data_type: string
+  - name: DISCONTINUED_SKU
+    data_type: string
+  - name: DISCOUNT_FLAG
+    data_type: string
+  - name: DISPLAY_UNIQUE_REVIEWS
+    data_type: long
+  - name: ECOMM_BUYABLE
+    data_type: string
+  - name: ELIGIBLE_FREESHIP
+    data_type: string
+  - name: ENERGYSTAR
+    data_type: string
+  - name: EXCLUDED_SHIP_STATES
+    data_type: string
+  - name: FIRST_ONLINE_DATE
+    data_type: string
+  - name: FREIGHT_CLASS
+    data_type: string
+  - name: HAZARDOUS_CODE
+    data_type: string
+  - name: HD_HOME
+    data_type: string
+  - name: HD_HOME_PRODUCT_CLASSIFICATION
+    data_type: string
+  - name: HDC_HOUSE_ITEM
+    data_type: string
+  - name: HIDE_SKU_ON_WEBSITE
+    data_type: string
+  - name: IDM_ACCOUNT_NAME
+    data_type: string
+  - name: INTERNET_SKU
+    data_type: string
+  - name: INTERNET_SKU_NAME
+    data_type: string
+  - name: ITEM_DEPTH_SHIPPING_CARTON
+    data_type: string
+  - name: ITEM_HEIGHT_SHIPPING_CARTON
+    data_type: string
+  - name: ITEM_LEVEL_FREESHIP
+    data_type: string
+  - name: ITEM_WEIGHT_SHIPPING_CARTON
+    data_type: string
+  - name: ITEM_WIDTH_SHIPPING_CARTON
+    data_type: string
+  - name: LAST_UPDATED_TS
+    data_type: datetime
+  - name: MANUF_PART_NUMBER
+    data_type: string
+  - name: MATERIAL
+    data_type: string
+  - name: MAX_RATING
+    data_type: long
+  - name: MAX_RATING_LAST_12_MONTHS
+    data_type: long
+  - name: MERCH_DEPT
+    data_type: string
+  - name: MFG_BRAND_NAME
+    data_type: string
+  - name: MIN_RATING
+    data_type: long
+  - name: MIN_RATING_LAST_12_MONTHS
+    data_type: long
+  - name: MODEL_NUMBER
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: ONLINE_CLASS
+    data_type: string
+  - name: ONLINE_CLASS_NAME
+    data_type: string
+  - name: ONLINE_CLASS_NBR
+    data_type: long
+  - name: ONLINE_CLASSIFICATION
+    data_type: string
+  - name: ONLINE_DISPOSITION
+    data_type: string
+  - name: ONLINE_MERCH_DEPT
+    data_type: string
+  - name: ONLINE_MERCH_DEPT_NAME
+    data_type: string
+  - name: ONLINE_MERCH_DEPT_NBR
+    data_type: long
+  - name: ONLINE_SUB_CLASS
+    data_type: string
+  - name: ONLINE_SUB_CLASS_NAME
+    data_type: string
+  - name: ONLINE_SUB_CLASS_NBR
+    data_type: long
+  - name: ONLINE_SVP
+    data_type: string
+  - name: PACKAGED_DEPTH_IN
+    data_type: string
+  - name: PACKAGED_HEIGHT_IN
+    data_type: string
+  - name: PACKAGED_WIDTH_IN
+    data_type: string
+  - name: PRIMARY_COMMODITY_FLAG
+    data_type: string
+  - name: PRODUCT_DEPTH_IN
+    data_type: string
+  - name: PRODUCT_HEIGHT_IN
+    data_type: string
+  - name: PRODUCT_LENGTH_IN
+    data_type: string
+  - name: PRODUCT_TYPE
+    data_type: string
+  - name: PRODUCT_TYPE_GROUP
+    data_type: string
+  - name: PRODUCT_WEIGHT_LB
+    data_type: string
+  - name: PRODUCT_WIDTH_IN
+    data_type: string
+  - name: PUBLISHED
+    data_type: string
+  - name: RECONDITIONED_FLAG
+    data_type: string
+  - name: SAVINGS_CENTER_TYPE
+    data_type: string
+  - name: SHIP_FROM_TYPE
+    data_type: string
+  - name: SHIP_LEAD_DAYS
+    data_type: string
+  - name: SHIP_TYPE
+    data_type: string
+  - name: SKU
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_GRP_DESC
+    data_type: string
+  - name: SKU_GRP_NBR
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SMART_HOME
+    data_type: string
+  - name: STATUS_CODE
+    data_type: long
+  - name: STH_ELIGIBILITY
+    data_type: string
+  - name: STORE_SKU
+    data_type: string
+  - name: SUB_CLASS_NBR
+    data_type: string
+  - name: SUB_SC_DESC
+    data_type: string
+  - name: SUB_SC_NBR
+    data_type: string
+  - name: SUB_SUBCLASS
+    data_type: string
+  - name: SUBCLASS
+    data_type: string
+  - name: SUBCLASS_NAME
+    data_type: string
+  - name: SUBCLASS_VIEW_BAND
+    data_type: string
+  - name: SUPPLIER_SKU
+    data_type: string
+  - name: SVP
+    data_type: string
+  - name: SVP_NBR
+    data_type: long
+  - name: TAXONOMY
+    data_type: string
+  - name: THD_DOT_COM_ONLINESTATUS
+    data_type: string
+  - name: THD_ONLINESTATUS
+    data_type: string
+  - name: THD_SO_SKU
+    data_type: string
+  - name: THDOMS_VALIDATED
+    data_type: string
+  - name: UNIQUE_REVIEWS
+    data_type: long
+  - name: UNIQUE_REVIEWS_LAST_12_MONTHS
+    data_type: long
+  - name: UPC_CD
+    data_type: string
+  - name: YOW_MERCH_VENDOR
+    data_type: string
+  - name: YOW_MERCH_VENDOR_NAME
+    data_type: string
+  - name: YOW_MERCH_VENDOR_NBR
+    data_type: string
+  - name: YOW_SKU_NBR
+    data_type: string

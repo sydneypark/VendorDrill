@@ -1,0 +1,6 @@
+unique_name: Sales__v_LY_p
+object_type: metric_calc
+label: Sales $ v LY (%)
+expression: "IIF ([Measures].[sales_ly] +0=0,NULL,[Measures].[Sales__vLY] /[Measures].[sales_ly]\
+  \ )"
+format: 0.00%;(0.00%)

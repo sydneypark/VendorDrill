@@ -1,0 +1,7 @@
+unique_name: m_ab_store_volume_store_sku_count
+object_type: metric
+label: AB STR Vol Store SKU Count
+calculation_method: count distinct
+format: "#,##0;(#,##0);;"
+dataset: Weeks of Capacity.dataset
+column: AB_Store_Volume_Store_SKU_Count

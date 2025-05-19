@@ -1,0 +1,49 @@
+unique_name: Part_Dt
+object_type: dimension
+label: Part_Dt
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Part_Dt
+    label: Part_Dt
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Part_Date
+
+        secondary_attributes:
+
+          - unique_name: MVNDR_NBR
+            label: MVNDR_NBR
+            dataset: VDRILL_VNDR_XREF_PT.dataset
+            key_columns:
+              - USER_ID
+            name_column: MVNDR_NBR
+            sort_column: MVNDR_NBR
+
+          - unique_name: PART_DT
+            label: PART_DT
+            dataset: VDRILL_VNDR_XREF_PT.dataset
+            key_columns:
+              - USER_ID
+            name_column: PART_DT
+            sort_column: PART_DT
+
+          - unique_name: USER_ID
+            label: USER_ID
+            dataset: VDRILL_VNDR_XREF_PT.dataset
+            key_columns:
+              - USER_ID
+            name_column: USER_ID
+            sort_column: USER_ID
+
+level_attributes:
+
+  - unique_name: Part_Date
+    label: Part_Dt
+    dataset: VDRILL_VNDR_XREF_PT.dataset
+    key_columns:
+      - USER_ID
+    name_column: PART_DT

@@ -1,0 +1,37 @@
+unique_name: CPI_SKU_STR_COMPETITOR_HIST.dataset
+object_type: dataset
+label: CPI_SKU_STR_COMPETITOR_HIST.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: CPI_SKU_STR_COMPETITOR_HIST
+
+columns:
+  - name: CLASS_NBR
+    data_type: long
+  - name: COMPETITOR_ID
+    data_type: long
+  - name: COMPETITOR_RETAIL
+    data_type: double
+  - name: ENEMY_IDENTIFIER
+    data_type: long
+  - name: EPK_ID
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: SCALED_COMPETITOR_RETAIL
+    data_type: double
+  - name: SCALING_FCTR
+    data_type: double
+  - name: SCRAPE_DATE
+    data_type: date
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SUB_CLASS_NBR
+    data_type: long
+  - name: SUB_DEPT_NBR
+    data_type: string
+  - name: THD_STR_NBR
+    data_type: string
+  - name: TIME_PERIOD
+    data_type: string

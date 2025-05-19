@@ -1,0 +1,7 @@
+unique_name: m_ly_returns_sum
+object_type: metric
+label: Return $ LY
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_SALES.dataset
+column: LY_RETURNS

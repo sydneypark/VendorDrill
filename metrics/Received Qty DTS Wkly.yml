@@ -1,0 +1,7 @@
+unique_name: Received Qty DTS Wkly
+object_type: metric
+label: Received Qty DTS Wkly +
+calculation_method: sum
+format: "#,###0"
+dataset: DTS_FILL_RATE_WKLY.dataset
+column: ADJ_RCVD_QTY

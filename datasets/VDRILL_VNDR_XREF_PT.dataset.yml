@@ -1,0 +1,21 @@
+unique_name: VDRILL_VNDR_XREF_PT.dataset
+object_type: dataset
+label: VDRILL_VNDR_XREF_PT.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: VDRILL_VNDR_XREF_PT
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: int
+  - name: PART_DT
+    data_type: date
+  - name: PVNDR_NBR
+    data_type: int
+  - name: SUPLR_CNTCT_ID
+    data_type: int
+  - name: USER_ID
+    data_type: string
+  - name: VNDR_FLG
+    data_type: string

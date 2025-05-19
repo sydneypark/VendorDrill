@@ -1,0 +1,420 @@
+unique_name: CPI
+object_type: dimension
+label: CPI
+type: standard
+
+hierarchies:
+
+  - unique_name: CPI
+    label: CPI
+
+    levels:
+
+      - unique_name: h_c_cpi
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_c_enemy_identifier
+            label: Enemy Identifier
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - ENEMY_IDENTIFIER
+            name_column: ENEMY_IDENTIFIER
+            sort_column: ENEMY_IDENTIFIER
+
+          - unique_name: d_c_is_primary_competitor
+            label: Is Primary Competitor
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - IS_PRIMARY_COMPETITOR
+            name_column: IS_PRIMARY_COMPETITOR
+            sort_column: IS_PRIMARY_COMPETITOR
+
+          - unique_name: d_c_is_relevant_competitor
+            label: Is Relevant Competitor
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - IS_RELEVANT_COMPETITOR
+            name_column: IS_RELEVANT_COMPETITOR
+
+          - unique_name: d_c_match_type
+            label: Match Type
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - MATCH_TYPE
+            name_column: MATCH_TYPE
+            sort_column: MATCH_TYPE
+
+          - unique_name: d_c_scaling_factor
+            label: Scaling Factor
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - SCALING_FCTR
+            name_column: SCALING_FCTR
+            sort_column: SCALING_FCTR
+
+          - unique_name: d_c_scrape_date
+            label: Scrape Date
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - SCRAPE_DATE
+            name_column: SCRAPE_DATE
+            sort_column: SCRAPE_DATE
+
+          - unique_name: d_c_scrape_reason
+            label: Scrape Reason
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - SCRAPE_REASON
+            name_column: SCRAPE_REASON
+            sort_column: SCRAPE_REASON
+
+          - unique_name: d_cpi_cacheer_id
+            label: Cacheer ID
+            folder: Competitor
+            dataset: VDRILL_CPI_DLY.dataset
+            key_columns:
+              - CACHEER_ID
+            name_column: CACHEER_ID
+            sort_column: CACHEER_ID
+
+          - unique_name: d_historical_scaling_factor
+            label: Historical Scaling Factor
+            folder: Competitor
+            dataset: CPI_SKU_STR_COMPETITOR_HIST.dataset
+            key_columns:
+              - SCALING_FCTR
+            name_column: SCALING_FCTR
+            sort_column: SCALING_FCTR
+
+          - unique_name: d_historical_scrape_date
+            label: Historical Scrape Date
+            folder: Competitor
+            dataset: CPI_SKU_STR_COMPETITOR_HIST.dataset
+            key_columns:
+              - SCRAPE_DATE
+            name_column: SCRAPE_DATE
+            sort_column: SCRAPE_DATE
+
+          - unique_name: d_historical_time_period
+            label: Historical Time Period
+            folder: Competitor
+            dataset: CPI_SKU_STR_COMPETITOR_HIST.dataset
+            key_columns:
+              - TIME_PERIOD
+            name_column: TIME_PERIOD
+            sort_column: TIME_PERIOD
+
+  - unique_name: h_c_competitor
+    label: Competitor
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_c_competitor
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_c_competitor_name
+            label: Competitor Name
+            folder: Competitor
+            dataset: CPI_COMPETITORS.dataset
+            key_columns:
+              - competitor_name
+            name_column: competitor_name
+            sort_column: competitor_name
+
+          - unique_name: d_c_competitors_id
+            label: Competitor ID
+            folder: Competitor
+            dataset: CPI_COMPETITORS.dataset
+            key_columns:
+              - competitor_id
+            name_column: competitor_id
+            sort_column: competitor_id
+
+          - unique_name: d_c_is_localized
+            label: Is Localized
+            folder: Competitor
+            dataset: CPI_COMPETITORS.dataset
+            key_columns:
+              - is_localized
+            name_column: is_localized
+            sort_column: is_localized
+
+  - unique_name: h_c_zones
+    label: Zones
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_c_zones
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_c_trait_group_id
+            label: Trait Group ID
+            folder: Zones
+            dataset: CPI_ZONES.dataset
+            key_columns:
+              - trait_grp_id
+            name_column: trait_grp_id
+            sort_column: trait_grp_id
+
+          - unique_name: d_c_trait_id
+            label: Trait ID
+            folder: Zones
+            dataset: CPI_ZONES.dataset
+            key_columns:
+              - trait_id
+            name_column: trait_id
+            sort_column: trait_id
+
+          - unique_name: d_c_trait_txmy_id
+            label: Trait TXMY ID
+            folder: Zones
+            dataset: CPI_ZONES.dataset
+            key_columns:
+              - trait_txmy_id
+            name_column: trait_txmy_id
+            sort_column: trait_txmy_id
+
+          - unique_name: d_c_user_def_zone_id
+            label: User Def Zone ID
+            folder: Zones
+            dataset: CPI_ZONES.dataset
+            key_columns:
+              - user_def_zone_id
+            name_column: user_def_zone_id
+            sort_column: user_def_zone_id
+
+          - unique_name: d_c_zone_name
+            label: Zone Name
+            folder: Zones
+            dataset: CPI_ZONES.dataset
+            key_columns:
+              - zone_name
+            name_column: zone_name
+            sort_column: zone_name
+
+  - unique_name: h_c_Store_Mile
+    label: Store Mile
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_c_Store_Mile
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_c_store_mile_flag
+            label: Store Mile Flag
+            folder: Store Mile Flag
+            dataset: CPI_STORE_MILE.dataset
+            key_columns:
+              - STORE_FLAG
+            name_column: STORE_FLAG
+            sort_column: STORE_FLAG
+
+  - unique_name: h_competitor_loc
+    label: Competitor Location
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_competitor_loc
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_cl_cmp_addr
+            label: Competitor Address
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - ADDRESS_COMP
+            name_column: ADDRESS_COMP
+            sort_column: ADDRESS_COMP
+
+          - unique_name: d_cl_cmp_city
+            label: Competitor City
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - CITY_COMP
+            name_column: CITY_COMP
+            sort_column: CITY_COMP
+
+          - unique_name: d_cl_cmp_cntry
+            label: Competitor Country
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - COUNTRY_COMP
+            name_column: COUNTRY_COMP
+            sort_column: COUNTRY_COMP
+
+          - unique_name: d_cl_cmp_lat
+            label: Competitor Latitude
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - LATITUDE_COMP
+            name_column: LATITUDE_COMP
+            sort_column: LATITUDE_COMP
+
+          - unique_name: d_cl_cmp_long
+            label: Competitor Longitude
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - LONGITUDE_COMP
+            name_column: LONGITUDE_COMP
+            sort_column: LONGITUDE_COMP
+
+          - unique_name: d_cl_cmp_str_dist
+            label: Competitor Store Distance
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - COMP_STR_DISTANCE
+            name_column: COMP_STR_DISTANCE
+            sort_column: COMP_STR_DISTANCE
+
+          - unique_name: d_cl_cmp_zip
+            label: Competitor Zip
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - ZIP_CODE_COMP
+            name_column: ZIP_CODE_COMP
+            sort_column: ZIP_CODE_COMP
+
+          - unique_name: d_cl_comp_str_nm
+            label: Competitor Store Name
+            folder: Competitor Location
+            dataset: THD_CMP_STR_DIST.dataset
+            key_columns:
+              - STR_NAME_COMP
+            name_column: STR_NAME_COMP
+            sort_column: STR_NAME_COMP
+
+  - unique_name: Competitor Product
+    label: Competitor Product
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_cp_competitor_product
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_competitor_sku
+            label: Competitor SKU
+            folder: Competitor Product
+            dataset: COMPETITOR_MATCH_DTL.dataset
+            key_columns:
+              - COMPETITOR_SKU
+            name_column: COMPETITOR_SKU
+            sort_column: COMPETITOR_SKU
+
+          - unique_name: d_cp_cmp_prod_key_id
+            label: Competitor Product Key ID
+            folder: Competitor Product
+            dataset: COMPETITOR_MATCH_DTL.dataset
+            key_columns:
+              - EPK_ID
+            name_column: EPK_ID
+            sort_column: EPK_ID
+
+          - unique_name: d_cp_competitor_img_url
+            label: Competitor Image URL
+            folder: Competitor Product
+            dataset: COMPETITOR_MATCH_DTL.dataset
+            key_columns:
+              - COMPETITOR_IMAGE_URL
+            name_column: COMPETITOR_IMAGE_URL
+            sort_column: COMPETITOR_IMAGE_URL
+
+          - unique_name: d_cp_competitor_sku_desc
+            label: Competitor SKU Name
+            folder: Competitor Product
+            dataset: COMPETITOR_MATCH_DTL.dataset
+            key_columns:
+              - COMPETITOR_SKU_NAME
+            name_column: COMPETITOR_SKU_NAME
+            sort_column: COMPETITOR_SKU_NAME
+
+          - unique_name: d_cp_competitor_sku_url
+            label: Competitor SKU URL
+            folder: Competitor Product
+            dataset: COMPETITOR_MATCH_DTL.dataset
+            key_columns:
+              - COMPETITOR_SKU_URL
+            name_column: COMPETITOR_SKU_URL
+            sort_column: COMPETITOR_SKU_URL
+
+level_attributes:
+
+  - unique_name: h_c_competitor
+    label: Competitor
+    dataset: CPI_COMPETITORS.dataset
+    key_columns:
+      - competitor_id
+    name_column: competitor_id
+
+  - unique_name: h_c_cpi
+    label: CPI
+    dataset: VDRILL_CPI_DLY.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+      - STR_NBR
+      - COMPETITOR_ID
+    name_column: IS_RELEVANT_COMPETITOR
+
+  - unique_name: h_c_Store_Mile
+    label: Store Mile
+    dataset: CPI_STORE_MILE.dataset
+    key_columns:
+      - COMPETITOR_ID
+      - STR_NBR
+    name_column: STORE_FLAG
+
+  - unique_name: h_c_zones
+    label: Zones
+    dataset: CPI_ZONES.dataset
+    key_columns:
+      - str_nbr
+      - sub_dept
+      - class
+      - sub_class
+    name_column: trait_id
+
+  - unique_name: h_competitor_loc
+    label: Competitor Location
+    dataset: THD_CMP_STR_DIST.dataset
+    key_columns:
+      - COMPETITOR_ID
+      - STR_NBR
+      - ENEMY_IDENTIFIER
+    name_column: STR_NBR
+
+  - unique_name: h_cp_competitor_product
+    label: Competitor Product
+    dataset: COMPETITOR_MATCH_DTL.dataset
+    key_columns:
+      - EPK_ID
+    name_column: COMPETITOR_SKU

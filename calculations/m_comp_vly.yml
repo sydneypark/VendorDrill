@@ -1,0 +1,5 @@
+unique_name: m_comp_vly
+object_type: metric_calc
+label: Comp $ v LY (1 Year)
+expression: "IIF (([Measures].[m_TY_COMP_SLS_sum_new]+0.00=0.00 OR [Measures].[m_LY_COMP_SLS_sum_new]+0.00=0.00),NULL,([Measures].[m_TY_COMP_SLS_sum_new]-[Measures].[m_LY_COMP_SLS_sum_new]))"
+format: "$ #,##0.00;($ #,##0.00);;"

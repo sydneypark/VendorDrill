@@ -1,0 +1,38 @@
+unique_name: Time Transformations Internal
+object_type: dimension
+label: Time Transformations Internal
+type: standard
+
+hierarchies:
+
+  - unique_name: Time_Transformations_Internal
+    label: Time Transformations Internal
+
+    levels:
+
+      - unique_name: Time_Calculations_Internal
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: Time_Calculations_Internal
+    label: Time Calculations Internal
+    dataset: VDRILL_TIME_TRNS.dataset
+    key_columns:
+      - CAL_DT
+    name_column: S_TRNSFM_TYP_DESC
+    sort_column: TRNSFM_TYP_DSPLY_SORT_ID
+
+relationships:
+
+  - unique_name: TimeTransformationsInternal_TimeTransformations
+    from:
+      hierarchy: Time_Transformations_Internal
+      level: Time_Calculations_Internal
+      dataset: VDRILL_TIME_TRNS.dataset
+      join_columns:
+        - S_TRNSFM_TYP_DESC
+    to:
+      dimension: Time Transformations
+      level: Time_Calculations
+    type: embedded

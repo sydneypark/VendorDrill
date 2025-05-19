@@ -1,0 +1,5 @@
+unique_name: Fill Rate FDC Mthly
+object_type: metric_calc
+label: Fill Rate FDC Mthly +
+expression: "IIF([Measures].[Ordered_Qty_FDC_Mthly]+0.0=0.0,NULL,([Measures].[Received_Qty_FDC_Mthly]/[Measures].[Ordered_Qty_FDC_Mthly]))"
+format: percent

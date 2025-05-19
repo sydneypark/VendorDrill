@@ -1,0 +1,5 @@
+unique_name: m_thd_weighted_avg_wkly
+object_type: metric_calc
+label: THD Weighted Avg Wkly
+expression: "[Measures].[m_thd_sales_amount_wkly]/[Measures].[m_r52_units_wkly]"
+visible: false

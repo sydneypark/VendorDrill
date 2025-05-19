@@ -1,0 +1,6 @@
+unique_name: m_online_product_interaction_visits_ly
+object_type: metric
+label: Online Product Interaction Visits LY +
+calculation_method: count distinct
+dataset: PRODUCT_VISIT.dataset
+column: LY_VISIT_ID_KEY

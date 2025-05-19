@@ -1,0 +1,8 @@
+unique_name: m_tot_on_time_dts_wkly
+object_type: metric
+label: Tot SKU On Time DTS Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: DTS_ONTIME_WKLY.dataset
+column: TOT_SKU_ONTIME

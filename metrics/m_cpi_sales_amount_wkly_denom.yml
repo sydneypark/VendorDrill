@@ -1,0 +1,7 @@
+unique_name: m_cpi_sales_amount_wkly_denom
+object_type: metric
+label: CPI Sales Cov $ Wkly Denom
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_CPI_WKLY.dataset
+column: COMP_SLS_COV_DENOM

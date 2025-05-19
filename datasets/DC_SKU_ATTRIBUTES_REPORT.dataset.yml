@@ -1,0 +1,31 @@
+unique_name: DC_SKU_ATTRIBUTES_REPORT.dataset
+object_type: dataset
+label: DC_SKU_ATTRIBUTES_REPORT.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: DC_SKU_ATTRIBUTES_REPORT
+
+columns:
+  - name: BUY_PK_WT
+    data_type: double
+  - name: BUY_UOM_QTY
+    data_type: long
+  - name: CAL_DT
+    data_type: date
+  - name: CUB_FT
+    data_type: double
+  - name: CURR_COST_AMT
+    data_type: double
+  - name: CURR_COST_BGN_DT
+    data_type: date
+  - name: CURR_DSVC_TYP_CD
+    data_type: long
+  - name: DC_NBR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

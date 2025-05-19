@@ -1,0 +1,11 @@
+unique_name: POG.dataset
+object_type: dataset
+label: POG.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: POG
+
+columns:
+  - name: CRT_TS
+    data_type: datetime
+  - name: FLAG
+    data_type: string

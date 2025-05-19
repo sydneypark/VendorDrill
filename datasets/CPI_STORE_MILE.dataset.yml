@@ -1,0 +1,13 @@
+unique_name: CPI_STORE_MILE.dataset
+object_type: dataset
+label: CPI_STORE_MILE.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: CPI_STORE_FLAG
+
+columns:
+  - name: COMPETITOR_ID
+    data_type: long
+  - name: STORE_FLAG
+    data_type: string
+  - name: STR_NBR
+    data_type: string

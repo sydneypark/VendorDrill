@@ -1,0 +1,7 @@
+unique_name: m_quotecenter_sales_amount
+object_type: metric
+label: QuoteCenter Sales $
+calculation_method: sum
+format: "$#,###,###,##0.00;($#,###,###,##0.00)"
+dataset: QuoteCenter Sales.dataset
+column: TY_SLS_AMT

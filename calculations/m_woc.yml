@@ -1,0 +1,5 @@
+unique_name: m_woc
+object_type: metric_calc
+label: Weeks of Capacity (WOC)
+expression: "IIF ([Measures].[m_avg_wkly_sales_units]+0=0,NULL,([Measures].[m_capacity_woc]/[Measures].[m_avg_wkly_sales_units]))"
+format: "#,##0.00;(#,##0.00);;"

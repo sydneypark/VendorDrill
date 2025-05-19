@@ -1,0 +1,14 @@
+unique_name: In_Stock_
+object_type: metric_calc
+label: In Stock %
+expression: |-
+  IIF(IsEmpty([Measures].[m_TY_IPR_REPLE_IND_sum]),
+      IIF(IsEmpty([Measures].[Time1_3] ),
+        NULL,
+        IIF(([Measures].[Time1_3] = 0),
+          0,
+          1 - ( [Measures].[Time1] / [Measures].[Time1_3] ))),
+      IIF( ([Measures].[m_TY_IPR_REPLE_IND_sum] = 0),
+        0,
+        1 - ( [Measures].[m_TY_SIMPL_OOS_IND_sum] / [Measures].[m_TY_IPR_REPLE_IND_sum] )))
+format: 0.00%;(0.00%)

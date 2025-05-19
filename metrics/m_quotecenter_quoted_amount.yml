@@ -1,0 +1,7 @@
+unique_name: m_quotecenter_quoted_amount
+object_type: metric
+label: QuoteCenter Quoted $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: QuoteCenter Quotes.dataset
+column: TY_QT_SLS_AMT

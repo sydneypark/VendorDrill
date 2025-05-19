@@ -1,0 +1,12 @@
+unique_name: m_dc_oh_amt
+object_type: metric
+label: DC OH $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations_Internal
+    - DFDRILL_BRCH_DLY.dataset_Time
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DC_OH_RETL_AMT

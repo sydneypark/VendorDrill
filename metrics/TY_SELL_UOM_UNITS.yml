@@ -1,0 +1,7 @@
+unique_name: TY_SELL_UOM_UNITS
+object_type: metric
+label: UOM Sales Units +
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SALES.dataset
+column: TY_SELL_UOM_UNITS

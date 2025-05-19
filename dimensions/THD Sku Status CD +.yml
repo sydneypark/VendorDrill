@@ -1,0 +1,33 @@
+unique_name: THD Sku Status CD +
+object_type: dimension
+label: THD Sku Status CD +
+type: standard
+
+hierarchies:
+
+  - unique_name: THD Sku Status CD +
+    label: THD Sku Status CD +
+
+    levels:
+
+      - unique_name: THD Sku Status CD +
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_THD_Sku_Status_CD
+            label: 'THD Sku Status CD + '
+            dataset: THD_SKU_STAT_CD.dataset
+            key_columns:
+              - DESCR
+            name_column: DESCR
+            sort_column: DESCR
+
+level_attributes:
+
+  - unique_name: THD Sku Status CD +
+    label: THD Sku Status CD +
+    dataset: THD_SKU_STAT_CD.dataset
+    key_columns:
+      - THD_SKU_STAT_CD
+    name_column: DESCR

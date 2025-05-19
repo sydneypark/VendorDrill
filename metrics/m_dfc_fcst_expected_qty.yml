@@ -1,0 +1,7 @@
+unique_name: m_dfc_fcst_expected_qty
+object_type: metric
+label: DFC Forecasted Expected Qty +
+calculation_method: sum
+format: "#,###"
+dataset: DFC_FCST_FILL_RATE_DLY.dataset
+column: ORD_QTY

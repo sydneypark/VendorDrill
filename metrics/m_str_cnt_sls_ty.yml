@@ -1,0 +1,7 @@
+unique_name: m_str_cnt_sls_ty
+object_type: metric
+label: Store Count With Sales
+calculation_method: count distinct
+format: "#,#;(#,#)"
+dataset: VDRILL_SALES.dataset
+column: TY_SLS_STR

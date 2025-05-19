@@ -1,0 +1,13 @@
+unique_name: UNIT_OF_MEASURE.dataset
+object_type: dataset
+label: UNIT_OF_MEASURE.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: UNIT_OF_MEASURE
+
+columns:
+  - name: DSPL_UOM_CD
+    data_type: string
+  - name: UOM_CD
+    data_type: string
+  - name: UOM_DESC
+    data_type: string

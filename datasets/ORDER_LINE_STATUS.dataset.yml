@@ -1,0 +1,19 @@
+unique_name: ORDER_LINE_STATUS.dataset
+object_type: dataset
+label: ORDER_LINE_STATUS.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: ORDER_LINE_STATUS
+
+columns:
+  - name: D_STAT_CD
+    data_type: string
+  - name: S_STAT_DESC
+    data_type: string
+  - name: STAT_DESC
+    data_type: string
+  - name: STATUS
+    data_type: string
+  - name: STATUS_CODE
+    data_type: string
+  - name: VENDORDRILL_STATUS
+    data_type: string

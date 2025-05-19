@@ -1,0 +1,43 @@
+unique_name: Display Ratings Reviews.dataset
+object_type: dataset
+label: Display Ratings Reviews.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: RATING_REVIEW_SUMMARY
+
+columns:
+  - name: DISPLAY_AVG_RATING
+    data_type: double
+  - name: DISPLAY_AVG_RATINGS_RANGE
+    data_type: string
+  - name: DISPLAY_COUNT_OF_1_STAR_REVIEWS
+    data_type: long
+  - name: DISPLAY_COUNT_OF_2_STAR_REVIEWS
+    data_type: long
+  - name: DISPLAY_COUNT_OF_3_STAR_REVIEWS
+    data_type: long
+  - name: DISPLAY_COUNT_OF_4_STAR_REVIEWS
+    data_type: long
+  - name: DISPLAY_COUNT_OF_5_STAR_REVIEWS
+    data_type: long
+  - name: DISPLAY_COUNT_OF_REVIEWS_RANGE
+    data_type: string
+  - name: DISPLAY_RATINGS_ONLY_REVIEW_COUNT
+    data_type: long
+  - name: DISPLAY_UNIQUE_REVIEWS
+    data_type: long
+  - name: DISPLAY_UNIQUE_REVIEWS_SUM
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SUBMISSION_DATE
+    data_type: date
+  - name: UPC_CD
+    data_type: string

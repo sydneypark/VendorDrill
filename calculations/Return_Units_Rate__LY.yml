@@ -1,0 +1,7 @@
+unique_name: Return_Units_Rate__LY
+object_type: metric_calc
+label: Return Units Rate % LY
+expression: "IIF (([Measures].[Sales_Units_LY] -[Measures].[m_ly_return_units_sum]\
+  \ )+0=0,NULL,([Measures].[m_ly_return_units_sum] /([Measures].[Sales_Units_LY] -[Measures].[m_ly_return_units_sum]\
+  \ ))*-1)"
+format: 0.00%;(0.00%)

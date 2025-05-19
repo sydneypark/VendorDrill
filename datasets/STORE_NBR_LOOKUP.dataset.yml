@@ -1,0 +1,11 @@
+unique_name: STORE_NBR_LOOKUP.dataset
+object_type: dataset
+label: STORE_NBR_LOOKUP.dataset
+connection_id: atscale_vendorcube_west_1_DIMENSION_GROUPS_ALPHA.connection
+table: STORE_NBR_LOOKUP
+
+columns:
+  - name: ID
+    data_type: long
+  - name: VALUES
+    data_type: string

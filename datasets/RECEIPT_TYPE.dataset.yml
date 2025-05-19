@@ -1,0 +1,17 @@
+unique_name: RECEIPT_TYPE.dataset
+object_type: dataset
+label: RECEIPT_TYPE.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: RECEIPT_TYPE
+
+columns:
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RECPT_TYP_CD
+    data_type: string
+  - name: RECPT_TYP_DESC
+    data_type: string
+  - name: S_TYP_DESC
+    data_type: string
+  - name: SORTING_ID
+    data_type: long

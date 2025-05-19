@@ -1,0 +1,8 @@
+unique_name: weekly_sales_units_ly
+object_type: metric
+label: Weekly Sales Units LY
+calculation_method: sum
+format: "#,###,###,##0.00;(#,###,###,##0.00)"
+visible: false
+dataset: APSPW.dataset
+column: LY_SLS_QTY

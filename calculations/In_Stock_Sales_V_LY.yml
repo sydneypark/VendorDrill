@@ -1,0 +1,6 @@
+unique_name: In_Stock_Sales_V_LY
+object_type: metric_calc
+label: In Stock to Sales % v LY
+expression: "IIF (([Measures].[In_Stock_Sales_TY]+0.00=0.00 OR [Measures].[In_Stock_Sales_LY]+0.00=0.00),NULL,\n\
+  \t   ([Measures].[In_Stock_Sales_TY]-[Measures].[In_Stock_Sales_LY]))"
+format: 0.00%;(0.00%)

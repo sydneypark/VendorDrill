@@ -1,0 +1,7 @@
+unique_name: m_store_count_dly
+object_type: metric
+label: Store Count Dly
+calculation_method: count distinct
+visible: false
+dataset: VDRILL_CPI_DLY.dataset
+column: STR_NBR

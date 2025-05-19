@@ -1,0 +1,37 @@
+unique_name: DFDRILL_BRCH_DLY.dataset
+object_type: dataset
+label: DFDRILL_BRCH_DLY.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: DFDRILL_BRCH_DLY
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: DC_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_DC_OH_QTY
+    data_type: double
+  - name: LY_DC_OH_RETL_AMT
+    data_type: double
+  - name: LY_DC_OO_QTY
+    data_type: double
+  - name: LY_DC_OO_RETL_AMT
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: TY_DC_OH_QTY
+    data_type: double
+  - name: TY_DC_OH_RETL_AMT
+    data_type: double
+  - name: TY_DC_OO_QTY
+    data_type: double
+  - name: TY_DC_OO_RETL_AMT
+    data_type: double

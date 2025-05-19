@@ -1,0 +1,8 @@
+unique_name: m_current_cost_begin_dt
+object_type: metric
+label: Current Cost Begin DT
+calculation_method: maximum
+format: yyyy-MM-dd
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: CURR_COST_BGN_DT

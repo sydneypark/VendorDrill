@@ -1,0 +1,5 @@
+unique_name: m_online_return_amount_v_ly
+object_type: metric_calc
+label: Online Return $ v LY +
+expression: "IIF (([Measures].[m_online_return_amount]+0.00=0.00 OR [Measures].[m_online_return_amount_ly]+0.00=0.00),NULL,([Measures].[m_online_return_amount]-[Measures].[m_online_return_amount_ly]))"
+format: "$ #,##0.00;($ #,##0.00);;"

@@ -1,0 +1,5 @@
+unique_name: m_ontime_fdc_wkly_p
+object_type: metric_calc
+label: FDC On Time % Wkly
+expression: "IIF([Measures].[m_sku_cnt_fdc_wkly]+0.0=0.0,NULL,([Measures].[m_tot_on_time_fdc_wkly]/[Measures].[m_sku_cnt_fdc_wkly]))"
+format: 0.00%;(0.00%)

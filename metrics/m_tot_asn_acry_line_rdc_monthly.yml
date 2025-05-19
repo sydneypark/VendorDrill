@@ -1,0 +1,8 @@
+unique_name: m_tot_asn_acry_line_rdc_monthly
+object_type: metric
+label: Tot ASN ACRY Line RDC Monthly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: RDC_ASN_ACCURACY_MONTHLY.dataset
+column: ASN_LINE_ACCURACY

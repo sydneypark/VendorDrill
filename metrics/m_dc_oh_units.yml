@@ -1,0 +1,12 @@
+unique_name: m_dc_oh_units
+object_type: metric
+label: DC OH Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations_Internal
+    - DFDRILL_BRCH_DLY.dataset_Time
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DC_OH_QTY

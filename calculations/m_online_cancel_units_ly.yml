@@ -1,0 +1,5 @@
+unique_name: m_online_cancel_units_ly
+object_type: metric_calc
+label: Online Cancel Units LY +
+expression: "[Measures].[m_online_sales_cancel_units_ly] + [Measures].[m_online_order_cancel_units_ly]"
+format: "#,##0;(#,##0);;"

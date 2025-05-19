@@ -1,0 +1,15 @@
+unique_name: VDRILL_VNDR_CUBE_XREF.dataset
+object_type: dataset
+label: VDRILL_VNDR_CUBE_XREF.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: VDRILL_VNDR_CUBE_XREF
+
+columns:
+  - name: CONNECTION_STRING
+    data_type: string
+  - name: LAST_UPD_SNSH_ID
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: USER_ID
+    data_type: string

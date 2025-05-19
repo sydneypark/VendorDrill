@@ -1,0 +1,6 @@
+unique_name: m_sls_plan_v_ly_str_class_week
+object_type: metric_calc
+label: Sales Plan v LY - Store Class Week
+expression: "IIF (([Measures].[sales] +0=0 OR [Measures].[m_sales_plan_str_class_week]\
+  \ +0=0),NULL,([Measures].[sales] -[Measures].[m_sales_plan_str_class_week] ))"
+format: "$ #,##0.00;($ #,##0.00);;"

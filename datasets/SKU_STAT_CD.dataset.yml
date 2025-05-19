@@ -1,0 +1,15 @@
+unique_name: SKU_STAT_CD.dataset
+object_type: dataset
+label: SKU_STAT_CD.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: SKU_STAT_CD
+
+columns:
+  - name: D_STAT_CD
+    data_type: string
+  - name: ITEM_STAT_CD
+    data_type: int
+  - name: S_STAT_DESC
+    data_type: string
+  - name: STAT_DESC
+    data_type: string

@@ -1,0 +1,7 @@
+unique_name: m_online_average_unit_retail
+object_type: metric_calc
+label: Online Average Unit Retail (AUR) +
+expression: |-
+  IIF ([Measures].[m_online_order_units]+0=0,NULL,
+  ( [Measures].[m_online_gross_demand]/[Measures].[m_online_order_units]))
+format: "$ #,##0.00;($ #,##0.00);;"

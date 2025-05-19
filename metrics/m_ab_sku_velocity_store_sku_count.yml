@@ -1,0 +1,7 @@
+unique_name: m_ab_sku_velocity_store_sku_count
+object_type: metric
+label: AB SKU Velocity Store SKU Count
+calculation_method: count distinct
+format: "#,##0;(#,##0);;"
+dataset: Weeks of Capacity.dataset
+column: AB_SKU_Velocity_Store_SKU_Count

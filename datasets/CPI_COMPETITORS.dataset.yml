@@ -1,0 +1,13 @@
+unique_name: CPI_COMPETITORS.dataset
+object_type: dataset
+label: CPI_COMPETITORS.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: CPI_COMPETITORS
+
+columns:
+  - name: competitor_id
+    data_type: long
+  - name: competitor_name
+    data_type: string
+  - name: is_localized
+    data_type: long

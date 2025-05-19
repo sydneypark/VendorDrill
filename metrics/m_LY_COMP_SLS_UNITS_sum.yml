@@ -1,0 +1,7 @@
+unique_name: m_LY_COMP_SLS_UNITS_sum
+object_type: metric
+label: Comp Units LY
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SALES.dataset
+column: LY_COMP_SLS_UNITS

@@ -1,0 +1,33 @@
+unique_name: Store Volume CD +
+object_type: dimension
+label: Store Volume CD +
+type: standard
+
+hierarchies:
+
+  - unique_name: Store Volume CD +
+    label: Store Volume CD +
+
+    levels:
+
+      - unique_name: Store Vol CD +
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_STR_VOL_LVL_CD
+            label: Store Volume Code  +
+            dataset: STR_VOL.dataset
+            key_columns:
+              - STR_VOL_LVL_CD
+            name_column: STR_VOL_LVL_CD
+            sort_column: STR_VOL_LVL_CD
+
+level_attributes:
+
+  - unique_name: Store Vol CD +
+    label: Store Vol CD +
+    dataset: STR_VOL.dataset
+    key_columns:
+      - STR_NBR
+    name_column: STR_VOL_LVL_CD

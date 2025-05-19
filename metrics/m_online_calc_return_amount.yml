@@ -1,0 +1,7 @@
+unique_name: m_online_calc_return_amount
+object_type: metric
+label: Online Calculated Return $ +
+calculation_method: sum
+visible: false
+dataset: ONLINE_SALES.dataset
+column: Return_Sales

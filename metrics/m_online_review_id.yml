@@ -1,0 +1,7 @@
+unique_name: m_online_review_id
+object_type: metric
+label: Online Review Id +
+calculation_method: count distinct
+visible: false
+dataset: Online Rating Review.dataset
+column: REVIEW_ID

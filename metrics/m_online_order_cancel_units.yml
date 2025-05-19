@@ -1,0 +1,8 @@
+unique_name: m_online_order_cancel_units
+object_type: metric
+label: Online Order Cancel Units +
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: ORDER_LINE.dataset
+column: CANCEL_UNIT

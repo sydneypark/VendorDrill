@@ -1,0 +1,7 @@
+unique_name: m_non_buyable_views_cnt
+object_type: metric
+label: Online Non-Buyable Views +
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: ONLINE_DIRECT_FULFILLMENT.dataset
+column: CUST_NOT_BUYBL_DAY_PG_VIST_CNT

@@ -1,0 +1,58 @@
+unique_name: QuoteCenter Product
+object_type: dimension
+label: QuoteCenter Product
+type: standard
+
+hierarchies:
+
+  - unique_name: h_qp
+    label: QuoteCenter Product
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_qp_quotecenter_product
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_qp_quotecenter_manuf_model_number
+            label: QuoteCenter Manuf Model Number
+            dataset: QuoteCenter_PRODUCT.dataset
+            key_columns:
+              - ManufacturerModelNbr
+            name_column: ManufacturerModelNbr
+            sort_column: ManufacturerModelNbr
+
+          - unique_name: d_qp_quotecenter_product_description
+            label: QuoteCenter Product Description
+            dataset: QuoteCenter_PRODUCT.dataset
+            key_columns:
+              - ProductDesc
+            name_column: ProductDesc
+            sort_column: ProductDesc
+
+          - unique_name: d_qp_quotecenter_product_description_continued
+            label: QuoteCenter Product Description Continued
+            dataset: QuoteCenter_PRODUCT.dataset
+            key_columns:
+              - ProductAdditionalDesc
+            name_column: ProductAdditionalDesc
+            sort_column: ProductAdditionalDesc
+
+          - unique_name: d_qp_quotecenter_product_id
+            label: QuoteCenter Product ID
+            dataset: QuoteCenter_PRODUCT.dataset
+            key_columns:
+              - SupplierProuductID
+            name_column: SupplierProuductID
+            sort_column: SupplierProuductID
+
+level_attributes:
+
+  - unique_name: h_qp_quotecenter_product
+    label: QuoteCenter Product
+    dataset: QuoteCenter_PRODUCT.dataset
+    key_columns:
+      - SupplierProuductID
+    name_column: SupplierProuductID

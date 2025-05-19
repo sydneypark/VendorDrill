@@ -1,0 +1,167 @@
+unique_name: POG Assortment
+object_type: dimension
+label: POG Assortment
+type: standard
+
+hierarchies:
+
+  - unique_name: POG_HIER_2
+    label: POG Assortment Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: POG_Assortment_Category_Name
+
+        secondary_attributes:
+
+          - unique_name: d_POG_CTGRY_NM
+            label: POG Assortment Category Nbr +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: POG_CTGRY_CD
+            sort_column: POG_CTGRY_CD
+
+          - unique_name: d_POG_CTGRY_NM_2
+            label: POG Assortment Category +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: POG_CTGRY_NM
+            sort_column: POG_CTGRY_CD
+
+          - unique_name: d_POG_CTGRY_NM_3
+            label: POG Assortment Category Name +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - POG_CTGRY_CD
+            name_column: S_POG_CTGRY_NM
+            sort_column: POG_CTGRY_CD
+
+      - unique_name: 'POG_Assortment_Subcategory '
+
+        secondary_attributes:
+
+          - unique_name: d_POG_SUB_CTGRY_NM
+            label: POG Assortment Subcategory +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - POG_SUB_CTGRY_NM
+            name_column: POG_SUB_CTGRY_NM
+            sort_column: POG_SUB_CTGRY
+
+          - unique_name: d_POG_SUB_CTGRY_NM_2
+            label: POG Assortment Subcategory Nbr +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - POG_SUB_CTGRY
+            name_column: POG_SUB_CTGRY
+            sort_column: POG_SUB_CTGRY
+
+          - unique_name: d_POG_SUB_CTGRY_NM_3
+            label: POG Assortment Subcategory Name +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - S_POG_SUB_CTGRY_NM
+            name_column: S_POG_SUB_CTGRY_NM
+            sort_column: POG_SUB_CTGRY
+
+      - unique_name: POG_Assortment
+
+        secondary_attributes:
+
+          - unique_name: d_BAY_CNT
+            label: Number of Bays +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - BAY_CNT
+            name_column: BAY_CNT
+            sort_column: BAY_CNT
+
+          - unique_name: d_LIVE_WEEK
+            label: Live Week +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - LIVE_WEEK
+            name_column: LIVE_WEEK
+            sort_column: LIVE_WEEK
+
+          - unique_name: d_POG_ID
+            label: POG ID +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - PLANOGRAM_ID
+            name_column: PLANOGRAM_ID
+            sort_column: PLANOGRAM_ID
+
+          - unique_name: d_POG_NAME
+            label: POG Assortment +
+            folder: More Fields
+            dataset: POG_HIER.dataset
+            key_columns:
+              - PLANOGRAM_ID
+            name_column: POG_NAME
+            sort_column: PLANOGRAM_ID
+
+  - unique_name: POG Class
+    label: POG Class
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: POG Class Level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_pog_class_2
+            label: POG Class
+            folder: Shelf Availability
+            dataset: Weeks of Capacity.dataset
+            key_columns:
+              - POG_CLASS
+            name_column: POG_CLASS
+            sort_column: POG_CLASS
+
+level_attributes:
+
+  - unique_name: POG Class Level
+    label: POG Class Level
+    dataset: Weeks of Capacity.dataset
+    key_columns:
+      - POG_CLASS
+    name_column: POG_CLASS
+
+  - unique_name: POG_Assortment
+    label: POG Assortment +
+    dataset: POG_HIER.dataset
+    key_columns:
+      - PLANOGRAM_ID
+    name_column: POG_NAME
+    sort_column: PLANOGRAM_ID
+
+  - unique_name: POG_Assortment_Category_Name
+    label: POG Assortment Category +
+    dataset: POG_HIER.dataset
+    key_columns:
+      - POG_CTGRY_CD
+    name_column: POG_CTGRY_NM
+    sort_column: POG_CTGRY_CD
+
+  - unique_name: 'POG_Assortment_Subcategory '
+    label: POG Assortment Subcategory +
+    dataset: POG_HIER.dataset
+    key_columns:
+      - POG_SUB_CTGRY_NM
+    name_column: POG_SUB_CTGRY_NM
+    sort_column: POG_SUB_CTGRY

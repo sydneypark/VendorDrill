@@ -1,0 +1,7 @@
+unique_name: sales_trans
+object_type: metric
+label: Sales Trans
+calculation_method: count distinct
+format: "#,##0;(#,##0);;"
+dataset: RC_SKU_STR_DAY_SLS.dataset
+column: TY_UNIQUE_TRANS_ID

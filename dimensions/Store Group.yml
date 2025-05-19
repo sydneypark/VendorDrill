@@ -1,0 +1,34 @@
+unique_name: Store Group
+object_type: dimension
+label: Store Group
+type: standard
+
+hierarchies:
+
+  - unique_name: Store Group
+    label: Store Group
+
+    levels:
+
+      - unique_name: h_sg_store_nbr
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_sg_store_group
+            label: Store Group +
+            is_hidden: true
+            dataset: STORE_NBR_LOOKUP.dataset
+            key_columns:
+              - ID
+            name_column: ID
+            sort_column: ID
+
+level_attributes:
+
+  - unique_name: h_sg_store_nbr
+    label: Store Nbr
+    dataset: STORE_NBR_LOOKUP.dataset
+    key_columns:
+      - VALUES
+    name_column: VALUES

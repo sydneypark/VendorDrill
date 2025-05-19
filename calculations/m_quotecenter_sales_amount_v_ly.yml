@@ -1,0 +1,7 @@
+unique_name: m_quotecenter_sales_amount_v_ly
+object_type: metric_calc
+label: QuoteCenter Sales $ v LY
+expression: "IIF (([Measures].[m_quotecenter_sales_amount] +0=0 OR [Measures].[m_quotecenter_sales_amount_ly]\
+  \ +0=0),NULL,([Measures].[m_quotecenter_sales_amount] -[Measures].[m_quotecenter_sales_amount_ly]\
+  \ ))"
+format: "$ #,##0.00;($ #,##0.00);;"

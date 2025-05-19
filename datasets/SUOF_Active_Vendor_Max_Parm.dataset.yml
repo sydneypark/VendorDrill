@@ -1,0 +1,9 @@
+unique_name: SUOF_Active_Vendor_Max_Parm.dataset
+object_type: dataset
+label: SUOF_Active_Vendor_Max_Parm.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: ACTIVE_VENDOR_MAX_PARM
+
+columns:
+  - name: FLAG
+    data_type: string

@@ -1,0 +1,8 @@
+unique_name: m_sku_cnt_rdc_asn_acry_wkly
+object_type: metric
+label: SKU Count RDC ASN Acry Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: RDC_ASN_ACCURACY_WKLY.dataset
+column: SKU_COUNT

@@ -1,0 +1,7 @@
+unique_name: m_store_count_wkly
+object_type: metric
+label: Store Count Wkly
+calculation_method: count distinct
+visible: false
+dataset: VDRILL_CPI_WKLY.dataset
+column: STR_NBR

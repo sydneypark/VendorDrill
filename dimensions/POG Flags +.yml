@@ -1,0 +1,89 @@
+unique_name: POG Flags +
+object_type: dimension
+label: POG Flags +
+type: standard
+
+hierarchies:
+
+  - unique_name: POG_Flags
+    label: POG Flags +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_POG
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_POG_2
+            label: POG +
+            folder: POG Flags +
+            dataset: POG.dataset
+            key_columns:
+              - FLAG
+            name_column: FLAG
+            sort_column: FLAG
+
+  - unique_name: d_Active_Sku
+    label: Active Sku +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_Active_Sku
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_Active_Sku_2
+            label: 'Active Sku + '
+            folder: POG Flags +
+            dataset: THD_SKU_STAT_CD.dataset
+            key_columns:
+              - DESCR
+            name_column: DESCR
+            sort_column: DESCR
+
+  - unique_name: Assortment
+    label: Assortment +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Assortment
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_Assortment
+            label: Assortment +
+            folder: POG Flags +
+            dataset: Assortment Flag.dataset
+            key_columns:
+              - DESCR
+            name_column: DESCR
+            sort_column: DESCR
+
+level_attributes:
+
+  - unique_name: Assortment
+    label: Assortment +
+    dataset: Assortment Flag.dataset
+    key_columns:
+      - FLAG
+    name_column: DESCR
+
+  - unique_name: d_Active_Sku
+    label: Active Sku +
+    dataset: THD_SKU_STAT_CD.dataset
+    key_columns:
+      - THD_SKU_STAT_CD
+    name_column: THD_SKU_STAT_CD
+
+  - unique_name: d_POG
+    label: POG +
+    dataset: POG.dataset
+    key_columns:
+      - FLAG
+    name_column: FLAG

@@ -1,0 +1,7 @@
+unique_name: Sell_UOM_Quantity
+object_type: metric
+label: Sell UOM Quantity +
+calculation_method: maximum
+format: "#,###"
+dataset: VDRILL_SALES.dataset
+column: TY_SL_UOM_QTY

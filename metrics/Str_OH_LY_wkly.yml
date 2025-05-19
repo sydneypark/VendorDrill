@@ -1,0 +1,12 @@
+unique_name: Str_OH_LY_wkly
+object_type: metric
+label: Str OH $ LY Wkly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_SLS_INV_WKLY.dataset_Time_Transformations_Internal
+    - VDRILL_SLS_INV_WKLY.dataset_Time
+dataset: VDRILL_SLS_INV_WKLY.dataset
+column: LY_WKLY_STR_OH_RETL_AMT

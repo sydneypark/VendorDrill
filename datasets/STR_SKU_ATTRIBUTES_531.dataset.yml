@@ -1,0 +1,57 @@
+unique_name: STR_SKU_ATTRIBUTES_531.dataset
+object_type: dataset
+label: STR_SKU_ATTRIBUTES_531.dataset
+connection_id: atscale_vendorcube_west_1_VENDOR_COLLAB_VIEWS.connection
+table: STR_SKU_ATTRIBUTES_REPORT
+
+columns:
+  - name: AD_EVENT
+    data_type: string
+  - name: BUY_PK_WT
+    data_type: double
+  - name: BUY_UOM_QTY
+    data_type: long
+  - name: CAL_DT
+    data_type: date
+  - name: CUB_FT
+    data_type: double
+  - name: CURR_BCOST_AMT
+    data_type: double
+  - name: CURR_BCOST_BGN_DT
+    data_type: date
+  - name: CURR_COST_AMT
+    data_type: double
+  - name: CURR_COST_BGN_DT
+    data_type: date
+  - name: DISP_REPLE_SKU_NBR
+    data_type: string
+  - name: IN_SEAS_DT
+    data_type: string
+  - name: MSTR_SKU_NBR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: NETWORK
+    data_type: string
+  - name: OUT_SEAS_DT
+    data_type: string
+  - name: REASON_CODE
+    data_type: string
+  - name: S_RMETH_DESC
+    data_type: string
+  - name: SELL_UOM_QTY
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SO_LEAD_TM_DAYS
+    data_type: long
+  - name: SO_TRN_TM_DAYS
+    data_type: long
+  - name: STORE_COUNT_AVAIL
+    data_type: string
+  - name: STR_EXCPT_FLG
+    data_type: string
+  - name: STR_NBR
+    data_type: string

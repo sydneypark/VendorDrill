@@ -1,0 +1,7 @@
+unique_name: m_sales_plan_str_dept_ly_day
+object_type: metric
+label: Sales Plan LY -Store Dept Day
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: STR_DEPT_PLN_DLY.dataset
+column: LY_SLS_PLN_AMT

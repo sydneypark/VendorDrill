@@ -1,0 +1,39 @@
+unique_name: VDRILL_SALES_TRANS.dataset
+object_type: dataset
+label: VDRILL_SALES_TRANS.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: VDRILL_SALES_TRANS
+
+columns:
+  - name: CORD_SRC_PRCSS_CD
+    data_type: long
+  - name: CUST_ORD_NBR
+    data_type: long
+  - name: DEPT_NBR
+    data_type: long
+  - name: EXTNL_REF_NBR
+    data_type: string
+  - name: LOC_NBR
+    data_type: string
+  - name: LY_RGSTR_TXN
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: SLS_DT
+    data_type: date
+  - name: THD_SKU_STAT_CD
+    data_type: long
+  - name: TRANS_TYP_CD
+    data_type: long
+  - name: TY_RGSTR_TXN
+    data_type: long

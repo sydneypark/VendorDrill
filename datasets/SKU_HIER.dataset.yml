@@ -1,0 +1,73 @@
+unique_name: SKU_HIER.dataset
+object_type: dataset
+label: SKU_HIER.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: SKU_HIER
+
+columns:
+  - name: ALL_DEPT_DESC
+    data_type: string
+  - name: CLASS_DESC
+    data_type: string
+  - name: CLASS_NBR
+    data_type: string
+  - name: CORE_DEPT_DESC
+    data_type: string
+  - name: CTG_DESC
+    data_type: string
+  - name: CTG_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: IMP_SKU_IND
+    data_type: string
+  - name: MER_DEPT_NAME
+    data_type: string
+  - name: MER_DEPT_NBR
+    data_type: string
+  - name: REL_FLG
+    data_type: string
+  - name: REL_SKU
+    data_type: string
+  - name: REL_SKU_NBR
+    data_type: long
+  - name: RPT_SKU_CRT_DT
+    data_type: date
+  - name: RPT_SKU_NBR
+    data_type: long
+  - name: S_CLASS_DESC
+    data_type: string
+  - name: S_CTG_DESC
+    data_type: string
+  - name: S_DEPT_NM
+    data_type: string
+  - name: S_MER_DEPT_NAME
+    data_type: string
+  - name: S_SC_DESC
+    data_type: string
+  - name: S_SKU_DESC
+    data_type: string
+  - name: S_SUB_SC_DESC
+    data_type: string
+  - name: SC_DESC
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_TYP_DESC
+    data_type: string
+  - name: SUB_CLASS_NBR
+    data_type: string
+  - name: SUB_SC_DESC
+    data_type: string
+  - name: SUB_SC_NBR
+    data_type: string
+  - name: SVP_DESC
+    data_type: string

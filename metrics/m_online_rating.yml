@@ -1,0 +1,7 @@
+unique_name: m_online_rating
+object_type: metric
+label: Online Rating +
+calculation_method: sum
+visible: false
+dataset: Online Rating Review.dataset
+column: RATING

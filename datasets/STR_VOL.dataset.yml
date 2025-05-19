@@ -1,0 +1,11 @@
+unique_name: STR_VOL.dataset
+object_type: dataset
+label: STR_VOL.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: STR_VOL
+
+columns:
+  - name: STR_NBR
+    data_type: string
+  - name: STR_VOL_LVL_CD
+    data_type: string

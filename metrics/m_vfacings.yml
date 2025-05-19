@@ -1,0 +1,7 @@
+unique_name: m_vfacings
+object_type: metric
+label: VFacings
+calculation_method: average
+format: "#,##0.00;(#,##0.00);;"
+dataset: Weeks of Capacity.dataset
+column: VFACINGS_ADJ

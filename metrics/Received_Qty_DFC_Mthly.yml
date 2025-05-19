@@ -1,0 +1,7 @@
+unique_name: Received_Qty_DFC_Mthly
+object_type: metric
+label: Received Qty DFC Mthly +
+calculation_method: sum
+format: "#,###"
+dataset: DFC_FILL_RATE_MONTHLY.dataset
+column: SKU_RECEIVED_QUANTITY

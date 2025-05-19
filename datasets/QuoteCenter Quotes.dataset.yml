@@ -1,0 +1,41 @@
+unique_name: QuoteCenter Quotes.dataset
+object_type: dataset
+label: QuoteCenter Quotes.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_FACT.connection
+table: HDQC_QUOTES
+
+columns:
+  - name: _PARTITIONTIME
+    data_type: datetime
+  - name: BRANCH_ID
+    data_type: string
+  - name: LY_QT_SLS_AMT
+    data_type: double
+  - name: LY_QT_SLS_UNITS
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: QUOTE_DATE
+    data_type: date
+  - name: QUOTE_ID
+    data_type: long
+  - name: QUOTE_LINE_ITEM_ID
+    data_type: long
+  - name: QUOTE_REF_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: SUPPLIER_PRODUCT_ID
+    data_type: string
+  - name: TY_QT_SLS_AMT
+    data_type: double
+  - name: TY_QT_SLS_UNITS
+    data_type: double
+  - name: UOM_CD
+    data_type: string
+  - name: UOM_ID
+    data_type: long

@@ -1,0 +1,45 @@
+unique_name: ONLINE_DIRECT_FULFILLMENT.dataset
+object_type: dataset
+label: ONLINE_DIRECT_FULFILLMENT.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: ONLINE_DIRECT_FULFILLMENT
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: CUST_NOT_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: LOST_SLS_AMT
+    data_type: double
+  - name: LOST_SLS_QTY
+    data_type: double
+  - name: LY_CUST_NOT_BUYBL_DAY_PG_VIST_CNT
+    data_type: long
+  - name: LY_LOST_SLS_AMT
+    data_type: double
+  - name: LY_LOST_SLS_QTY
+    data_type: double
+  - name: LY_POTNTL_SLS_AMT
+    data_type: double
+  - name: LY_POTNTL_SLS_QTY
+    data_type: double
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: POSTAL_CD
+    data_type: string
+  - name: POTNTL_SLS_AMT
+    data_type: double
+  - name: POTNTL_SLS_QTY
+    data_type: double
+  - name: PVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: UPC_CD
+    data_type: string

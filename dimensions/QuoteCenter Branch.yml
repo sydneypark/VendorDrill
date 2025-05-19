@@ -1,0 +1,42 @@
+unique_name: QuoteCenter Branch
+object_type: dimension
+label: QuoteCenter Branch
+type: standard
+
+hierarchies:
+
+  - unique_name: h_qb
+    label: QuoteCenter Branch
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_qb_quotecenter_branch
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_qb_quotecenter_branch_id
+            label: QuoteCenter Branch ID
+            dataset: QuoteCenter Branch.dataset
+            key_columns:
+              - BranchId
+            name_column: BranchId
+            sort_column: BranchId
+
+          - unique_name: d_qb_quotecenter_branch_name
+            label: QuoteCenter Branch Name
+            dataset: QuoteCenter Branch.dataset
+            key_columns:
+              - BranchNm
+            name_column: BranchNm
+            sort_column: BranchNm
+
+level_attributes:
+
+  - unique_name: h_qb_quotecenter_branch
+    label: QuoteCenter Branch
+    dataset: QuoteCenter Branch.dataset
+    key_columns:
+      - BranchId
+    name_column: BranchId

@@ -1,0 +1,8 @@
+unique_name: m_tot_sku_ontime_dfc_mthly
+object_type: metric
+label: Tot SKU On Time DFC Mthly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: DFC_ONTIME_MONTHLY.dataset
+column: TOT_SKU_ONTIME

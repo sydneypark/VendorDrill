@@ -1,0 +1,7 @@
+unique_name: m_cmp_retl_wkly
+object_type: metric
+label: Competitor Retail $ Wkly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_CPI_WKLY.dataset
+column: COMPETITOR_RETAIL

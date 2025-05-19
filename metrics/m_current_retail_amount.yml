@@ -1,0 +1,7 @@
+unique_name: m_current_retail_amount
+object_type: metric
+label: Current Retail $
+calculation_method: maximum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: RETAIL_PRICE

@@ -1,0 +1,7 @@
+unique_name: m_ab_under_spaced_store_sku_count
+object_type: metric
+label: AB/AB Underspaced Store SKU Count
+calculation_method: count distinct
+format: "#,##0;(#,##0);;"
+dataset: Weeks of Capacity.dataset
+column: AB_AB_Under_Spaced_Store_SKU_Count

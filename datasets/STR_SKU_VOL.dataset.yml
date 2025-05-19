@@ -1,0 +1,31 @@
+unique_name: STR_SKU_VOL.dataset
+object_type: dataset
+label: STR_SKU_VOL.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: STR_SKU_VOL
+
+columns:
+  - name: _PARTITIONTIME
+    data_type: datetime
+  - name: CLASS_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: STR_VOL_LVL_CD
+    data_type: string
+  - name: STRSC_VOL_LVL_CD
+    data_type: string
+  - name: SUB_CLASS_NBR
+    data_type: string

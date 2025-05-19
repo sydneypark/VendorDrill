@@ -1,0 +1,6 @@
+unique_name: Str_OO_Units_v_LY__Wkly
+object_type: metric_calc
+label: Str OO Units v LY (%) Wkly
+expression: "IIF ( [Measures].[Str_OO_units_ly_wkly] +0=0,NULL, [Measures].[Str_OO_Units_v_LY_Wkly]/\
+  \ [Measures].[Str_OO_units_ly_wkly] )"
+format: 0.00%;(0.00%)

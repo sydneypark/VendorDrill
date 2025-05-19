@@ -1,0 +1,8 @@
+unique_name: Online_Product_Interaction_Conversion_Rate_vLY
+object_type: metric_calc
+label: Online Product Interaction Conversion Rate vLY
+expression: "IIF(ISEMPTY([Measures].[Online_Product_Interaction_Conversion_Rate])\
+  \ OR ISEMPTY([Measures].[Online_Product_Interaction_Conversion_Rate_LY]), NULL,\
+  \ [Measures].[Online_Product_Interaction_Conversion_Rate] - [Measures].[Online_Product_Interaction_Conversion_Rate_LY]\
+  \ )"
+format: 0.00%;(0.00%)

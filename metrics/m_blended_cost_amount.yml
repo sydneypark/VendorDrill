@@ -1,0 +1,7 @@
+unique_name: m_blended_cost_amount
+object_type: metric
+label: Blended Cost $
+calculation_method: maximum
+format: "$ #,##0.000;($ #,##0.000);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: CURR_BCOST_AMT

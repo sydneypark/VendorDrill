@@ -1,0 +1,7 @@
+unique_name: m_str_cnt_inv_dly_ty
+object_type: metric
+label: Store Count With Inventory Daily
+calculation_method: count distinct
+format: "#,#;(#,#)"
+dataset: VDRILL_SLS_INV_DLY.dataset
+column: TY_INV_STR

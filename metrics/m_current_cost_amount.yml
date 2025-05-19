@@ -1,0 +1,7 @@
+unique_name: m_current_cost_amount
+object_type: metric
+label: Current Cost $
+calculation_method: maximum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: CURR_COST_AMT

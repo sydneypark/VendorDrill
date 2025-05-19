@@ -1,0 +1,9 @@
+unique_name: In_Stock_Sales_V_LY_BPS
+object_type: metric_calc
+label: In Stock to Sales % v LY (BPS)
+expression: |-
+  IIF ( IsEmpty ( [Measures].[In_Stock_Sales_V_LY] )
+         ,  null
+         ,  ( [Measures].[In_Stock_Sales_V_LY]) * 10000
+         )
+format: "#,#;(#,#)"

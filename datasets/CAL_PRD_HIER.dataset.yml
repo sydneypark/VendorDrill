@@ -1,0 +1,73 @@
+unique_name: CAL_PRD_HIER.dataset
+object_type: dataset
+label: CAL_PRD_HIER.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: CAL_PRD_HIER
+
+columns:
+  - name: CAL_DT
+    data_type: date
+  - name: DAY
+    data_type: string
+  - name: DAY_OF_MTH_NBR
+    data_type: string
+  - name: DAY_OF_WK_NBR
+    data_type: long
+  - name: DAY_OF_YR_NBR
+    data_type: string
+  - name: FSCL_HY_DESC
+    data_type: string
+  - name: FSCL_HY_END_DT
+    data_type: date
+  - name: FSCL_HY_NBR
+    data_type: long
+  - name: FSCL_HYNBR_DESC
+    data_type: string
+  - name: FSCL_MTH_NM
+    data_type: string
+  - name: FSCL_PRD_DESC
+    data_type: string
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: FSCL_PRD_KEY_VAL
+    data_type: string
+  - name: FSCL_PRD_KEY_VAL_DESC
+    data_type: string
+  - name: FSCL_PRD_NBR
+    data_type: long
+  - name: FSCL_QTR_DESC
+    data_type: string
+  - name: FSCL_QTR_END_DT
+    data_type: date
+  - name: FSCL_QTR_NBR
+    data_type: long
+  - name: FSCL_QTR_NBR_DESC
+    data_type: string
+  - name: FSCL_WK_DAY_DESC
+    data_type: string
+  - name: FSCL_WK_DESC
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: FSCL_WK_NBR
+    data_type: long
+  - name: FSCL_WK_NBR_DESC
+    data_type: string
+  - name: FSCL_YR
+    data_type: long
+  - name: FSCL_YR_END_DT
+    data_type: date
+  - name: FSCL_YR_WK_KEY_VAL
+    data_type: string
+  - name: FSCL_YR_WK_KEY_VAL_DESC
+    data_type: string
+  - name: LY_CAL_DT
+    data_type: date
+  - name: LY_FSCL_WK_END_DT
+    data_type: date
+  - name: MONTH
+    data_type: string
+  - name: SHORT_DAY
+    data_type: string
+  - name: SHORT_MTH
+    data_type: string

@@ -1,0 +1,6 @@
+unique_name: Return__Rate_
+object_type: metric_calc
+label: Return $ Rate %
+expression: "IIF (([Measures].[sales] -[Measures].[m_ty_Returns_sum] )+0=0,NULL,([Measures].[m_ty_Returns_sum]\
+  \ /([Measures].[sales] -[Measures].[m_ty_Returns_sum] ))*-1)"
+format: 0.00%;(0.00%)

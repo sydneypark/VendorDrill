@@ -1,0 +1,6 @@
+unique_name: Out_of_Stock
+object_type: metric_calc
+label: Out of Stock
+expression: "IIF ( IsEmpty ( [Measures].[m_TY_SIMPL_OOS_IND_sum] )\n       , [Measures].[Time1]\n\
+  \       , [Measures].[m_TY_SIMPL_OOS_IND_sum]\n       ) "
+format: "#,##0"

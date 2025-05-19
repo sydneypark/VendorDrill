@@ -1,0 +1,7 @@
+unique_name: m_LY_COMP_SLS_sum_new
+object_type: metric
+label: Comp $ Base (1 Year)
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_SALES.dataset
+column: LY_COMP_SLS

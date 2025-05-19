@@ -1,0 +1,5 @@
+unique_name: m_average_order_value_noship_amount
+object_type: metric_calc
+label: Average Order Value - No Ship $ (AOV - No Ship)
+expression: "IIF( [Measures].[m_online_count_of_orders]+0=0,NULL,([Measures].[m_online_gross_demand]/[Measures].[m_online_count_of_orders]))"
+format: "$ #,##0.00;($ #,##0.00);;"

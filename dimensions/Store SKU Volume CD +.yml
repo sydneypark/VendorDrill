@@ -1,0 +1,35 @@
+unique_name: Store SKU Volume CD +
+object_type: dimension
+label: Store SKU Volume CD +
+type: standard
+
+hierarchies:
+
+  - unique_name: Store SKU Volume CD +
+    label: Store SKU Volume CD +
+
+    levels:
+
+      - unique_name: Store SKU Volume CD +
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_STRSC_VOL_LVL_CD
+            label: Store SKU Volume Code +
+            dataset: STR_SKU_VOL.dataset
+            key_columns:
+              - STR_VOL_LVL_CD
+            name_column: STRSC_VOL_LVL_CD
+            sort_column: STRSC_VOL_LVL_CD
+
+level_attributes:
+
+  - unique_name: Store SKU Volume CD +
+    label: Store SKU Volume CD +
+    dataset: STR_SKU_VOL.dataset
+    key_columns:
+      - STR_NBR
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: STRSC_VOL_LVL_CD

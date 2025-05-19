@@ -1,0 +1,6 @@
+unique_name: m_online_count_of_orders
+object_type: metric
+label: Online Count Of Orders +
+calculation_method: count distinct
+dataset: ORDER_LINE.dataset
+column: TY_CUST_ORD_ID

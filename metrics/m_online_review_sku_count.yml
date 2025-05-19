@@ -1,0 +1,8 @@
+unique_name: m_online_review_sku_count
+object_type: metric
+label: Online Review SKU Count
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: ONLINE_PRODUCT_FACT.dataset
+column: REVIEW_COUNT

@@ -1,0 +1,324 @@
+unique_name: Degen_Mvndr
+object_type: dimension
+label: Degen_Mvndr
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Mvndr_Number
+    label: Mvndr_Number
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: MVNDR_NBR
+
+level_attributes:
+
+  - unique_name: MVNDR_NBR
+    label: Mvndr_Number
+    shared_degenerate_columns:
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ORDER_LINE.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DTS_FCST_FILL_RATE_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DTS_FILL_RATE_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: F_RDC_FILL_RATE_W.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FDC_FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: PRODUCT_VISIT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_SLS_RECPT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DC_SKU_ATTRIBUTES_REPORT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_SALES_TRANS.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: APSPW.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ONLINE_PRODUCT_FACT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: PRICING.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFC_ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFDRILL_BRCH_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FDC_ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RC_SKU_STR_DAY_SLS.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: PIP_VISIT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_SALES.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: F_DTS_COMPLIANCE_PO_W.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFC_FCST_FILL_RATE_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: QuoteCenter Quotes.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DTS_FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_FCST_FILL_RATE_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: F_DTS_COMPLIANCE_PO_M.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FILL_RATE_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: In Stock / OOS -D.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: F_RDC_FILL_RATE_M.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FDC_ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: SUOF_DC.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DTS_ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: Weeks of Capacity.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_ASN_ACCURACY_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_FILL_RATE_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFC_FILL_RATE_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_SLS_INV_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FDC_FCST_FILL_RATE_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ONLINE_DIRECT_FULFILLMENT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFC_ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_DC_RECPT.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_SLS_INV_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DTS_ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: FDC_FILL_RATE_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: In Stock / OOS - W.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: RDC_ASN_ACCURACY_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_INV_RDC_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: ONLINE_SALES.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_INV_RDC_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: REGIONAL_PRICING.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: Display Ratings Reviews.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: DFC_FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: QuoteCenter Sales.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_ISS_DLY.dataset
+        is_unique_key: false
+      - name_column: MVNDR_NBR
+        key_columns:
+          - MVNDR_NBR
+        dataset: VDRILL_ISS_WKLY.dataset
+        is_unique_key: false
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

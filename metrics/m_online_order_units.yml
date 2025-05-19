@@ -1,0 +1,6 @@
+unique_name: m_online_order_units
+object_type: metric
+label: Online Order Units +
+calculation_method: sum
+dataset: ORDER_LINE.dataset
+column: ORD_QTY

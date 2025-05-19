@@ -1,0 +1,5 @@
+unique_name: APSPW_Sales_v_LY
+object_type: metric_calc
+label: APSPW Sales $ v LY
+expression: "IIF (([Measures].[APSPW_Sales]+0.00=0.00 OR [Measures].[APSPW_Sales_LY]+0.00=0.00),NULL,([Measures].[APSPW_Sales]-[Measures].[APSPW_Sales_LY]))"
+format: "$ #,##0.00;($ #,##0.00);;"

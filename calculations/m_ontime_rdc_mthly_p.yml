@@ -1,0 +1,5 @@
+unique_name: m_ontime_rdc_mthly_p
+object_type: metric_calc
+label: RDC On Time % Mthly
+expression: "IIF([Measures].[m_sku_cnt_rdc_mthly]+0.0=0.0,NULL,([Measures].[m_tot_on_time_rdc_mthly]/[Measures].[m_sku_cnt_rdc_mthly]))"
+format: 0.00%;(0.00%)

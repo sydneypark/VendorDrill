@@ -1,0 +1,7 @@
+unique_name: m_store_count_avail
+object_type: metric
+label: Store Count Avail
+calculation_method: count distinct
+format: "#,##0;(#,##0);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: STORE_COUNT_AVAIL

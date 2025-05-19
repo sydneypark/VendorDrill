@@ -1,0 +1,5 @@
+unique_name: m_online_sales_amount_before_returns
+object_type: metric_calc
+label: Online Sales $ before Returns +
+expression: "[Measures].[m_Online_Sales_Amt] +  [Measures].[m_online_calc_return_amount]"
+format: "$ #,##0.00;($ #,##0.00);;"

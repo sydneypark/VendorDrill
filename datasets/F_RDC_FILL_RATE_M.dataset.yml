@@ -1,0 +1,48 @@
+unique_name: F_RDC_FILL_RATE_M.dataset
+object_type: dataset
+label: F_RDC_FILL_RATE_M.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: F_RDC_FILL_RATE_M
+
+columns:
+  - name: COMPLIANT_FR_MV_FLAG
+    data_type: string
+  - name: CURR_COST_AMT
+    data_type: double
+  - name: DC_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DSVC_TYP_CD
+    data_type: long
+    sql: "2"
+  - name: FILL_RATE
+    data_type: double
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: LOAD_DT
+    data_type: date
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: PERFECT_FR_PO_FLAG
+    data_type: string
+  - name: PERFECT_FR_SKU_FLAG
+    data_type: string
+  - name: PO_NBR
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_ORDER_QUANTITY
+    data_type: double
+  - name: SKU_RATE_OFFSET
+    data_type: double
+  - name: SKU_RECEIVED_QUANTITY
+    data_type: double
+  - name: UNDER_FILLED_SKU_VALUE
+    data_type: double

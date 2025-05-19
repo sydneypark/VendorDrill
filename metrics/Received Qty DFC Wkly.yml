@@ -1,0 +1,7 @@
+unique_name: Received Qty DFC Wkly
+object_type: metric
+label: Received Qty DFC Wkly +
+calculation_method: sum
+format: "#,###"
+dataset: DFC_FILL_RATE_WKLY.dataset
+column: ADJ_RCVD_QTY

@@ -1,0 +1,71 @@
+unique_name: VDRILL_INV_RDC_WKLY.dataset
+object_type: dataset
+label: VDRILL_INV_RDC_WKLY.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_INV_RDC_WKLY
+
+columns:
+  - name: _PARTITIONTIME
+    data_type: datetime
+  - name: DC_NBR
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: DSVC_TYP_CD
+    data_type: long
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LY_CONF_ALLOC_AMT
+    data_type: double
+  - name: LY_CONF_ALLOC_QTY
+    data_type: double
+  - name: LY_EXPCTD_ALLOC_AMT
+    data_type: double
+  - name: LY_EXPCTD_ALLOC_QTY
+    data_type: double
+  - name: MB_ID
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: MVNDR_NM_NBR
+    data_type: string
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: RMETH_CD
+    data_type: long
+  - name: S_SKU_DESC
+    data_type: string
+  - name: S_STR_NM
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_TYP_DESC
+    data_type: string
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: SPLR_MER_DEPT_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: STR_NM
+    data_type: string
+  - name: THD_SKU_STAT_CD
+    data_type: long
+  - name: TY_CONF_ALLOC_AMT
+    data_type: double
+  - name: TY_CONF_ALLOC_QTY
+    data_type: double
+  - name: TY_EXPCTD_ALLOC_AMT
+    data_type: double
+  - name: TY_EXPCTD_ALLOC_QTY
+    data_type: double

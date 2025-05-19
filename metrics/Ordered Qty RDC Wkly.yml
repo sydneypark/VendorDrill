@@ -1,0 +1,7 @@
+unique_name: Ordered Qty RDC Wkly
+object_type: metric
+label: Ordered Qty RDC Wkly +
+calculation_method: sum
+format: "#,###"
+dataset: RDC_FILL_RATE_WKLY.dataset
+column: ORD_QTY

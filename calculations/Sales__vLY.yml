@@ -1,0 +1,6 @@
+unique_name: Sales__vLY
+object_type: metric_calc
+label: Sales $ vLY
+expression: "IIF (([Measures].[sales] +0=0 OR [Measures].[sales_ly] +0=0),NULL,([Measures].[sales]\
+  \ -[Measures].[sales_ly] ))"
+format: "$ #,##0.00;($ #,##0.00);;"

@@ -1,0 +1,6 @@
+unique_name: Online_Cancel_Rate_p
+object_type: metric_calc
+label: Online Cancel Rate (%) +
+expression: "IIF (([Measures].[m_online_cancel_amount] -[Measures].[m_online_gross_demand]\
+  \ )+0=0,NULL,[Measures].[m_online_cancel_amount] /[Measures].[m_online_gross_demand])"
+format: 0.00%;(0.00%)

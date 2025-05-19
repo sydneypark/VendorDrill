@@ -1,0 +1,7 @@
+unique_name: m_ty_Returns_sum
+object_type: metric
+label: Return $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_SALES.dataset
+column: TY_RETURNS

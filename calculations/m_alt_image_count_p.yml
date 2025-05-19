@@ -1,0 +1,9 @@
+unique_name: m_alt_image_count_p
+object_type: metric_calc
+label: Online Alt Image Count % +
+expression: |-
+  IIF([Measures].[m_tot_online_sku_count] + 0 = 0
+  , NULL,
+  [Measures].[m_sku_alt_image_cnt]/[Measures].[m_tot_online_sku_count]
+   )
+format: 0.00%;(0.00%)

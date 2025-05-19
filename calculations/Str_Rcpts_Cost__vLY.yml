@@ -1,0 +1,6 @@
+unique_name: Str_Rcpts_Cost__vLY
+object_type: metric_calc
+label: Str Rcpts Cost $ vLY
+expression: "IIF (([Measures].[Str_Rcpts_Cost] +0=0 OR [Measures].[Str_Rcpts_Cost_LY]\
+  \ +0=0),NULL,([Measures].[Str_Rcpts_Cost] -[Measures].[Str_Rcpts_Cost_LY] ))"
+format: "$ #,##0.00;($ #,##0.00);;"

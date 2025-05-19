@@ -1,0 +1,65 @@
+unique_name: STR_CLASS_PLN_WKLY.dataset
+object_type: dataset
+label: STR_CLASS_PLN_WKLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_BASE_VIEWS.connection
+table: STR_CLASS_PLN_WKLY
+
+columns:
+  - name: ACCESS_FLG
+    data_type: string
+  - name: ALLOC_STR_NBR
+    data_type: string
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: HD_CHNL_NBR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_PLN_BMKDN_AMT
+    data_type: double
+  - name: LY_PLN_DEFR_INTRS_AMT
+    data_type: double
+  - name: LY_PLN_EI_RETL_AMT
+    data_type: double
+  - name: LY_PLN_NRCTC_AMT
+    data_type: double
+  - name: LY_PLN_NRCTR_AMT
+    data_type: double
+  - name: LY_PLN_PCMKUP_AMT
+    data_type: double
+  - name: LY_PLN_SHNK_AMT
+    data_type: double
+  - name: LY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: LY_PLN_SMKDN_AMT
+    data_type: double
+  - name: LY_SLS_PLN_AMT
+    data_type: double
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_PLN_BMKDN_AMT
+    data_type: double
+  - name: TY_PLN_DEFR_INTRS_AMT
+    data_type: double
+  - name: TY_PLN_EI_RETL_AMT
+    data_type: double
+  - name: TY_PLN_NRCTC_AMT
+    data_type: double
+  - name: TY_PLN_NRCTR_AMT
+    data_type: double
+  - name: TY_PLN_PCMKUP_AMT
+    data_type: double
+  - name: TY_PLN_SHNK_AMT
+    data_type: double
+  - name: TY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: TY_PLN_SMKDN_AMT
+    data_type: double
+  - name: TY_SLS_PLN_AMT
+    data_type: double

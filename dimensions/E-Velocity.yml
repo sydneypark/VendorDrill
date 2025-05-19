@@ -1,0 +1,53 @@
+unique_name: E-Velocity
+object_type: dimension
+label: E-Velocity
+type: standard
+
+hierarchies:
+
+  - unique_name: h_ev
+    label: E-Velocity
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: E-Velocity
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_ev_e_velocity_cycle
+            label: E-Velocity Cycle
+            dataset: EV_CYCLE.dataset
+            key_columns:
+              - EV_CYCLE
+            name_column: EV_CYCLE
+            sort_column: SORT_ORDER
+
+  - unique_name: h_lev
+    label: Leaving E-Velocity
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_lev
+
+level_attributes:
+
+  - unique_name: E-Velocity
+    label: E-Velocity
+    dataset: EV_CYCLE.dataset
+    key_columns:
+      - E1
+      - E2
+      - E3
+      - E4
+      - PRE_E
+    name_column: EV_CYCLE
+
+  - unique_name: h_lev
+    label: Leaving E-Velocity
+    dataset: VDRILL_SLS_INV_WKLY.dataset
+    key_columns:
+      - WKLY_QTD_SLS_FLAG
+    name_column: WKLY_QTD_SLS_FLAG

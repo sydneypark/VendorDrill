@@ -1,0 +1,141 @@
+unique_name: DC Hierarchy +
+object_type: dimension
+label: DC Hierarchy +
+type: standard
+
+hierarchies:
+
+  - unique_name: dc_hierarchy
+    label: DC Hierarchy +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_dh_all_thd
+
+        secondary_attributes:
+
+          - unique_name: d_dh_all_thd
+            label: All THD +
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - ALL_THD_DESC
+            name_column: ALL_THD_DESC
+            sort_column: ALL_THD_DESC
+
+      - unique_name: h_dh_lob
+
+        secondary_attributes:
+
+          - unique_name: d_dh_lob
+            label: LOB +
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - S_LOB_HQ_NM
+            name_column: S_LOB_HQ_NM
+            sort_column: S_LOB_HQ_NM
+
+      - unique_name: h_dh_geography
+
+        secondary_attributes:
+
+          - unique_name: d_dh_geography
+            label: 'Geography + '
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - S_GEO_HQ_NM
+            name_column: S_GEO_HQ_NM
+            sort_column: S_GEO_HQ_NM
+
+      - unique_name: h_dh_division
+
+        secondary_attributes:
+
+          - unique_name: d_dh_division
+            label: Division +
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - DIV_NBR
+            name_column: DIV_NM
+            sort_column: DIV_NM
+
+      - unique_name: h_dh_dc
+
+        secondary_attributes:
+
+          - unique_name: d_dc_name_2
+            label: 'DC Name +  '
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - S_DC_ORG_NM
+            name_column: S_DC_ORG_NM
+            sort_column: S_DC_ORG_NM
+
+          - unique_name: d_dc_type
+            label: DC Type +
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - DC_TYPE_CD
+            name_column: DC_TYPE
+            sort_column: DC_TYPE
+
+          - unique_name: d_dh_dc
+            label: 'DC +  '
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - DC_ORG_NBR
+            name_column: DC_ORG_NM
+            sort_column: DC_ORG_NM
+
+          - unique_name: d_dh_dc_nbr
+            label: DC Nbr +
+            folder: More Fields
+            dataset: DC_LOCATION.dataset
+            key_columns:
+              - DC_ORG_NBR
+            name_column: DC_ORG_NBR
+            sort_column: DC_ORG_NBR
+
+level_attributes:
+
+  - unique_name: h_dh_all_thd
+    label: All THD +
+    dataset: DC_LOCATION.dataset
+    key_columns:
+      - ALL_THD_DESC
+    name_column: ALL_THD_DESC
+
+  - unique_name: h_dh_dc
+    label: DC +
+    dataset: DC_LOCATION.dataset
+    key_columns:
+      - DC_ORG_NBR
+    name_column: DC_ORG_NM
+
+  - unique_name: h_dh_division
+    label: Division +
+    dataset: DC_LOCATION.dataset
+    key_columns:
+      - DIV_NBR
+    name_column: DIV_NBR
+
+  - unique_name: h_dh_geography
+    label: Geography +
+    dataset: DC_LOCATION.dataset
+    key_columns:
+      - S_GEO_HQ_NM
+    name_column: S_GEO_HQ_NM
+
+  - unique_name: h_dh_lob
+    label: LOB +
+    dataset: DC_LOCATION.dataset
+    key_columns:
+      - S_LOB_HQ_NM
+    name_column: S_LOB_HQ_NM

@@ -1,0 +1,12 @@
+unique_name: m_dc_oo_units
+object_type: metric
+label: DC OO Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+semi_additive:
+  position: last
+  relationships:
+    - DFDRILL_BRCH_DLY.dataset_Time_Transformations_Internal
+    - DFDRILL_BRCH_DLY.dataset_Time
+dataset: DFDRILL_BRCH_DLY.dataset
+column: TY_DC_OO_QTY

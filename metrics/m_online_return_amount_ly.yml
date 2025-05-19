@@ -1,0 +1,7 @@
+unique_name: m_online_return_amount_ly
+object_type: metric
+label: Online Return $ LY +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: ONLINE_SALES.dataset
+column: LY_RTN_AMT

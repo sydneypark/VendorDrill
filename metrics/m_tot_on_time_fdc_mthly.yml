@@ -1,0 +1,8 @@
+unique_name: m_tot_on_time_fdc_mthly
+object_type: metric
+label: Tot SKU On Time FDC Mthly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: FDC_ONTIME_MONTHLY.dataset
+column: TOT_SKU_ONTIME

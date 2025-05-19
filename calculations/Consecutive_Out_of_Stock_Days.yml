@@ -1,0 +1,9 @@
+unique_name: Consecutive_Out_of_Stock_Days
+object_type: metric_calc
+label: Consecutive Out of Stock Days
+expression: |-
+  IIF(IsEmpty([Measures].[m_TY_CONSC_SMOOS_DAYS_sum_2])
+        , DIVIDE([Measures].[m_TY_CONSC_SMOOS_DAYS_sum],[Measures].[Time1])
+        ,DIVIDE([Measures].[m_TY_CONSC_SMOOS_DAYS_sum_2],[Measures].[m_TY_SIMPL_OOS_IND_sum])
+        )
+format: "#,##0;(#,##0);;"

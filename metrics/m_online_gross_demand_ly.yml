@@ -1,0 +1,7 @@
+unique_name: m_online_gross_demand_ly
+object_type: metric
+label: Online Gross Demand $ LY +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: ORDER_LINE.dataset
+column: LY_GROSS_DEMAND_AMT

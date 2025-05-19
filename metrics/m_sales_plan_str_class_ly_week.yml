@@ -1,0 +1,7 @@
+unique_name: m_sales_plan_str_class_ly_week
+object_type: metric
+label: Sales Plan LY -Store Class Week
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: STR_CLASS_PLN_WKLY.dataset
+column: LY_SLS_PLN_AMT

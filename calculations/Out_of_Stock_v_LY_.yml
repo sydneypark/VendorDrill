@@ -1,0 +1,7 @@
+unique_name: Out_of_Stock_v_LY_
+object_type: metric_calc
+label: Out of Stock v LY (%)
+expression: "IIF ( IsEmpty ( [Measures].[Out_of_Stock_LY] )\n       , null\n     \
+  \  , ( [Measures].[Out_of_Stock] - [Measures].[Out_of_Stock_LY] ) / [Measures].[Out_of_Stock_LY]\
+  \ \n       )"
+format: "#,##0.00%;(#,##0.00%);;"

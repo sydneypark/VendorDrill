@@ -1,0 +1,6 @@
+unique_name: Fill Rate DFC Wkly
+object_type: metric_calc
+label: Fill Rate DFC Wkly +
+expression: "IIF([Measures].[Ordered Qty DFC Wkly]+0.0=0.0,NULL,([Measures].[Received\
+  \ Qty DFC Wkly]/[Measures].[Ordered Qty DFC Wkly]))"
+format: percent

@@ -1,0 +1,8 @@
+unique_name: m_r52_units_dly
+object_type: metric
+label: R52 Units Dly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: VDRILL_CPI_DLY.dataset
+column: R52_UNITS

@@ -1,0 +1,6 @@
+unique_name: m_CONNECTION_STRING_min
+object_type: metric
+label: Connection String
+calculation_method: minimum
+dataset: VDRILL_VNDR_CUBE_XREF.dataset
+column: CONNECTION_STRING

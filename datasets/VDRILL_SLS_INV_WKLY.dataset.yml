@@ -1,0 +1,128 @@
+unique_name: VDRILL_SLS_INV_WKLY.dataset
+object_type: dataset
+label: VDRILL_SLS_INV_WKLY.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_SLS_INV_WKLY
+
+columns:
+  - name: ACT_SKU_FLAG
+    data_type: string
+  - name: AMT_KEY_FLAG
+    data_type: string
+  - name: CROSS_MERCHANDISING_FLAG
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: E1
+    data_type: string
+  - name: E2
+    data_type: string
+  - name: E3
+    data_type: string
+  - name: E4
+    data_type: string
+  - name: FPA_EVENT_FLAG
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_INV_STR
+    data_type: string
+  - name: LY_WKLY_OH_QTY
+    data_type: double
+  - name: LY_WKLY_OO_QTY
+    data_type: double
+  - name: LY_WKLY_STR_OH_RETL_AMT
+    data_type: double
+  - name: LY_WKLY_STR_OO_RETL_AMT
+    data_type: double
+  - name: MB_ID
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: MVNDR_NM_NBR
+    data_type: string
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: NO_POG_HOME_AMT
+    data_type: double
+    sql: CASE WHEN NPH_FLAG="Y" THEN TY_WKLY_STR_OH_RETL_AMT + TY_WKLY_STR_OO_RETL_AMT  ELSE
+      0 END
+  - name: NO_POG_HOME_UNITS
+    data_type: double
+    sql: CASE WHEN NPH_FLAG="Y" THEN TY_WKLY_OH_QTY + TY_WKLY_OO_QTY  ELSE 0 END
+  - name: NPH_FLAG
+    data_type: string
+  - name: NPH_WKLY_AMT
+    data_type: double
+  - name: NPH_WKLY_QTY
+    data_type: double
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: POG_FLAG
+    data_type: string
+  - name: POG_PARENT
+    data_type: string
+  - name: PRE_E
+    data_type: string
+  - name: RELO_TO_STR_NBR
+    data_type: string
+  - name: S_SKU_DESC
+    data_type: string
+  - name: S_STR_NM
+    data_type: string
+  - name: SC_EXC_FLAG
+    data_type: string
+  - name: SC_INC_FLAG
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_EXC_FLAG
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STR_EXC_FLAG
+    data_type: string
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_TYP_DESC
+    data_type: string
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: STR_NM
+    data_type: string
+  - name: THD_SKU_STAT_CD
+    data_type: long
+  - name: TY_INV_STR
+    data_type: string
+  - name: TY_WKLY_OH_QTY
+    data_type: double
+  - name: TY_WKLY_OO_QTY
+    data_type: double
+  - name: TY_WKLY_STR_OH_RETL_AMT
+    data_type: double
+  - name: TY_WKLY_STR_OO_RETL_AMT
+    data_type: double
+  - name: WKLY_ALLSTR_OH_RETL_AMT
+    data_type: double
+  - name: WKLY_ALLSTR_OH_RETL_AMT_FLAG
+    data_type: string
+  - name: WKLY_EVSTR_ALLEVSKU_SC_OH_RETL_AMT
+    data_type: double
+  - name: WKLY_EVSTR_ALLEVSKU_SC_OH_RETL_AMT_FLAG
+    data_type: string
+  - name: WKLY_EVSTR_ALLEVSKU_SC_ZSCORES
+    data_type: double
+  - name: WKLY_EVSTR_ALLEVSKU_SC_ZSCORES_FLAG
+    data_type: string
+  - name: WKLY_EVSTR_OH_RETL_AMT
+    data_type: double
+  - name: WKLY_QTD_SLS_FLAG
+    data_type: string

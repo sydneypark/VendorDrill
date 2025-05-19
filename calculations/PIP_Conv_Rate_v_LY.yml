@@ -1,0 +1,5 @@
+unique_name: PIP_Conv_Rate_v_LY
+object_type: metric_calc
+label: Online PIP Conversion Rate v LY +
+expression: "[Measures].[PIP_Conversion_Rate]-[Measures].[PIP_Conversion_Rate_LY]"
+format: "#,##0;(#,##0);;"

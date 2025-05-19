@@ -1,0 +1,121 @@
+unique_name: F_DTS_COMPLIANCE_PO_M.dataset
+object_type: dataset
+label: F_DTS_COMPLIANCE_PO_M.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_FACT.connection
+table: F_DTS_COMPLIANCE_PO_M
+
+columns:
+  - name: ADJ_RCVD_QTY
+    data_type: double
+  - name: BYO_NBR
+    data_type: string
+  - name: BYO_NM
+    data_type: string
+  - name: CAN_ELIG_DT
+    data_type: date
+  - name: COMPL_FILL_FLG
+    data_type: string
+  - name: COMPL_ONTIME_FLG
+    data_type: string
+  - name: COMPLIANT_FR_MV_FLAG
+    data_type: string
+  - name: CRT_TS
+    data_type: datetime
+  - name: EST_SHP_DT
+    data_type: date
+  - name: EXPCTD_ARVL_DT
+    data_type: date
+  - name: FILL_RATE_OFFSET
+    data_type: double
+  - name: FILL_RATE_OFFSET_CALC
+    data_type: double
+  - name: FRT_TRM_CD
+    data_type: string
+  - name: FSCL_PRD_END_DT
+    data_type: date
+  - name: KEYREC_DT
+    data_type: date
+  - name: KEYREC_TYP_IND
+    data_type: string
+  - name: KEYREC_UPD_FLG
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LD_TM_VAR
+    data_type: long
+  - name: MER_CLASS_DESC
+    data_type: string
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: string
+  - name: MER_SUB_CLASS_DESC
+    data_type: string
+  - name: MER_SUB_CLASS_NBR
+    data_type: long
+  - name: MKT_NBR
+    data_type: long
+  - name: MKT_NM
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: NS_IND
+    data_type: long
+  - name: ON_TIME
+    data_type: long
+  - name: ON_TIME_OFFSET
+    data_type: double
+  - name: ON_TIME_OFFSET_CALC
+    data_type: double
+  - name: ORD_COST
+    data_type: double
+  - name: ORD_QTY
+    data_type: double
+  - name: ORD_RSN_CD
+    data_type: string
+  - name: ORGN_NBR
+    data_type: string
+  - name: ORGN_NM
+    data_type: string
+  - name: ORIG_RCVD_QTY
+    data_type: double
+  - name: PERFECT_FR_PO_FLAG
+    data_type: string
+  - name: PERFECT_FR_SKU_FLAG
+    data_type: string
+  - name: PO_CRT_DT
+    data_type: date
+  - name: PO_NBR
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: PVNDR_NM
+    data_type: string
+  - name: RCVD_QTY
+    data_type: double
+  - name: S_SKU_DESC
+    data_type: string
+  - name: S_STR_NM
+    data_type: string
+  - name: SHIP_IND
+    data_type: string
+  - name: SHP_DT
+    data_type: date
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_DC_IND
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: TRN_TM_VAR
+    data_type: long
+  - name: UNDR_FILL_SKU_VAL
+    data_type: double
+  - name: UNIT_FILL_RATE
+    data_type: double
+  - name: UNT_COST_AMT
+    data_type: double

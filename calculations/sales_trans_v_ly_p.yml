@@ -1,0 +1,5 @@
+unique_name: sales_trans_v_ly_p
+object_type: metric_calc
+label: Sales Trans v LY (%)
+expression: "[Measures].[sales_trans_v_ly]/[Measures].[sales_trans_ly]"
+format: 0.00%;(0.00%)

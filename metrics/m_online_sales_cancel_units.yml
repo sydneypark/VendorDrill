@@ -1,0 +1,8 @@
+unique_name: m_online_sales_cancel_units
+object_type: metric
+label: 'Online Sales Cancel Units + '
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: ONLINE_SALES.dataset
+column: TY_CANCEL_UNIT

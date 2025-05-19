@@ -1,0 +1,7 @@
+unique_name: m_online_potential_lost_sls_amt
+object_type: metric
+label: Online Potential Lost Sales $ +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: ONLINE_DIRECT_FULFILLMENT.dataset
+column: LOST_SLS_AMT

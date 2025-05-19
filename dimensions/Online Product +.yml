@@ -1,0 +1,366 @@
+unique_name: Online Product +
+object_type: dimension
+label: Online Product +
+type: standard
+
+hierarchies:
+
+  - unique_name: Online_Item_Merchandising_Hierarchy
+    label: Online Item Merchandising Hierarchy +
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Online_All_THD
+
+        secondary_attributes:
+
+          - unique_name: d_Online_All_THD
+            label: Online All THD +
+            is_hidden: true
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - ALL_THD
+            name_column: ALL_THD
+            sort_column: ALL_THD
+
+      - unique_name: Online_SVP
+
+        secondary_attributes:
+
+          - unique_name: d_Online_SVP
+            label: Online SVP +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SVP_NBR
+            name_column: SVP
+            sort_column: SVP
+
+      - unique_name: Online_Merch_Dept
+
+        secondary_attributes:
+
+          - unique_name: d_Onlin_Merch_Dept_Nbr
+            label: Online Merch Dept Nbr +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_GRP_NBR
+            name_column: SKU_GRP_NBR
+            sort_column: SKU_GRP_NBR
+
+          - unique_name: d_Online_Merch_Dept
+            label: Online Merch Dept +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_GRP_NBR
+            name_column: MERCH_DEPT
+            sort_column: MERCH_DEPT
+
+          - unique_name: d_Online_Merch_Dept_Name
+            label: Online Merch Dept Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_GRP_NBR
+            name_column: SKU_GRP_DESC
+            sort_column: SKU_GRP_DESC
+
+      - unique_name: Online_Class
+
+        secondary_attributes:
+
+          - unique_name: d_Online_Class
+            label: Online Class +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: CLASS
+            sort_column: CLASS
+
+          - unique_name: d_Online_Class_Name
+            label: Online Class Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: CLASS_NAME
+            sort_column: CLASS_NAME
+
+          - unique_name: d_Online_Class_Nbr
+            label: Online Class Nbr +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - CLASS_NBR
+            name_column: CLASS_NBR
+            sort_column: CLASS_NBR
+
+      - unique_name: Online_SubClass
+
+        secondary_attributes:
+
+          - unique_name: d_Online_SubClass
+            label: Online SubClass +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: SUBCLASS
+            sort_column: SUBCLASS
+
+          - unique_name: d_Online_SubClass_Name
+            label: Online SubClass Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: SUBCLASS_NAME
+            sort_column: SUBCLASS_NAME
+
+          - unique_name: d_Online_SubClass_Nbr
+            label: Online SubClass Nbr +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SUB_CLASS_NBR
+            name_column: SUB_CLASS_NBR
+            sort_column: SUB_CLASS_NBR
+
+      - unique_name: Online_THD_SKU
+
+        secondary_attributes:
+
+          - unique_name: d_Online _THD_SKU_Name
+            label: Online THD SKU Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: SKU_DESC
+            sort_column: SKU_DESC
+
+          - unique_name: d_Online_THD_SKU
+            label: Online THD SKU +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: SKU
+            sort_column: SKU
+
+          - unique_name: d_Online_THD_SKU_Nbr
+            label: Online THD SKU Nbr +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SKU_NBR
+              - SKU_CRT_DT
+            name_column: SKU_NBR
+            sort_column: SKU_NBR
+
+      - unique_name: Internet_SKU
+
+        secondary_attributes:
+
+          - unique_name: d_Internet_SKU
+            label: Internet SKU +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - INTERNET_SKU
+            name_column: INTERNET_SKU
+            sort_column: INTERNET_SKU
+
+          - unique_name: d_Internet_SKU_Name
+            label: Internet SKU Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - INTERNET_SKU_NAME
+            name_column: INTERNET_SKU_NAME
+            sort_column: INTERNET_SKU_NAME
+
+          - unique_name: d_OMS_ID
+            label: OMS ID +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - OMS_ID
+            name_column: OMS_ID
+            sort_column: OMS_ID
+
+      - unique_name: Online_UPC
+
+        secondary_attributes:
+
+          - unique_name: d_alt_image_count
+            label: Online Alt Image Count +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - ALT_IMAGE_COUNT
+            name_column: ALT_IMAGE_COUNT
+            sort_column: ALT_IMAGE_COUNT
+
+          - unique_name: d_freight_class
+            label: Online Freight Class +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - FREIGHT_CLASS
+            name_column: FREIGHT_CLASS
+            sort_column: FREIGHT_CLASS
+
+          - unique_name: d_IDM_Account_Name
+            label: Online IDM Account Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - IDM_ACCOUNT_NAME
+            name_column: IDM_ACCOUNT_NAME
+            sort_column: IDM_ACCOUNT_NAME
+
+          - unique_name: d_Manufacturing_Part_Number
+            label: Online Manufacturing Part Number +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - MANUF_PART_NUMBER
+            name_column: MANUF_PART_NUMBER
+            sort_column: MANUF_PART_NUMBER
+
+          - unique_name: d_Online_Classification
+            label: Online Classification +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - ONLINE_CLASSIFICATION
+            name_column: ONLINE_CLASSIFICATION
+            sort_column: ONLINE_CLASSIFICATION
+
+          - unique_name: d_online_disposition
+            label: Online Disposition
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - ONLINE_DISPOSITION
+            name_column: ONLINE_DISPOSITION
+            sort_column: ONLINE_DISPOSITION
+
+          - unique_name: d_Online_Mfg_Brand_Name
+            label: Online Mfg Brand Name +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - MFG_BRAND_NAME
+            name_column: MFG_BRAND_NAME
+            sort_column: MFG_BRAND_NAME
+
+          - unique_name: d_Online_Model_Number
+            label: Online Model Number +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - MODEL_NUMBER
+            name_column: MODEL_NUMBER
+            sort_column: MODEL_NUMBER
+
+          - unique_name: d_online_ship_from_type
+            label: Online Ship From Type +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SHIP_FROM_TYPE
+            name_column: SHIP_FROM_TYPE
+            sort_column: SHIP_FROM_TYPE
+
+          - unique_name: d_online_ship_lead_days
+            label: Online Ship Lead Days
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - SHIP_LEAD_DAYS
+            name_column: SHIP_LEAD_DAYS
+            sort_column: SHIP_LEAD_DAYS
+
+          - unique_name: d_Online_UPC_CD
+            label: Online UPC CD +
+            folder: More Fields
+            dataset: ONLINE_PRODUCT.dataset
+            key_columns:
+              - UPC_CD
+            name_column: UPC_CD
+            sort_column: UPC_CD
+
+level_attributes:
+
+  - unique_name: Internet_SKU
+    label: Internet SKU +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - INTERNET_SKU
+    name_column: INTERNET_SKU
+
+  - unique_name: Online_All_THD
+    label: Online All THD +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - ALL_THD
+    name_column: ALL_THD
+    sort_column: ALL_THD
+
+  - unique_name: Online_Class
+    label: Online Class +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - CLASS_NBR
+    name_column: CLASS
+    sort_column: CLASS_NBR
+
+  - unique_name: Online_Merch_Dept
+    label: Online Merch Dept +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - SKU_GRP_NBR
+    name_column: MERCH_DEPT
+
+  - unique_name: Online_SubClass
+    label: Online SubClass +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - SUB_CLASS_NBR
+    name_column: SUBCLASS
+    sort_column: SUB_CLASS_NBR
+
+  - unique_name: Online_SVP
+    label: Online SVP +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - SVP_NBR
+    name_column: SVP
+    sort_column: SVP_NBR
+
+  - unique_name: Online_THD_SKU
+    label: Online THD SKU +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+    name_column: SKU
+    sort_column: SKU_NBR
+
+  - unique_name: Online_UPC
+    label: Online UPC +
+    dataset: ONLINE_PRODUCT.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+      - OMS_ID
+      - UPC_CD
+    name_column: UPC_CD

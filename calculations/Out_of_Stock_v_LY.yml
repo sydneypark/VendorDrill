@@ -1,0 +1,9 @@
+unique_name: Out_of_Stock_v_LY
+object_type: metric_calc
+label: Out of Stock v LY
+expression: |-
+  IIF ( IsEmpty ( [Measures].[Out_of_Stock_LY] )
+         , null
+         , (  [Measures].[Out_of_Stock] - [Measures].[Out_of_Stock_LY] )
+        )
+format: "#,##0;(#,##0);;"

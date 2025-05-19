@@ -1,0 +1,8 @@
+unique_name: m_sku_cnt_rdc_wkly
+object_type: metric
+label: SKU Count RDC Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: RDC_ONTIME_WKLY.dataset
+column: SKU_COUNT

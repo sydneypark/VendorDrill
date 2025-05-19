@@ -1,0 +1,6 @@
+unique_name: Fill Rate DTS Mthly
+object_type: metric_calc
+label: Fill Rate DTS Mthly +
+expression: "IIF([Measures].[Ordered Qty DTS Mthly]+0.0=0.0,NULL,([Measures].[Received\
+  \ Qty DTS Mthly]/[Measures].[Ordered Qty DTS Mthly]))"
+format: percent

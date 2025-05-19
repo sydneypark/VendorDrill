@@ -1,0 +1,6 @@
+unique_name: m_online_sales_amount_v_ly_percent
+object_type: metric_calc
+label: Online Sales $ v LY (%) +
+expression: "IIF ([Measures].[m_Online_Sales_Amt_LY] +0=0,NULL,[Measures].[m_online_sales_amount_v_ly]\
+  \ /[Measures].[m_Online_Sales_Amt_LY] )"
+format: 0.00%;(0.00%)

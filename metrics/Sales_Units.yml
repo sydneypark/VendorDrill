@@ -1,0 +1,7 @@
+unique_name: Sales_Units
+object_type: metric
+label: Sales Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SALES.dataset
+column: TY_SLS_UNITS

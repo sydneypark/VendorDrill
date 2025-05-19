@@ -1,0 +1,6 @@
+unique_name: Avg_Unit_Retail_LY
+object_type: metric_calc
+label: Avg Unit Retail LY
+expression: "IIF ([Measures].[Sales_Units_LY] +0=0,NULL,[Measures].[sales_ly] /[Measures].[Sales_Units_LY]\
+  \ )"
+format: "$ #,##0.00;($ #,##0.00);;"

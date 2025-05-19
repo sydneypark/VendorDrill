@@ -1,0 +1,31 @@
+unique_name: DC_LOCATION.dataset
+object_type: dataset
+label: DC_LOCATION.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: DC_LOCATION
+
+columns:
+  - name: ALL_THD_DESC
+    data_type: string
+  - name: DC_ORG_NBR
+    data_type: string
+  - name: DC_ORG_NM
+    data_type: string
+  - name: DC_TYP_CD
+    data_type: string
+  - name: DC_TYPE
+    data_type: string
+  - name: DC_TYPE_CD
+    data_type: string
+  - name: DIV_NBR
+    data_type: string
+  - name: DIV_NM
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: S_DC_ORG_NM
+    data_type: string
+  - name: S_GEO_HQ_NM
+    data_type: string
+  - name: S_LOB_HQ_NM
+    data_type: string

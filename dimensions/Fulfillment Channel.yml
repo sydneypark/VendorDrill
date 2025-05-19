@@ -1,0 +1,79 @@
+unique_name: Fulfillment Channel
+object_type: dimension
+label: Fulfillment Channel
+type: standard
+
+hierarchies:
+
+  - unique_name: fulfillment_channel_hier
+    label: Fulfillment Channel
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: fulfillment_channel_level
+
+        secondary_attributes:
+
+          - unique_name: d_appliance_online_indicator
+            label: Appliance Online Indicator +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - S_RPT_CHNL_DESC
+            name_column: S_RPT_CHNL_DESC
+            sort_column: S_RPT_CHNL_DESC
+
+          - unique_name: d_online_delivery_method
+            label: Online Delivery Method +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - S_RPT_CHNL_DESC_VD
+            name_column: S_RPT_CHNL_DESC_VD
+            sort_column: S_RPT_CHNL_DESC_VD
+
+          - unique_name: d_sales_channel
+            label: Sales Channel +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - HD_SLS_CHNL_DESC
+            name_column: HD_SLS_CHNL_DESC
+            sort_column: HD_SLS_CHNL_DESC
+
+          - unique_name: d_store_purchase_sub_channel
+            label: Store Purchase Sub Channel +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - S_RPT_CHNL_DESC2
+            name_column: S_RPT_CHNL_DESC2
+            sort_column: S_RPT_CHNL_DESC2
+
+          - unique_name: d_store_purchase_sub_channel_name
+            label: Store Purchase Sub Channel Name +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - RPT_CHNL_DESC2
+            name_column: RPT_CHNL_DESC2
+            sort_column: RPT_CHNL_DESC2
+
+          - unique_name: fulfillment_channel_name
+            label: Fulfillment Channel Name +
+            folder: More Fields
+            dataset: CHANNEL.dataset
+            key_columns:
+              - RPT_CHNL_DESC1
+            name_column: RPT_CHNL_DESC1
+            sort_column: RPT_CHNL_DESC1
+
+level_attributes:
+
+  - unique_name: fulfillment_channel_level
+    label: Fulfillment Channel +
+    dataset: CHANNEL.dataset
+    key_columns:
+      - COMT_RPT_CHNL_CD_V
+    name_column: COMT_RPT_CHNL_CD

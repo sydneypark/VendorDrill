@@ -1,0 +1,27 @@
+unique_name: POG_HIER.dataset
+object_type: dataset
+label: POG_HIER.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: POG_HIER
+
+columns:
+  - name: BAY_CNT
+    data_type: long
+  - name: LIVE_WEEK
+    data_type: string
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: POG_CTGRY_CD
+    data_type: string
+  - name: POG_CTGRY_NM
+    data_type: string
+  - name: POG_NAME
+    data_type: string
+  - name: POG_SUB_CTGRY
+    data_type: string
+  - name: POG_SUB_CTGRY_NM
+    data_type: string
+  - name: S_POG_CTGRY_NM
+    data_type: string
+  - name: S_POG_SUB_CTGRY_NM
+    data_type: string

@@ -1,0 +1,54 @@
+unique_name: DC Service Type +
+object_type: dimension
+label: DC Service Type +
+type: standard
+
+hierarchies:
+
+  - unique_name: dc_service_type_2
+    label: 'DC Service Type + '
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: h_dc_service_type_name
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_dc_service_type_name
+            label: DC Service Type Name +
+            dataset: DC_SERVICE_TYPE.dataset
+            key_columns:
+              - DSVC_TYP_CD
+            name_column: TYP_DESC
+            sort_column: TYP_DESC
+
+      - unique_name: h_dc_service_type
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_dc_service_type
+            label: DC Service Type +
+            dataset: DC_SERVICE_TYPE.dataset
+            key_columns:
+              - DSVC_TYP_CD
+            name_column: D_TYP_CD
+            sort_column: D_TYP_CD
+
+level_attributes:
+
+  - unique_name: h_dc_service_type
+    label: DC Service Type +
+    dataset: DC_SERVICE_TYPE.dataset
+    key_columns:
+      - DSVC_TYP_CD
+    name_column: D_TYP_CD
+
+  - unique_name: h_dc_service_type_name
+    label: DC Service Type Name +
+    dataset: DC_SERVICE_TYPE.dataset
+    key_columns:
+      - DSVC_TYP_CD
+    name_column: TYP_DESC

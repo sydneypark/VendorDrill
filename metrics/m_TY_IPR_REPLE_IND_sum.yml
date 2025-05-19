@@ -1,0 +1,8 @@
+unique_name: m_TY_IPR_REPLE_IND_sum
+object_type: metric
+label: Replen Count W
+calculation_method: sum
+visible: false
+unrelated_dimensions_handling: empty
+dataset: In Stock / OOS - W.dataset
+column: TY_IPR_REPLE_IND

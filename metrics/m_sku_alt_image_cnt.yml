@@ -1,0 +1,8 @@
+unique_name: m_sku_alt_image_cnt
+object_type: metric
+label: Alt Image SKU Count
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: ONLINE_PRODUCT_FACT.dataset
+column: SKU_ALT_IMAGE_COUNT

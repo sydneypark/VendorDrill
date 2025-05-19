@@ -1,0 +1,8 @@
+unique_name: m_tot_sku_on_time_dfc_wkly
+object_type: metric
+label: Tot SKU On Time DFC Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: DFC_ONTIME_WKLY.dataset
+column: TOT_SKU_ONTIME

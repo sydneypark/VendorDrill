@@ -1,0 +1,12 @@
+unique_name: Str_OO_units_dly
+object_type: metric
+label: Str OO Units Dly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_SLS_INV_DLY.dataset_Time_Transformations_Internal
+    - VDRILL_SLS_INV_DLY.dataset_Time
+dataset: VDRILL_SLS_INV_DLY.dataset
+column: TY_DLY_OO_QTY

@@ -1,0 +1,5 @@
+unique_name: m_thd_weighted_avg_dly
+object_type: metric_calc
+label: THD Weighted Avg Dly
+expression: "[Measures].[m_thd_sales_amount_dly]/[Measures].[m_r52_units_dly]"
+visible: false

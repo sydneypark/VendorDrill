@@ -1,0 +1,7 @@
+unique_name: PIP_Conv_Rate_v_LY_p
+object_type: metric_calc
+label: Online PIP Conversion Rate v LY (%) +
+expression: |-
+  IIF ([Measures].[PIP_Conversion_Rate_LY]+0.00=0.00,NULL
+  ,([Measures].[PIP_Conv_Rate_v_LY]/[Measures].[PIP_Conversion_Rate_LY]))
+format: 0.00%;(0.00%)

@@ -1,0 +1,11 @@
+unique_name: SUOF_WEEK.dataset
+object_type: dataset
+label: SUOF_WEEK.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: SUOF_WEEK
+
+columns:
+  - name: FiscalWeek
+    data_type: string
+  - name: SUOF_FiscalWeek
+    data_type: string

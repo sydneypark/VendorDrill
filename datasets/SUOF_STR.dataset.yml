@@ -1,0 +1,37 @@
+unique_name: SUOF_STR.dataset
+object_type: dataset
+label: SUOF_STR.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: SUOF_STR_IT
+
+columns:
+  - name: ACTIVE_VENDOR_MAX_PARM
+    data_type: string
+  - name: AVG_RETL_AMT
+    data_type: double
+  - name: FCST_CRT_WK
+    data_type: date
+  - name: FCST_CRT_WK_END
+    data_type: date
+  - name: FCST_REL_WK_END_DT
+    data_type: date
+  - name: FCST_SRC_SYS
+    data_type: string
+  - name: FISCALWEEK
+    data_type: string
+  - name: INDICATOR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: PVNDR_NBR
+    data_type: long
+  - name: RUN_DT
+    data_type: date
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SOQ_UNITS
+    data_type: long
+  - name: STR_NBR
+    data_type: string

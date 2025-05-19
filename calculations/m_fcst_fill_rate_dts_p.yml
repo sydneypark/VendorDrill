@@ -1,0 +1,5 @@
+unique_name: m_fcst_fill_rate_dts_p
+object_type: metric_calc
+label: Forecasted Fill Rate DTS (%) +
+expression: "IIF ([Measures].[m_dts_fcst_expected_qty]+0.00=0.00,NULL,([Measures].[m_dts_fcst_rcvd_qty]/[Measures].[m_dts_fcst_expected_qty]))"
+format: percent

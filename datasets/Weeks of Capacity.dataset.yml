@@ -1,0 +1,61 @@
+unique_name: Weeks of Capacity.dataset
+object_type: dataset
+label: Weeks of Capacity.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_WOC_FNL
+
+columns:
+  - name: AB_AB_Store_SKU_Count
+    data_type: string
+  - name: AB_AB_Under_Spaced_Store_SKU_Count
+    data_type: string
+  - name: AB_SKU_Velocity_Store_SKU_Count
+    data_type: string
+  - name: AB_Store_Volume_Store_SKU_Count
+    data_type: string
+  - name: AWSU
+    data_type: double
+  - name: CAPACITY_ADJ
+    data_type: double
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: HFACINGS_ADJ
+    data_type: double
+  - name: LIVE_FLAG
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: POG_CLASS
+    data_type: string
+  - name: POG_SKU_ACTIVE_WEEKS
+    data_type: long
+  - name: POG_SPC_ID
+    data_type: long
+  - name: R52_FDC_SALES
+    data_type: double
+  - name: R52_FDC_UNITS
+    data_type: double
+  - name: R52_SALES
+    data_type: double
+  - name: R52_SALES_FUFILL_IN_STORE
+    data_type: double
+  - name: R52_UNITS
+    data_type: double
+  - name: R52_UNITS_FUFILL_IN_STORE
+    data_type: double
+  - name: SKU_ACTIVE_WEEKS
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STAT_CD
+    data_type: long
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: STR_VOL_CD
+    data_type: string
+  - name: VFACINGS_ADJ
+    data_type: double

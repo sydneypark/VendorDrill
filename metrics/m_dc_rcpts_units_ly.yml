@@ -1,0 +1,7 @@
+unique_name: m_dc_rcpts_units_ly
+object_type: metric
+label: DC Rcpts Units LY +
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_DC_RECPT.dataset
+column: LY_RCVD_UNT_CNT

@@ -1,0 +1,8 @@
+unique_name: m_avg_wkly_sales_units
+object_type: metric
+label: Average Weekly Sales Units (AWSU)
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: Weeks of Capacity.dataset
+column: AWSU

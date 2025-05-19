@@ -1,0 +1,6 @@
+unique_name: Internal_VendorDrill.catalog
+object_type: catalog
+label: Internal_VendorDrill
+version: 1.0
+aggressive_agg_promotion: false
+build_speculative_aggs: false

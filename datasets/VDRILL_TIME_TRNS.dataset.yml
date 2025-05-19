@@ -1,0 +1,27 @@
+unique_name: VDRILL_TIME_TRNS.dataset
+object_type: dataset
+label: VDRILL_TIME_TRNS.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: VDRILL_TIME_TRNS
+
+columns:
+  - name: ARR_CNT
+    data_type: long
+  - name: BGN_DT
+    data_type: date
+  - name: CAL_DT
+    data_type: date
+  - name: DT_DIFF
+    data_type: long
+  - name: END_DT
+    data_type: date
+  - name: S_TRNSFM_TYP_DESC
+    data_type: string
+  - name: SORTING_ID
+    data_type: long
+  - name: TRNSFM_DT
+    data_type: date
+  - name: TRNSFM_TYP_DESC
+    data_type: string
+  - name: TRNSFM_TYP_DSPLY_SORT_ID
+    data_type: long

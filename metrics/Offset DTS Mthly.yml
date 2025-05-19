@@ -1,0 +1,7 @@
+unique_name: Offset DTS Mthly
+object_type: metric
+label: Offset DTS Mthly +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);$ #,##0.00;"
+dataset: DTS_FILL_RATE_MONTHLY.dataset
+column: FILL_RATE_OFFSET

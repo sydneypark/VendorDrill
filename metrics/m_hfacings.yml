@@ -1,0 +1,7 @@
+unique_name: m_hfacings
+object_type: metric
+label: HFacings
+calculation_method: average
+format: "#,##0.00;(#,##0.00);;"
+dataset: Weeks of Capacity.dataset
+column: HFACINGS_ADJ

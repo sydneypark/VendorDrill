@@ -1,0 +1,6 @@
+unique_name: m_online_pip_visits
+object_type: metric
+label: Online PIP Visits +
+calculation_method: count distinct
+dataset: PIP_VISIT.dataset
+column: TY_VISIT_ID_KEY

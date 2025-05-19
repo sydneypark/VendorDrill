@@ -1,0 +1,35 @@
+unique_name: STR_DEPT_PLN_DLY.dataset
+object_type: dataset
+label: STR_DEPT_PLN_DLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_BASE_VIEWS.connection
+table: STR_DEPT_PLN_DLY
+
+columns:
+  - name: ALLOC_STR_NBR
+    data_type: string
+  - name: CAL_DT
+    data_type: date
+  - name: CLASS_NBR
+    data_type: long
+  - name: DEPT_NBR
+    data_type: long
+  - name: EXT_CLASS_NBR
+    data_type: string
+  - name: HD_CHNL_NBR
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: LY_SLS_PLN_AMT
+    data_type: double
+  - name: LY_SLS_PLN_COMP_AMT
+    data_type: double
+  - name: STR_NBR
+    data_type: string
+  - name: TY_PLN_SHPG_RVNU_AMT
+    data_type: double
+  - name: TY_SLS_PLN_AMT
+    data_type: double
+  - name: TY_SLS_PLN_COMP_AMT
+    data_type: double

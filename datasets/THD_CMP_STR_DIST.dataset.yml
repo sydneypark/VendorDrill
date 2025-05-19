@@ -1,0 +1,29 @@
+unique_name: THD_CMP_STR_DIST.dataset
+object_type: dataset
+label: THD_CMP_STR_DIST.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: THD_CMP_STR_DIST
+
+columns:
+  - name: ADDRESS_COMP
+    data_type: string
+  - name: CITY_COMP
+    data_type: string
+  - name: COMP_STR_DISTANCE
+    data_type: double
+  - name: COMPETITOR_ID
+    data_type: long
+  - name: COUNTRY_COMP
+    data_type: string
+  - name: ENEMY_IDENTIFIER
+    data_type: long
+  - name: LATITUDE_COMP
+    data_type: "decimal(38,9)"
+  - name: LONGITUDE_COMP
+    data_type: "decimal(38,9)"
+  - name: STR_NAME_COMP
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: ZIP_CODE_COMP
+    data_type: string

@@ -1,0 +1,4 @@
+unique_name: m_cpi_wkly
+object_type: metric_calc
+label: CPI Wkly
+expression: "[Measures].[m_thd_weighted_avg_wkly]/[Measures].[m_comp_weighted_avg_wkly]"

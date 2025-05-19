@@ -1,0 +1,7 @@
+unique_name: m_quotecenter_close_rate_v_ly
+object_type: metric_calc
+label: QuoteCenter Close Rate vLY
+expression: "IIF (([Measures].[m_quotecenter_close_rate] +0=0 OR [Measures].[m_quotecenter_close_rate_ly]\
+  \ +0=0),NULL,([Measures].[m_quotecenter_close_rate] -[Measures].[m_quotecenter_close_rate_ly]\
+  \ ))"
+format: percent

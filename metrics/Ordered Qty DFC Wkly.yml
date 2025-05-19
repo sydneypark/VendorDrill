@@ -1,0 +1,7 @@
+unique_name: Ordered Qty DFC Wkly
+object_type: metric
+label: Ordered Qty DFC Wkly +
+calculation_method: sum
+format: "#,###"
+dataset: DFC_FILL_RATE_WKLY.dataset
+column: ORD_QTY

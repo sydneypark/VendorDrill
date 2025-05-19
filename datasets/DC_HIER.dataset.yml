@@ -1,0 +1,22 @@
+unique_name: DC_HIER.dataset
+object_type: dataset
+label: DC_HIER.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_VIEWS.connection
+table: DC_HIER_INIT
+incremental:
+  column: PVNDR_NBR
+  grace_period: 0s
+
+columns:
+  - name: DC
+    data_type: string
+  - name: DC_NBR
+    data_type: string
+  - name: DC_NM
+    data_type: string
+  - name: DC_TYP_CD
+    data_type: string
+  - name: PART_DT
+    data_type: date
+  - name: PVNDR_NBR
+    data_type: long

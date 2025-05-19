@@ -1,0 +1,5 @@
+unique_name: m_comp_units_vLLY_p
+object_type: metric_calc
+label: Comp Units % (2 Year)
+expression: "IIF ([Measures].[m_LY_COMP_SLS_UNITS_2yr_sum]+0=0,NULL,(([Measures].[m_TY_COMP_SLS_UNITS_2yr_sum]-[Measures].[m_LY_COMP_SLS_UNITS_2yr_sum])/[Measures].[m_LY_COMP_SLS_UNITS_2yr_sum]))"
+format: 0.00%;(0.00%)

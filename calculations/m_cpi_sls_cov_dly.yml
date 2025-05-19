@@ -1,0 +1,5 @@
+unique_name: m_cpi_sls_cov_dly
+object_type: metric_calc
+label: CPI Sales Cov  Dly
+expression: "IIF([Measures].[m_cpi_sales_amount_dly_num]+0=0,NULL,[Measures].[m_cpi_sales_amount_dly_num]/[Measures].[m_cpi_sales_amount_dly_denom])"
+format: percent

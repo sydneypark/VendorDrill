@@ -1,0 +1,33 @@
+unique_name: PRODUCT_VISIT.dataset
+object_type: dataset
+label: PRODUCT_VISIT.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_VIEWS.connection
+table: PRODUCT_VISIT
+
+columns:
+  - name: DEPT_NBR
+    data_type: long
+  - name: EVENT_DATE
+    data_type: date
+  - name: EVENT_FLAG
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_VISIT_ID_KEY
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: PVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_VISIT_ID_KEY
+    data_type: long
+  - name: UPC_CD
+    data_type: string

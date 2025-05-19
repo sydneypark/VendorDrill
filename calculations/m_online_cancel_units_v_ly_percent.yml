@@ -1,0 +1,5 @@
+unique_name: m_online_cancel_units_v_ly_percent
+object_type: metric_calc
+label: Online Cancel Units v LY (%) +
+expression: "IIF ([Measures].[m_online_sales_cancel_units_ly]+0.00=0.00,NULL,([Measures].[m_online_cancel_units_v_ly]/[Measures].[m_online_sales_cancel_units_ly]))"
+format: 0.00%;(0.00%)

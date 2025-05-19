@@ -1,0 +1,23 @@
+unique_name: Product Attribute.dataset
+object_type: dataset
+label: Product Attribute.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: SKU_ATTRIBUTE
+
+columns:
+  - name: BRAND
+    data_type: string
+  - name: MANUF_PART_NUMBER
+    data_type: string
+  - name: MODEL_NUMBER
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: PVNDR_NBR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: UPC_CD
+    data_type: string

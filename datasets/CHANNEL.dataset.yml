@@ -1,0 +1,45 @@
+unique_name: CHANNEL.dataset
+object_type: dataset
+label: CHANNEL.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: CHANNEL
+
+columns:
+  - name: COMT_RPT_CHNL_CD
+    data_type: int
+  - name: COMT_RPT_CHNL_CD1
+    data_type: int
+  - name: COMT_RPT_CHNL_CD2
+    data_type: int
+  - name: COMT_RPT_CHNL_CD_V
+    data_type: int
+  - name: COMT_RPT_CHNL_CD_VD
+    data_type: int
+  - name: D_RPT_CHNL_CD
+    data_type: string
+  - name: D_RPT_CHNL_CD_V
+    data_type: string
+  - name: HD_SLS_CHNL_DESC
+    data_type: string
+  - name: HD_SLS_CHNL_ID
+    data_type: int
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: RPT_CHNL_DESC
+    data_type: string
+  - name: RPT_CHNL_DESC1
+    data_type: string
+  - name: RPT_CHNL_DESC2
+    data_type: string
+  - name: RPT_CHNL_DESC_V
+    data_type: string
+  - name: S_RPT_CHNL_DESC
+    data_type: string
+  - name: S_RPT_CHNL_DESC1
+    data_type: string
+  - name: S_RPT_CHNL_DESC2
+    data_type: string
+  - name: S_RPT_CHNL_DESC_V
+    data_type: string
+  - name: S_RPT_CHNL_DESC_VD
+    data_type: string

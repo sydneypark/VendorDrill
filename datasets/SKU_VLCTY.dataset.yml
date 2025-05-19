@@ -1,0 +1,11 @@
+unique_name: SKU_VLCTY.dataset
+object_type: dataset
+label: SKU_VLCTY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: SKU_VLCTY
+
+columns:
+  - name: CRT_TS
+    data_type: datetime
+  - name: SKU_VLCTY_CD
+    data_type: string

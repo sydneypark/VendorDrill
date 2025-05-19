@@ -1,0 +1,7 @@
+unique_name: m_rdc_fcst_rcvd_qty
+object_type: metric
+label: RDC Forecasted Received Qty +
+calculation_method: sum
+format: "#,###"
+dataset: RDC_FCST_FILL_RATE_DLY.dataset
+column: ADJ_RCVD_QTY_ASN

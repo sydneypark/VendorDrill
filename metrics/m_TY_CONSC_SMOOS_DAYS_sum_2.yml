@@ -1,0 +1,8 @@
+unique_name: m_TY_CONSC_SMOOS_DAYS_sum_2
+object_type: metric
+label: Consc Smoos Days W
+calculation_method: sum
+visible: false
+unrelated_dimensions_handling: empty
+dataset: In Stock / OOS - W.dataset
+column: TY_CONSC_SMOOS_DAYS

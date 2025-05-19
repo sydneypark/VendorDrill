@@ -1,0 +1,8 @@
+unique_name: m_ly_iss_cap_sls_sum
+object_type: metric
+label: LY ISS CAP SLS D
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: VDRILL_ISS_DLY.dataset
+column: LY_CAPTURED_RT_SALES

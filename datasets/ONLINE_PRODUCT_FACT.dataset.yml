@@ -1,0 +1,33 @@
+unique_name: ONLINE_PRODUCT_FACT.dataset
+object_type: dataset
+label: ONLINE_PRODUCT_FACT.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_VIEWS.connection
+table: ONLINE_PRODUCT_FACT
+
+columns:
+  - name: ALT_IMAGE_COUNT
+    data_type: long
+  - name: LOAD_DATE
+    data_type: date
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: PSTL_CD
+    data_type: string
+  - name: REVIEW_COUNT
+    data_type: long
+  - name: SKU_ALT_IMAGE_COUNT
+    data_type: long
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STATUS_CODE
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: UPC_CD
+    data_type: string

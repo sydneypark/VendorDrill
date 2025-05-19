@@ -1,0 +1,81 @@
+unique_name: ONTIME_MONTHLY.dataset
+object_type: dataset
+label: ONTIME_MONTHLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: ONTIME_MONTHLY
+
+columns:
+  - name: ADJ_RCVD_QTY
+    data_type: double
+  - name: ADV_SHPNTC_ID
+    data_type: long
+  - name: ASN_FRT_BILL_NBR
+    data_type: string
+  - name: ASN_TRNSM_TS
+    data_type: datetime
+  - name: CHK_IN_TS
+    data_type: datetime
+  - name: DC_NBR
+    data_type: string
+    sql: "CASE WHEN PROGRAM IN (\"RDC\",\"DFC\") THEN LOC_NBR ELSE '0' END"
+  - name: DFC_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DFC" THEN SKU_COUNT ELSE 0 END
+  - name: DFC_TOT_SKU_ONTIME
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DFC" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: DOC_TRACE_ID
+    data_type: string
+  - name: DTS_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DTS" THEN SKU_COUNT ELSE 0 END
+  - name: DTS_TOT_SKU_ONTIME
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DTS" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: EST_DLVRY_DT
+    data_type: date
+  - name: FSCL_MTH_END_DT
+    data_type: date
+  - name: LOC_NBR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ON_TIME_FLG
+    data_type: long
+  - name: ON_TIME_OFFSET
+    data_type: double
+  - name: ONTIME_COUNT
+    data_type: long
+  - name: ORD_CRT_DT
+    data_type: date
+  - name: ORD_QTY
+    data_type: double
+  - name: PO_NBR
+    data_type: string
+  - name: PROGRAM
+    data_type: string
+  - name: RDC_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "RDC" THEN SKU_COUNT ELSE 0 END
+  - name: RDC_TOT_SKU_ONTIME
+    data_type: long
+    sql: CASE WHEN PROGRAM = "RDC" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: RTSHP_DT
+    data_type: datetime
+  - name: SHP_ONTM_LN_QTY
+    data_type: long
+  - name: SHP_RCVD_DT
+    data_type: date
+  - name: SHPMT_ID
+    data_type: string
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+    sql: CASE WHEN PROGRAM in ("DTS") THEN LOC_NBR ELSE '0' END
+  - name: TOT_SKU_ONTIME
+    data_type: long

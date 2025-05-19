@@ -1,0 +1,7 @@
+unique_name: m_display_avg_rating
+object_type: metric_calc
+label: Online Display Avg Rating +
+expression: |-
+  IIF ([Measures].[m_display_unique_reviews]+0=0,NULL,
+  CEILING(([Measures].[m_display_unique_reviews_sum]/[Measures].[m_display_unique_reviews])*10^1)/10^1)
+format: " #,##0.0;(#,##0.0);;"

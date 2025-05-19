@@ -1,0 +1,6 @@
+unique_name: sales_trans_v_ly
+object_type: metric_calc
+label: Sales Trans v LY
+expression: "[Measures].[sales_trans]- [Measures].[sales_trans_ly]"
+format: "#,##0;(#,##0);;"
+visible: false

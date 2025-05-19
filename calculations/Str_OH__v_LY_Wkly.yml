@@ -1,0 +1,6 @@
+unique_name: Str_OH__v_LY_Wkly
+object_type: metric_calc
+label: Str OH $ v LY Wkly
+expression: "IIF (([Measures].[Str_OH_wkly] +0=0 OR  [Measures].[Str_OH_LY_wkly] +0=0),\
+  \ NULL,([Measures].[Str_OH_wkly] -[Measures].[Str_OH_LY_wkly] ))"
+format: "$ #,##0.00;($ #,##0.00);;"

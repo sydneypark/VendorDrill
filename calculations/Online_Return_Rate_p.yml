@@ -1,0 +1,6 @@
+unique_name: Online_Return_Rate_p
+object_type: metric_calc
+label: Online Return Rate (%) +
+expression: "IIF (([Measures].[m_Online_Sales_Amt] -[Measures].[m_online_return_amount]\
+  \ )+0=0,NULL,[Measures].[m_online_return_amount] /[Measures].[m_Online_Sales_Amt])"
+format: 0.00%;(0.00%)

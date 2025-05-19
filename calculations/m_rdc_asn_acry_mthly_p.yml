@@ -1,0 +1,5 @@
+unique_name: m_rdc_asn_acry_mthly_p
+object_type: metric_calc
+label: RDC ASN Accuracy % Mthly
+expression: "[Measures].[m_tot_asn_acry_line_rdc_monthly]/[Measures].[m_sku_cnt_rdc_asn_acry_monthly]"
+format: 0.00%;(0.00%)

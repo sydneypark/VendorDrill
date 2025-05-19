@@ -1,0 +1,7 @@
+unique_name: m_quotecenter_quoted_units_ly
+object_type: metric
+label: QuoteCenter Quoted Units LY
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: QuoteCenter Quotes.dataset
+column: LY_QT_SLS_UNITS

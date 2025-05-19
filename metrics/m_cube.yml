@@ -1,0 +1,7 @@
+unique_name: m_cube
+object_type: metric
+label: Cube
+calculation_method: maximum
+format: "#,##0.00;(#,##0.00);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: CUB_FT

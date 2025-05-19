@@ -1,0 +1,6 @@
+unique_name: atscale_vendorcube_west_1_DIMENSION_GROUPS_ALPHA.connection
+label: atscale_vendorcube_west_1_DIMENSION_GROUPS_ALPHA
+object_type: connection
+as_connection: atscale_vendorcube_west_1
+database: pr-vendor-collab-thd
+schema: DIMENSION_GROUPS_ALPHA

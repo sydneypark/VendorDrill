@@ -1,0 +1,22 @@
+unique_name: VendorDrillAddin
+object_type: model
+label: VendorDrillAddin
+include_default_drillthrough: true
+visible: true
+
+relationships:
+
+  - unique_name: VDRILL_VNDR_CUBE_XREF.dataset_Vendor_Drill_Add_In_Security
+    from:
+      dataset: VDRILL_VNDR_CUBE_XREF.dataset
+      join_columns:
+        - USER_ID
+    to:
+      row_security: Vendor Drill Add In Security
+
+dimensions:
+  - Part_Dt
+
+metrics:
+
+  - unique_name: m_CONNECTION_STRING_min

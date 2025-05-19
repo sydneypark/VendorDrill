@@ -1,0 +1,7 @@
+unique_name: UOM Sales Units v LY
+object_type: metric_calc
+label: UOM Sales Units v LY +
+expression: "IIF ( \n  ( IsEmpty( [Measures].[TY_SELL_UOM_UNITS] ) OR \n    IsEmpty(\
+  \ [Measures].[LY_SELL_UOM_UNITS] ) ),\n  NULL,\n  ( [Measures].[TY_SELL_UOM_UNITS]\
+  \ - [Measures].[LY_SELL_UOM_UNITS] ) )"
+format: "#,##0;(#,##0);;"

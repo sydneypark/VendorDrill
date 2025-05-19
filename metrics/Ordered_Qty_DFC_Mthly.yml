@@ -1,0 +1,7 @@
+unique_name: Ordered_Qty_DFC_Mthly
+object_type: metric
+label: Ordered Qty DFC Mthly +
+calculation_method: sum
+format: "#,###"
+dataset: DFC_FILL_RATE_MONTHLY.dataset
+column: SKU_ORDER_QUANTITY

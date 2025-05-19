@@ -1,0 +1,5 @@
+unique_name: Comp Units vs LY (%)
+object_type: metric_calc
+label: Comp Units vs LY (%)
+expression: "IIF ([Measures].[m_LY_COMP_SLS_UNITS_sum]+0=0,NULL,(([Measures].[m_TY_COMP_SLS_UNITS_sum]-[Measures].[m_LY_COMP_SLS_UNITS_sum])/[Measures].[m_LY_COMP_SLS_UNITS_sum]))"
+format: 0.00%;(0.00%)

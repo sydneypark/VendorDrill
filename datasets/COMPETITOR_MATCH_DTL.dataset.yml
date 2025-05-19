@@ -1,0 +1,23 @@
+unique_name: COMPETITOR_MATCH_DTL.dataset
+object_type: dataset
+label: COMPETITOR_MATCH_DTL.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: COMPETITOR_MATCH_DTL
+
+columns:
+  - name: COMPETITOR_ID
+    data_type: long
+  - name: COMPETITOR_IMAGE_URL
+    data_type: string
+  - name: COMPETITOR_SKU
+    data_type: string
+  - name: COMPETITOR_SKU_NAME
+    data_type: string
+  - name: COMPETITOR_SKU_URL
+    data_type: string
+  - name: EFF_BGN_DT
+    data_type: date
+  - name: EFF_END_DT
+    data_type: date
+  - name: EPK_ID
+    data_type: long

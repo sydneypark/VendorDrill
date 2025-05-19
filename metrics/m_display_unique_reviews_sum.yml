@@ -1,0 +1,8 @@
+unique_name: m_display_unique_reviews_sum
+object_type: metric
+label: Online Display Unique Reviews Sum +
+calculation_method: sum
+format: "#,##0"
+visible: false
+dataset: Display Ratings Reviews.dataset
+column: DISPLAY_UNIQUE_REVIEWS_SUM

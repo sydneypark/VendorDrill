@@ -1,0 +1,5 @@
+unique_name: m_ontime_dts_wkly_p
+object_type: metric_calc
+label: DTS On Time % Wkly
+expression: "IIF([Measures].[m_sku_cnt_dts_wkly]+0.0=0.0,NULL,([Measures].[m_tot_on_time_dts_wkly]/[Measures].[m_sku_cnt_dts_wkly]))"
+format: 0.00%;(0.00%)

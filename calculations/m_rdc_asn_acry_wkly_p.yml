@@ -1,0 +1,5 @@
+unique_name: m_rdc_asn_acry_wkly_p
+object_type: metric_calc
+label: RDC ASN Accuracy % Wkly
+expression: "[Measures].[m_tot_asn_acry_line_rdc_wkly]/[Measures].[m_sku_cnt_rdc_asn_acry_wkly]"
+format: 0.00%;(0.00%)

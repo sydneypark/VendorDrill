@@ -1,0 +1,152 @@
+unique_name: Vendor
+object_type: dimension
+label: Vendor
+type: standard
+
+hierarchies:
+
+  - unique_name: Merch_Vendor_by_Dept_Hierarchy
+    label: Merch Vendor by Dept Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Vendor
+
+        secondary_attributes:
+
+          - unique_name: d_DEPT_NM
+            label: Dept
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - DEPT_NBR
+            name_column: DEPT_NM
+            sort_column: DEPT_NM
+
+      - unique_name: Merch_Vendor
+
+        secondary_attributes:
+
+          - unique_name: Import_Type
+            label: Import Type
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - IMP_FLG
+            name_column: IMP_FLG_DESC
+            sort_column: IMP_FLG_DESC
+
+          - unique_name: Merch_Vendor2
+            label: Merch Vendor
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: MVNDR_NM_NBR
+            sort_column: MVNDR_NM_NBR
+
+          - unique_name: Merch_Vendor_Name
+            label: Merch Vendor Name
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: MVNDR_NM
+            sort_column: MVNDR_NM
+
+          - unique_name: Merch_Vendor_Nbr
+            label: Merch Vendor Nbr
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: MVNDR_NBR
+            sort_column: MVNDR_NBR
+
+          - unique_name: New_Store_Pay_Terms
+            label: New Store Pay Terms
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: NEW_STR_PAY_TRM_TYP_DESC
+            sort_column: NEW_STR_PAY_TRM_TYP_DESC
+
+          - unique_name: Pay_Terms
+            label: Pay Terms
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - MVNDR_NBR
+            name_column: PAY_TRM_TYP_DESC
+            sort_column: PAY_TRM_TYP_DESC
+
+  - unique_name: Payment_Vendor_Hierarchy
+    label: Payment Vendor Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Payment_Vendor
+
+        secondary_attributes:
+
+          - unique_name: Payment_Vendor1
+            label: 'Payment Vendor '
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - PVNDR_NBR
+            name_column: PVNDR_NM_NBR
+            sort_column: PVNDR_NM_NBR
+
+          - unique_name: Payment_Vendor_Name
+            label: Payment Vendor Name
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - PVNDR_NBR
+            name_column: PVNDR_NM
+            sort_column: PVNDR_NM
+
+          - unique_name: Payment_Vendor_Nbr
+            label: Payment Vendor Nbr
+            folder: More Fields
+            dataset: MVNDR_HIER.dataset
+            key_columns:
+              - PVNDR_NBR
+            name_column: PVNDR_NBR
+            sort_column: PVNDR_NBR
+
+      - unique_name: Merch_Vendor1
+
+level_attributes:
+
+  - unique_name: Merch_Vendor1
+    label: Merch Vendor
+    dataset: MVNDR_HIER.dataset
+    key_columns:
+      - MVNDR_NBR
+    name_column: MVNDR_NM_NBR
+
+  - unique_name: Merch_Vendor
+    label: Merch Vendor
+    dataset: MVNDR_HIER.dataset
+    key_columns:
+      - MVNDR_NBR
+    name_column: MVNDR_NM_NBR
+
+  - unique_name: Payment_Vendor
+    label: 'Payment Vendor '
+    dataset: MVNDR_HIER.dataset
+    key_columns:
+      - PVNDR_NBR
+    name_column: PVNDR_NM_NBR
+
+  - unique_name: Vendor
+    label: Dept
+    dataset: MVNDR_HIER.dataset
+    key_columns:
+      - DEPT_NBR
+    name_column: DEPT_NM

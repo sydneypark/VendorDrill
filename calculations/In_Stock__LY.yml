@@ -1,0 +1,14 @@
+unique_name: In_Stock__LY
+object_type: metric_calc
+label: In Stock % LY
+expression: |-
+  IIF(IsEmpty([Measures].[m_LY_IPR_REPLE_IND_sum]),
+      IIF(IsEmpty([Measures].[Time1_4] ),
+        NULL,
+        IIF(([Measures].[Time1_4] = 0),
+          0,
+          1 - ( [Measures].[Time1_2] / [Measures].[Time1_4] ))),
+      IIF( ([Measures].[m_LY_IPR_REPLE_IND_sum] = 0),
+        0,
+        1 - ( [Measures].[m_LY_SIMPL_OOS_IND_sum] / [Measures].[m_LY_IPR_REPLE_IND_sum] )))
+format: 0.00%;(0.00%)

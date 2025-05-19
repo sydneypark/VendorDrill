@@ -1,0 +1,7 @@
+unique_name: m_online_return_amount
+object_type: metric
+label: Online Return $ +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: ONLINE_SALES.dataset
+column: TY_RTN_AMT

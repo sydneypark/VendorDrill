@@ -1,0 +1,49 @@
+unique_name: DTS_ONTIME_WKLY.dataset
+object_type: dataset
+label: DTS_ONTIME_WKLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: DTS_ONTIME_WKLY
+
+columns:
+  - name: ACT_SHP_DT
+    data_type: date
+  - name: ADV_SHPNTC_ID
+    data_type: long
+  - name: ASN_SHP_BY_DT
+    data_type: date
+  - name: ASN_TRNSM_TS
+    data_type: datetime
+  - name: CHK_IN_TS
+    data_type: datetime
+  - name: DOC_TRACE_ID
+    data_type: string
+  - name: EST_DLVRY_DT
+    data_type: date
+  - name: FRT_BILL_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ON_TIME
+    data_type: double
+  - name: PO_NBR
+    data_type: string
+  - name: PROGRAM
+    data_type: string
+  - name: RTSHP_DT
+    data_type: datetime
+  - name: SHP_RCVD_DT
+    data_type: date
+  - name: SHPMT_ID
+    data_type: string
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TOT_SKU_ONTIME
+    data_type: double

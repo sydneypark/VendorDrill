@@ -1,0 +1,4 @@
+unique_name: m_cpi_dly
+object_type: metric_calc
+label: CPI Dly
+expression: "[Measures].[m_thd_weighted_avg_dly]/[Measures].[m_comp_weighted_avg_dly]"

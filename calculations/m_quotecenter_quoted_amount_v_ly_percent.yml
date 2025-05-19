@@ -1,0 +1,6 @@
+unique_name: m_quotecenter_quoted_amount_v_ly_percent
+object_type: metric_calc
+label: QuoteCenter Quoted $ vLY%
+expression: "IIF ([Measures].[m_quotecenter_quoted_amount_ly] +0=0,NULL,[Measures].[m_quotecenter_quoted_amount_v_ly]\
+  \ /[Measures].[m_quotecenter_quoted_amount_ly] )"
+format: 0.00%;(0.00%)

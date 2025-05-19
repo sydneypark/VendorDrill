@@ -1,0 +1,13 @@
+unique_name: QuoteCenter Branch.dataset
+object_type: dataset
+label: QuoteCenter Branch.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: HDQC_BRANCH
+
+columns:
+  - name: BranchId
+    data_type: string
+  - name: BranchNm
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long

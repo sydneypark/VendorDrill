@@ -1,0 +1,23 @@
+unique_name: SUOF Active Vendor Max Parm
+object_type: dimension
+label: SUOF Active Vendor Max Parm
+type: standard
+
+hierarchies:
+
+  - unique_name: h_suof_active_vendor_max_parm
+    label: SUOF Active Vendor Max Parm
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_suof_active_vendor_max_parm
+
+level_attributes:
+
+  - unique_name: d_suof_active_vendor_max_parm
+    label: 'SUOF Active Vendor Max Parm '
+    dataset: SUOF_Active_Vendor_Max_Parm.dataset
+    key_columns:
+      - FLAG
+    name_column: FLAG

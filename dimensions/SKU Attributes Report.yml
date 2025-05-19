@@ -1,0 +1,109 @@
+unique_name: SKU Attributes Report
+object_type: dimension
+label: SKU Attributes Report
+type: standard
+
+hierarchies:
+
+  - unique_name: sku_attributes_report_hierarchy
+    label: SKU Attributes Report Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: sku_attributes_report_Level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_ad_events
+            label: AD Events
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - AD_EVENT
+            name_column: AD_EVENT
+            sort_column: AD_EVENT
+
+          - unique_name: d_in_seas_dt
+            label: In Seas DT
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - IN_SEAS_DT
+            name_column: IN_SEAS_DT
+            sort_column: IN_SEAS_DT
+
+          - unique_name: d_master_sku
+            label: Master SKU
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - MSTR_SKU_NBR
+            name_column: MSTR_SKU_NBR
+            sort_column: MSTR_SKU_NBR
+
+          - unique_name: d_network
+            label: Network
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - NETWORK
+            name_column: NETWORK
+            sort_column: NETWORK
+
+          - unique_name: d_out_seas_dt
+            label: Out Seas DT
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - OUT_SEAS_DT
+            name_column: OUT_SEAS_DT
+            sort_column: OUT_SEAS_DT
+
+          - unique_name: d_reason_code
+            label: Reason Code
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - REASON_CODE
+            name_column: REASON_CODE
+            sort_column: REASON_CODE
+
+          - unique_name: d_Replenishment_Method
+            label: Replenishment Method
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - S_RMETH_DESC
+            name_column: S_RMETH_DESC
+            sort_column: S_RMETH_DESC
+
+          - unique_name: d_replenishment_sku
+            label: Replenishment SKU
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - DISP_REPLE_SKU_NBR
+            name_column: DISP_REPLE_SKU_NBR
+            sort_column: DISP_REPLE_SKU_NBR
+
+          - unique_name: d_sell_pack
+            label: Sell Pack
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - SELL_UOM_QTY
+            name_column: SELL_UOM_QTY
+            sort_column: SELL_UOM_QTY
+
+          - unique_name: d_store_exceptions
+            label: Store Exceptions
+            dataset: STR_SKU_ATTRIBUTES_531.dataset
+            key_columns:
+              - STR_EXCPT_FLG
+            name_column: STR_EXCPT_FLG
+            sort_column: STR_EXCPT_FLG
+
+level_attributes:
+
+  - unique_name: sku_attributes_report_Level
+    label: SKU Attributes Report Level
+    dataset: STR_SKU_ATTRIBUTES_531.dataset
+    key_columns:
+      - SKU_NBR
+      - SKU_CRT_DT
+      - STR_NBR
+      - MVNDR_NBR
+    name_column: SKU_NBR

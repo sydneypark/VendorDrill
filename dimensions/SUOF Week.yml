@@ -1,0 +1,23 @@
+unique_name: SUOF Week
+object_type: dimension
+label: SUOF Week
+type: standard
+
+hierarchies:
+
+  - unique_name: h_suof_week
+    label: SUOF Week
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_suof_week
+
+level_attributes:
+
+  - unique_name: d_suof_week
+    label: SUOF Week
+    dataset: SUOF_WEEK.dataset
+    key_columns:
+      - FiscalWeek
+    name_column: SUOF_FiscalWeek

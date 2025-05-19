@@ -1,0 +1,66 @@
+unique_name: F_RDC_FILL_RATE_W.dataset
+object_type: dataset
+label: F_RDC_FILL_RATE_W.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: F_RDC_UNIT_FILL_RATE_DETAIL_W
+
+columns:
+  - name: ADJ_RCVD_QTY
+    data_type: double
+  - name: ADJ_RCVD_QTY_ASN
+    data_type: double
+  - name: AGG_NBR
+    data_type: string
+  - name: ASN_SHP_QTY
+    data_type: double
+  - name: COMPLIANT_FR_MV_FLAG
+    data_type: string
+  - name: COST_FILL_RATE
+    data_type: double
+  - name: DC_NBR
+    data_type: string
+  - name: DSVC_TYP_CD
+    data_type: long
+    sql: "2"
+  - name: FACILITY_TYPE
+    data_type: string
+  - name: FILL_RATE
+    data_type: double
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LOAD_DT
+    data_type: date
+  - name: MER_CLASS_NBR
+    data_type: long
+  - name: MER_DEPT_NBR
+    data_type: long
+  - name: MER_SUB_CLASS_NBR
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: ORD_COST
+    data_type: double
+  - name: ORD_QTY
+    data_type: double
+  - name: PERFECT_FR_PO_FLAG
+    data_type: string
+  - name: PERFECT_FR_SKU_FLAG
+    data_type: string
+  - name: PO_NBR
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: RCVD_QTY
+    data_type: double
+  - name: RCVD_QTY_FOR_ASN
+    data_type: double
+  - name: SHP_COST
+    data_type: double
+  - name: SKU_COST
+    data_type: double
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long

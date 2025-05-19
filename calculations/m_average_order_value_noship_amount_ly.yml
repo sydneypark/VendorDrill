@@ -1,0 +1,5 @@
+unique_name: m_average_order_value_noship_amount_ly
+object_type: metric_calc
+label: Average Order Value - No Ship $ LY
+expression: "IIF( [Measures].[m_online_count_of_orders_ly]+0=0,NULL,([Measures].[m_online_gross_demand_ly]/[Measures].[m_online_count_of_orders_ly]))"
+format: "$ #,##0.00;($ #,##0.00);;"

@@ -1,0 +1,31 @@
+unique_name: CPI_ZONES.dataset
+object_type: dataset
+label: CPI_ZONES.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: CPI_ZONES
+
+columns:
+  - name: actv_flg
+    data_type: string
+  - name: class
+    data_type: long
+  - name: eff_bgn_dt
+    data_type: datetime
+  - name: eff_end_dt
+    data_type: datetime
+  - name: str_nbr
+    data_type: string
+  - name: sub_class
+    data_type: long
+  - name: sub_dept
+    data_type: string
+  - name: trait_grp_id
+    data_type: long
+  - name: trait_id
+    data_type: long
+  - name: trait_txmy_id
+    data_type: long
+  - name: user_def_zone_id
+    data_type: string
+  - name: zone_name
+    data_type: string

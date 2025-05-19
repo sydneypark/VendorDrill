@@ -1,0 +1,6 @@
+unique_name: Str_OO_Units_v_LY_Dly
+object_type: metric_calc
+label: Str OO Units v LY Dly
+expression: "IIF (( [Measures].[Str_OO_units_dly] +0=0 OR  [Measures].[Str_OO_units_ly_dly]\
+  \ +0=0),NULL,([Measures].[Str_OO_units_dly] - [Measures].[Str_OO_units_ly_dly] ))"
+format: "#,##0.00;(#,##0.00);;"

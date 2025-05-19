@@ -1,0 +1,29 @@
+unique_name: PIP_VISIT.dataset
+object_type: dataset
+label: PIP_VISIT.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: PIP_VISIT
+
+columns:
+  - name: DEPT_NBR
+    data_type: long
+  - name: EVENT_DATE
+    data_type: date
+  - name: EVENT_FLAG
+    data_type: string
+  - name: LY_VISIT_ID_KEY
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TY_VISIT_ID_KEY
+    data_type: long
+  - name: UPC_CD
+    data_type: string

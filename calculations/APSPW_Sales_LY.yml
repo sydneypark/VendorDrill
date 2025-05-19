@@ -1,0 +1,5 @@
+unique_name: APSPW_Sales_LY
+object_type: metric_calc
+label: APSPW Sales $ LY
+expression: "IIF([Measures].[store_weeks_ly]+0=0,NULL,([Measures].[weekly_sales_ly]/[Measures].[store_weeks_ly]))"
+format: "$ #,##0.00;($ #,##0.00);;"

@@ -1,0 +1,5 @@
+unique_name: APSPW Str OH Units v LY
+object_type: metric_calc
+label: APSPW Str OH Units v LY
+expression: "[Measures].[APSPW_Str_OH_Units] - [Measures].[APSPW_Str_OH_Units_LY]"
+format: "#,###,###,##0.00;(#,###,###,##0.00)"

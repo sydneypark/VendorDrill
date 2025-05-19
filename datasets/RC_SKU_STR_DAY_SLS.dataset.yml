@@ -1,0 +1,53 @@
+unique_name: RC_SKU_STR_DAY_SLS.dataset
+object_type: dataset
+label: RC_SKU_STR_DAY_SLS.dataset
+connection_id: atscale_vendorcube_west_1_SSR_DATA.connection
+table: RC_SKU_STR_DAY_SLS
+
+columns:
+  - name: LY_ALLOCATED_TOTAL_UNT_SLS_QTY
+    data_type: double
+  - name: LY_GROSS_MRGN_AMT
+    data_type: double
+  - name: LY_NET_MUMD_AMT
+    data_type: double
+  - name: LY_SALES_AMT
+    data_type: double
+  - name: LY_UNIQUE_TRANS_ID
+    data_type: string
+  - name: LY_UNT_SLS_QTY
+    data_type: double
+  - name: MUMD_OR_SHELF
+    data_type: string
+  - name: MUMD_RSN_CODE
+    data_type: long
+  - name: MVNDR_NBR
+    data_type: long
+  - name: POS_TRANS_TYP_CD
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SLS_DT
+    data_type: date
+  - name: SOURCE_TABLE
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: TXN_OR_NON_TXN
+    data_type: string
+  - name: TY_ALLOCATED_TOTAL_UNT_SLS_QTY
+    data_type: double
+  - name: TY_GROSS_MRGN_AMT
+    data_type: double
+  - name: TY_NET_MUMD_AMT
+    data_type: double
+  - name: TY_SALES_AMT
+    data_type: double
+  - name: TY_UNIQUE_TRANS_ID
+    data_type: string
+  - name: TY_UNT_SLS_QTY
+    data_type: double

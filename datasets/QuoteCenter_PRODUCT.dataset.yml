@@ -1,0 +1,21 @@
+unique_name: QuoteCenter_PRODUCT.dataset
+object_type: dataset
+label: QuoteCenter_PRODUCT.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_DIM.connection
+table: HDQC_PRODUCT
+
+columns:
+  - name: ManufacturerModelNbr
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ProductAdditionalDesc
+    data_type: string
+  - name: ProductDesc
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SupplierProuductID
+    data_type: string

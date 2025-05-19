@@ -1,0 +1,7 @@
+unique_name: m_dts_fcst_rcvd_qty
+object_type: metric
+label: DTS Forecasted Received Qty +
+calculation_method: sum
+format: "#,###"
+dataset: DTS_FCST_FILL_RATE_DLY.dataset
+column: ADJ_RCVD_QTY_ASN

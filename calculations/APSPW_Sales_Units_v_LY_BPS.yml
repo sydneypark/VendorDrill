@@ -1,0 +1,5 @@
+unique_name: APSPW_Sales_Units_v_LY_BPS
+object_type: metric_calc
+label: APSPW Sales Units v LY (BPS)
+expression: "[Measures].[APSPW_Sales_Units_v_LY_p]*10000"
+format: "#,#;(#,#)"

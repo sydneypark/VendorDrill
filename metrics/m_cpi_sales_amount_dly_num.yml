@@ -1,0 +1,7 @@
+unique_name: m_cpi_sales_amount_dly_num
+object_type: metric
+label: CPI Sales $ Dly Num
+calculation_method: sum
+visible: false
+dataset: VDRILL_CPI_DLY.dataset
+column: COMP_SLS_COV_NUM

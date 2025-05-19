@@ -1,0 +1,8 @@
+unique_name: m_blended_cost_eff_dt
+object_type: metric
+label: Blended Cost EFF DT
+calculation_method: maximum
+format: yyyy-MM-dd
+unrelated_dimensions_handling: empty
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: CURR_BCOST_BGN_DT

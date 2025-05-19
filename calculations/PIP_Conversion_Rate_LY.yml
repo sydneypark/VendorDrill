@@ -1,0 +1,7 @@
+unique_name: PIP_Conversion_Rate_LY
+object_type: metric_calc
+label: Online PIP Conversion Rate LY +
+expression: "IIF (([Measures].[m_online_pip_visits_ly] +0=0 OR [Measures].[m_online_count_of_orders_ly]\
+  \ +0=0),NULL,([Measures].[m_online_count_of_orders_ly]/[Measures].[m_online_pip_visits_ly]\
+  \ ))"
+format: percent

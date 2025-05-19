@@ -1,0 +1,115 @@
+unique_name: ONLINE_SALES.dataset
+object_type: dataset
+label: ONLINE_SALES.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: ONLINE_SALES
+
+columns:
+  - name: BILL_PSTL_CD
+    data_type: string
+  - name: BILL_STR_NBR
+    data_type: string
+  - name: BROWSER_TYPE
+    data_type: string
+  - name: BUSINESS_TYPE
+    data_type: string
+  - name: BYR_MKDN_AMT
+    data_type: double
+  - name: CUST_ORD_ID
+    data_type: string
+  - name: DEPT_NBR
+    data_type: string
+  - name: EVENT_HOUR_ID
+    data_type: long
+  - name: EXPR_ID
+    data_type: long
+  - name: EXTNL_REF_NBR
+    data_type: string
+  - name: FULFILL_CHNL_CD
+    data_type: long
+  - name: ICL_PSTL_CD
+    data_type: string
+  - name: ICL_STR_NBR
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_CANCEL_AMT
+    data_type: double
+  - name: LY_CANCEL_UNIT
+    data_type: double
+  - name: LY_RTN_AMT
+    data_type: double
+  - name: LY_RTN_QTY
+    data_type: double
+  - name: LY_SALES_AMT
+    data_type: double
+  - name: LY_SALES_SHIP_AMT
+    data_type: double
+  - name: LY_UNT_QTY
+    data_type: double
+  - name: MKUP_MKDN_RSN_CD
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: ONLINE_COST
+    data_type: double
+  - name: ORD_HOUR_ID
+    data_type: long
+  - name: ORD_LN_CURR_STATUS
+    data_type: string
+  - name: ORD_LN_STATUS
+    data_type: string
+  - name: PAYMT_METH_CD
+    data_type: string
+  - name: PVNDR_NBR
+    data_type: long
+  - name: Return_Sales_LY
+    data_type: double
+    sql: ABS(LY_RTN_AMT)
+  - name: Return_Sales
+    data_type: double
+    sql: ABS(TY_RTN_AMT)
+  - name: Return_units_LY
+    data_type: double
+    sql: ABS(LY_RTN_QTY)
+  - name: Return_units
+    data_type: double
+    sql: ABS(TY_RTN_QTY)
+  - name: RTN_METHOD
+    data_type: long
+  - name: RTN_PROD_AMT
+    data_type: double
+  - name: RTN_SHIP_AMT
+    data_type: double
+  - name: SALES_DATE
+    data_type: date
+  - name: SETTLEMENT_DATE_ID
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: TIME_TYPE
+    data_type: string
+  - name: TY_CANCEL_AMT
+    data_type: double
+  - name: TY_CANCEL_UNIT
+    data_type: double
+  - name: TY_RTN_AMT
+    data_type: double
+  - name: TY_RTN_QTY
+    data_type: double
+  - name: TY_SALES_AMT
+    data_type: double
+  - name: TY_SALES_SHIP_AMT
+    data_type: double
+  - name: TY_UNT_QTY
+    data_type: double
+  - name: UPC_CD
+    data_type: string
+  - name: WEB_EVENT_ID
+    data_type: long

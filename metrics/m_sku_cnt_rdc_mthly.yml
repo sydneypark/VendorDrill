@@ -1,0 +1,8 @@
+unique_name: m_sku_cnt_rdc_mthly
+object_type: metric
+label: SKU Count RDC Mthly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: RDC_ONTIME_MONTHLY.dataset
+column: SKU_COUNT

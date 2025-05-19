@@ -1,0 +1,5 @@
+unique_name: Comp $ vs LY
+object_type: metric_calc
+label: Comp $ vs LY
+expression: "IIF (([Measures].[m_TY_COMP_SLS_sum]+0.00=0.00 OR [Measures].[m_LY_COMP_SLS_sum]+0.00=0.00),NULL,([Measures].[m_TY_COMP_SLS_sum]-[Measures].[m_LY_COMP_SLS_sum]))"
+format: "$ #,##0.00;($ #,##0.00);;"

@@ -1,0 +1,77 @@
+unique_name: STR_HIER.dataset
+object_type: dataset
+label: STR_HIER.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: STR_HIER
+
+columns:
+  - name: ADDR_LINE1_TXT
+    data_type: string
+  - name: ALL_THD_DESC
+    data_type: string
+  - name: BYO_NBR
+    data_type: string
+  - name: BYO_NM
+    data_type: string
+  - name: CITY_NM
+    data_type: string
+  - name: CNTY_NM
+    data_type: string
+  - name: DIV_NBR
+    data_type: string
+  - name: DIV_NM
+    data_type: string
+  - name: DST_NBR
+    data_type: string
+  - name: DST_NM
+    data_type: string
+  - name: GEO_HQ_NM
+    data_type: string
+  - name: GMT_ADJ_HRS
+    data_type: double
+  - name: LAT_NBR
+    data_type: double
+  - name: LNG_NBR
+    data_type: double
+  - name: LOB_HQ_NM
+    data_type: string
+  - name: LOC_CLS_DT
+    data_type: date
+  - name: MGRP_NBR
+    data_type: string
+  - name: MGRP_NM
+    data_type: string
+  - name: MKT_NBR
+    data_type: string
+  - name: MKT_NM
+    data_type: string
+  - name: PSTL_CD
+    data_type: string
+  - name: RELO_TO_STR_NBR
+    data_type: string
+  - name: RGN_NBR
+    data_type: string
+  - name: RGN_NM
+    data_type: string
+  - name: S_BYO_NM
+    data_type: string
+  - name: S_DIV_NM
+    data_type: string
+  - name: S_DST_NM
+    data_type: string
+  - name: S_MGRP_NM
+    data_type: string
+  - name: S_MKT_NM
+    data_type: string
+  - name: S_RELO_TO_STR_NM
+    data_type: string
+  - name: S_RGN_NM
+    data_type: string
+  - name: S_TM_RGN_DESC
+    data_type: string
+  - name: ST_CD
+    data_type: string
+  - name: STR_NBR
+    data_type: string
+  - name: STR_NM
+    data_type: string

@@ -1,0 +1,5 @@
+unique_name: m_dc_rcpts_units_v_ly
+object_type: metric_calc
+label: DC Rcpts Units v LY +
+expression: "[Measures].[m_dc_rcpts_units]- [Measures].[m_dc_rcpts_units_ly]"
+format: "#,##0;(#,##0);;"

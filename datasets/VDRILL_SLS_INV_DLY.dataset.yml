@@ -1,0 +1,100 @@
+unique_name: VDRILL_SLS_INV_DLY.dataset
+object_type: dataset
+label: VDRILL_SLS_INV_DLY.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_SLS_INV_DLY
+
+columns:
+  - name: ACT_SKU_FLAG
+    data_type: string
+  - name: AMT_KEY_FLAG
+    data_type: string
+  - name: CAL_DT
+    data_type: date
+  - name: CROSS_MERCHANDISING_FLAG
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: DEPT_NM
+    data_type: string
+  - name: FPA_EVENT_FLAG
+    data_type: string
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LY_DLY_OH_QTY
+    data_type: double
+  - name: LY_DLY_OO_QTY
+    data_type: double
+  - name: LY_DLY_STR_OH_RETL_AMT
+    data_type: double
+  - name: LY_DLY_STR_OO_RETL_AMT
+    data_type: double
+  - name: LY_INV_STR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: MVNDR_NM_NBR
+    data_type: string
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: NO_POG_HOME_AMT
+    data_type: double
+    sql: CASE WHEN NPH_FLAG="Y" THEN TY_DLY_STR_OH_RETL_AMT + TY_DLY_STR_OO_RETL_AMT
+      ELSE 0 END
+  - name: NO_POG_HOME_UNITS
+    data_type: double
+    sql: 'CASE WHEN NPH_FLAG="Y" THEN TY_DLY_OH_QTY + TY_DLY_OO_QTY  ELSE 0 END '
+  - name: NPH_DLY_AMT
+    data_type: double
+  - name: NPH_DLY_QTY
+    data_type: double
+  - name: NPH_FLAG
+    data_type: string
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: POG_FLAG
+    data_type: string
+  - name: POG_PARENT
+    data_type: string
+  - name: RELO_TO_STR_NBR
+    data_type: string
+  - name: S_SKU_DESC
+    data_type: string
+  - name: S_STR_NM
+    data_type: string
+  - name: SC_EXC_FLAG
+    data_type: string
+  - name: SC_INC_FLAG
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_DESC
+    data_type: string
+  - name: SKU_EXC_FLAG
+    data_type: string
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_STR_EXC_FLAG
+    data_type: string
+  - name: SKU_TYP_CD
+    data_type: string
+  - name: SKU_TYP_DESC
+    data_type: string
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: STR_NM
+    data_type: string
+  - name: THD_SKU_STAT_CD
+    data_type: long
+  - name: TY_DLY_OH_QTY
+    data_type: double
+  - name: TY_DLY_OO_QTY
+    data_type: double
+  - name: TY_DLY_STR_OH_RETL_AMT
+    data_type: double
+  - name: TY_DLY_STR_OO_RETL_AMT
+    data_type: double
+  - name: TY_INV_STR
+    data_type: string

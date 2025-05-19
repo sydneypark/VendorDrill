@@ -1,0 +1,301 @@
+unique_name: Time
+object_type: dimension
+label: Time
+type: standard
+
+hierarchies:
+
+  - unique_name: Time_Hierarchy
+    label: Time Hierarchy
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Year1
+
+        secondary_attributes:
+
+          - unique_name: year1_1
+            label: Year
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_YR
+            name_column: FSCL_YR
+            sort_column: FSCL_YR_END_DT
+
+      - unique_name: Half
+
+        secondary_attributes:
+
+          - unique_name: Half_1
+            label: Half
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_HY_END_DT
+            name_column: FSCL_HY_DESC
+            sort_column: FSCL_HY_END_DT
+
+          - unique_name: Half_Nbr
+            label: Half Nbr
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_HY_NBR
+            name_column: FSCL_HYNBR_DESC
+            sort_column: FSCL_HYNBR_DESC
+
+      - unique_name: Quarter
+
+        secondary_attributes:
+
+          - unique_name: Quarter_1
+            label: Quarter
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_QTR_END_DT
+            name_column: FSCL_QTR_DESC
+            sort_column: FSCL_QTR_END_DT
+
+          - unique_name: Quarter_Nbr
+            label: Quarter Nbr
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_QTR_NBR
+            name_column: FSCL_QTR_NBR_DESC
+            sort_column: FSCL_QTR_NBR_DESC
+
+      - unique_name: Month1
+
+        secondary_attributes:
+
+          - unique_name: Month1_1
+            label: Month
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_PRD_END_DT
+            name_column: FSCL_PRD_DESC
+            sort_column: FSCL_PRD_END_DT
+
+          - unique_name: Month_Name
+            label: Month Name
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_MTH_NM
+            name_column: FSCL_MTH_NM
+            sort_column: FSCL_PRD_NBR
+
+          - unique_name: Month_Nbr
+            label: Month Nbr
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_PRD_NBR
+              - FSCL_PRD_END_DT
+            name_column: FSCL_PRD_NBR
+            sort_column: FSCL_PRD_NBR
+
+          - unique_name: Month_short
+            label: Month Short
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - MONTH
+              - FSCL_PRD_END_DT
+            name_column: MONTH
+            sort_column: MONTH
+
+          - unique_name: month_shortest
+            label: Month Shortest
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - SHORT_MTH
+              - FSCL_PRD_END_DT
+            name_column: SHORT_MTH
+            sort_column: SHORT_MTH
+
+          - unique_name: Short_Month
+            label: Short Month
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_PRD_END_DT
+            name_column: FSCL_PRD_KEY_VAL_DESC
+            sort_column: FSCL_PRD_END_DT
+
+      - unique_name: Week
+
+        secondary_attributes:
+
+          - unique_name: d_FSCL_WK_END_DT
+            label: Week End Date
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_WK_END_DT
+            name_column: FSCL_WK_END_DT
+            sort_column: FSCL_WK_END_DT
+
+          - unique_name: d_FSCL_YR_WK_KEY_VAL
+            label: Year Week Key
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_YR_WK_KEY_VAL
+            name_column: FSCL_YR_WK_KEY_VAL
+            sort_column: FSCL_YR_WK_KEY_VAL
+
+          - unique_name: Short_Week
+            label: Short Week
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_YR_WK_KEY_VAL
+            name_column: FSCL_YR_WK_KEY_VAL_DESC
+            sort_column: FSCL_YR_WK_KEY_VAL_DESC
+
+          - unique_name: Week1
+            label: Week
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_WK_END_DT
+            name_column: FSCL_WK_DESC
+            sort_column: FSCL_WK_END_DT
+
+          - unique_name: Week_Nbr
+            label: Week Nbr
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_WK_NBR
+            name_column: FSCL_WK_NBR_DESC
+            sort_column: FSCL_WK_NBR_DESC
+
+          - unique_name: WK_NBR
+            label: WK NBR
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - FSCL_WK_NBR
+              - FSCL_WK_END_DT
+            name_column: FSCL_WK_NBR
+            sort_column: FSCL_WK_NBR
+
+      - unique_name: Day1
+
+        secondary_attributes:
+
+          - unique_name: Day1_2
+            label: Day
+            format: yyyy-MM-dd
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - CAL_DT
+            name_column: CAL_DT
+            sort_column: CAL_DT
+
+          - unique_name: Day_Name
+            label: Day Name
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - CAL_DT
+            name_column: FSCL_WK_DAY_DESC
+            sort_column: CAL_DT
+
+          - unique_name: Day_of_mth
+            label: Day of Month
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - DAY_OF_MTH_NBR
+              - CAL_DT
+            name_column: DAY_OF_MTH_NBR
+            sort_column: DAY_OF_MTH_NBR
+
+          - unique_name: Day_of_year
+            label: Day of Year
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - DAY_OF_YR_NBR
+              - CAL_DT
+            name_column: DAY_OF_YR_NBR
+            sort_column: CAL_DT
+
+          - unique_name: day_short
+            label: Day Short
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - DAY
+              - CAL_DT
+            name_column: DAY
+            sort_column: DAY
+
+          - unique_name: day_shortest
+            label: Day Shortest
+            folder: More Fields
+            dataset: CAL_PRD_HIER.dataset
+            key_columns:
+              - SHORT_DAY
+              - CAL_DT
+            name_column: SHORT_DAY
+            sort_column: SHORT_DAY
+
+level_attributes:
+
+  - unique_name: Day1
+    label: Day
+    format: yyyy-MM-dd
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - CAL_DT
+    name_column: CAL_DT
+
+  - unique_name: Half
+    label: Half
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - FSCL_HY_END_DT
+    name_column: FSCL_HY_DESC
+    sort_column: FSCL_HY_END_DT
+
+  - unique_name: Month1
+    label: Month
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - FSCL_PRD_END_DT
+    name_column: FSCL_PRD_DESC
+    sort_column: FSCL_PRD_END_DT
+
+  - unique_name: Quarter
+    label: Quarter
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - FSCL_QTR_END_DT
+    name_column: FSCL_QTR_DESC
+    sort_column: FSCL_QTR_END_DT
+
+  - unique_name: Week
+    label: Week
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - FSCL_WK_END_DT
+    name_column: FSCL_WK_DESC
+
+  - unique_name: Year1
+    label: Year
+    dataset: CAL_PRD_HIER.dataset
+    key_columns:
+      - FSCL_YR
+    name_column: FSCL_YR
+    sort_column: FSCL_YR_END_DT

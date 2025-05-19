@@ -1,0 +1,5 @@
+unique_name: m_dc_rcpts_units_v_ly_p
+object_type: metric_calc
+label: DC Rcpts Units v LY (%)
+expression: "IIF([Measures].[m_dc_rcpts_units_ly]+0=0,NULL,([Measures].[m_dc_rcpts_units_v_ly]/[Measures].[m_dc_rcpts_units_ly]))"
+format: 0.00%;(0.00%)

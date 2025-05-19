@@ -1,0 +1,7 @@
+unique_name: Online_Product_Interaction_Conversion_Rate
+object_type: metric_calc
+label: 'Online Product Interaction Conversion Rate '
+expression: "IIF((IsEmpty([Measures].[m_online_product_interaction_visits]) OR [Measures].[m_online_product_interaction_visits]\
+  \ = 0) OR (IsEmpty([Measures].[m_online_count_of_orders]) OR [Measures].[m_online_count_of_orders]\
+  \ = 0),NULL,[Measures].[m_online_count_of_orders]/[Measures].[m_online_product_interaction_visits])"
+format: percent

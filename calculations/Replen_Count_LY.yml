@@ -1,0 +1,9 @@
+unique_name: Replen_Count_LY
+object_type: metric_calc
+label: Replen Count LY
+expression: |-
+  IIF ( IsEmpty ( [Measures].[m_LY_IPR_REPLE_IND_sum] )
+         , [Measures].[Time1_4]
+         , [Measures].[m_LY_IPR_REPLE_IND_sum]
+         )
+format: "#,##0"

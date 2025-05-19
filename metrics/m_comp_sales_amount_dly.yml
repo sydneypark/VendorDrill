@@ -1,0 +1,8 @@
+unique_name: m_comp_sales_amount_dly
+object_type: metric
+label: Comp Sales $ Dly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: VDRILL_CPI_DLY.dataset
+column: COMP_WEIGHTED_DERIVED

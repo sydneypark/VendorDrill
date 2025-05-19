@@ -1,0 +1,11 @@
+unique_name: Str_OO_LY_wkly
+object_type: metric
+label: Str OO $ LY Wkly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_SLS_INV_WKLY.dataset_Time
+dataset: VDRILL_SLS_INV_WKLY.dataset
+column: LY_WKLY_STR_OO_RETL_AMT

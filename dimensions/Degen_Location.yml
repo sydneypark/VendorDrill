@@ -1,0 +1,198 @@
+unique_name: Degen_Location
+object_type: dimension
+label: Degen_Location
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Relo To Str Number
+    label: Relo To Str Number
+
+    levels:
+
+      - unique_name: Relo To Str Number
+
+level_attributes:
+
+  - unique_name: Relo To Str Number
+    label: Relo To Str Number
+    shared_degenerate_columns:
+      - name_column: LOCATION_STR_NBR
+        key_columns:
+          - LOCATION_STR_NBR
+        dataset: ORDER_LINE.dataset
+        is_unique_key: false
+      - name_column: LOC_NBR
+        key_columns:
+          - LOC_NBR
+        dataset: DTS_FCST_FILL_RATE_DLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: PRODUCT_VISIT.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: VDRILL_SLS_RECPT.dataset
+        is_unique_key: false
+      - name_column: LOC_NBR
+        key_columns:
+          - LOC_NBR
+        dataset: VDRILL_SALES_TRANS.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: APSPW.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: ONLINE_PRODUCT_FACT.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: RC_SKU_STR_DAY_SLS.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: PIP_VISIT.dataset
+        is_unique_key: false
+      - name_column: LOC_NBR
+        key_columns:
+          - LOC_NBR
+        dataset: VDRILL_SALES.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: F_DTS_COMPLIANCE_PO_W.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: QuoteCenter Quotes.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: DTS_FILL_RATE_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: F_DTS_COMPLIANCE_PO_M.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: SUOF_STR.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: In Stock / OOS -D.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: DTS_ONTIME_MONTHLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: Weeks of Capacity.dataset
+        is_unique_key: false
+      - name_column: RELO_TO_STR_NBR
+        key_columns:
+          - RELO_TO_STR_NBR
+        dataset: VDRILL_SLS_INV_DLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: SUOF_STR_AVG_UNITS.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: ONLINE_DIRECT_FULFILLMENT.dataset
+        is_unique_key: false
+      - name_column: RELO_TO_STR_NBR
+        key_columns:
+          - RELO_TO_STR_NBR
+        dataset: VDRILL_SLS_INV_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: DTS_ONTIME_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: In Stock / OOS - W.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: VDRILL_INV_RDC_DLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: ONLINE_SALES.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: VDRILL_INV_RDC_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: STR_CLASS_PLN_WKLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: STR_DEPT_PLN_DLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: QuoteCenter Sales.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: VDRILL_ISS_DLY.dataset
+        is_unique_key: false
+      - name_column: STR_NBR
+        key_columns:
+          - STR_NBR
+        dataset: VDRILL_ISS_WKLY.dataset
+        is_unique_key: false
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

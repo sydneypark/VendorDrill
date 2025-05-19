@@ -1,0 +1,57 @@
+unique_name: FDC_ONTIME_MONTHLY.dataset
+object_type: dataset
+label: FDC_ONTIME_MONTHLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: FDC_ONTIME_MONTHLY
+
+columns:
+  - name: ADJ_RCVD_QTY
+    data_type: double
+  - name: ADV_SHPNTC_ID
+    data_type: long
+  - name: ASN_FRT_BILL_NBR
+    data_type: string
+  - name: ASN_TRNSM_TS
+    data_type: datetime
+  - name: CHK_IN_TS
+    data_type: datetime
+  - name: DC_NBR
+    data_type: string
+  - name: DOC_TRACE_ID
+    data_type: string
+  - name: EST_DLVRY_DT
+    data_type: date
+  - name: FSCL_MTH_END_DT
+    data_type: date
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ON_TIME_FLG
+    data_type: long
+  - name: ON_TIME_OFFSET
+    data_type: double
+  - name: ONTIME_COUNT
+    data_type: long
+  - name: ORD_CRT_DT
+    data_type: date
+  - name: ORD_QTY
+    data_type: double
+  - name: PO_NBR
+    data_type: string
+  - name: PROGRAM
+    data_type: string
+  - name: RTSHP_DT
+    data_type: datetime
+  - name: SHP_ONTM_LN_QTY
+    data_type: long
+  - name: SHP_RCVD_DT
+    data_type: date
+  - name: SHPMT_ID
+    data_type: string
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: TOT_SKU_ONTIME
+    data_type: long

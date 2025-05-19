@@ -1,0 +1,71 @@
+unique_name: VDRILL_CPI_DLY.dataset
+object_type: dataset
+label: VDRILL_CPI_DLY.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_CPI_DLY
+
+columns:
+  - name: CACHEER_ID
+    data_type: string
+  - name: CAL_DT
+    data_type: date
+  - name: CLASS_NBR
+    data_type: long
+  - name: COMP_SLS_AMT
+    data_type: double
+  - name: COMP_SLS_COV
+    data_type: double
+  - name: COMP_SLS_COV_DENOM
+    data_type: double
+  - name: COMP_SLS_COV_NUM
+    data_type: double
+  - name: COMP_WEIGHTED_DERIVED
+    data_type: double
+    sql: CASE WHEN MATCH_TYPE <> 'Informational'  THEN COMP_SLS_AMT  ELSE null END
+  - name: COMPETITOR_ID
+    data_type: long
+  - name: COMPETITOR_IMG_URL
+    data_type: string
+  - name: COMPETITOR_NM
+    data_type: string
+  - name: COMPETITOR_RETAIL
+    data_type: double
+  - name: CPI
+    data_type: double
+  - name: ENEMY_IDENTIFIER
+    data_type: long
+  - name: EPK_ID
+    data_type: long
+  - name: IS_PRIMARY_COMPETITOR
+    data_type: string
+  - name: IS_RELEVANT_COMPETITOR
+    data_type: string
+  - name: MATCH_TYPE
+    data_type: string
+  - name: R52_UNITS
+    data_type: double
+  - name: SCALED_COMPETITOR_RETAIL
+    data_type: double
+  - name: SCALING_FCTR
+    data_type: double
+  - name: SCRAPE_DATE
+    data_type: date
+  - name: SCRAPE_REASON
+    data_type: string
+  - name: SHELF_RETL
+    data_type: double
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+  - name: SUB_CLASS_NBR
+    data_type: long
+  - name: SUB_DEPT_NBR
+    data_type: string
+  - name: THD_SLS_AMT
+    data_type: double
+  - name: THD_WEIGHTED_DERIVED
+    data_type: double
+    sql: CASE WHEN MATCH_TYPE <> 'Informational'  THEN THD_SLS_AMT  ELSE null END

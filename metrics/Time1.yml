@@ -1,0 +1,13 @@
+unique_name: Time1
+object_type: metric
+label: Out of Stock D
+calculation_method: sum
+visible: false
+unrelated_dimensions_handling: empty
+semi_additive:
+  position: last
+  relationships:
+    - In_Stock_/_OOS_-D.dataset_Time_Transformations_Internal
+    - In_Stock_/_OOS_-D.dataset_Time
+dataset: In Stock / OOS -D.dataset
+column: TY_SIMPL_OOS_IND

@@ -1,0 +1,7 @@
+unique_name: m_cpi_sales_amount_wkly_num
+object_type: metric
+label: CPI Sales $ Wkly Num
+calculation_method: sum
+visible: false
+dataset: VDRILL_CPI_WKLY.dataset
+column: COMP_SLS_COV_NUM

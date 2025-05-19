@@ -1,0 +1,6 @@
+unique_name: m_online_gross_demand_v_ly
+object_type: metric_calc
+label: Online Gross Demand $ v LY +
+expression: "IIF (\n([Measures].[m_online_gross_demand]+0.00=0.00 \n  OR [Measures].[m_online_gross_demand_ly]+0.00=0.00)\n\
+  ,NULL\n,([Measures].[m_online_gross_demand]-[Measures].[m_online_gross_demand_ly]))"
+format: "$ #,##0.00;($ #,##0.00);;"

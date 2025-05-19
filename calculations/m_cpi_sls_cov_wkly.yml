@@ -1,0 +1,5 @@
+unique_name: m_cpi_sls_cov_wkly
+object_type: metric_calc
+label: CPI Sales Cov  Wkly
+expression: "IIF([Measures].[m_cpi_sales_amount_wkly_num]+0=0,NULL,[Measures].[m_cpi_sales_amount_wkly_num]/[Measures].[m_cpi_sales_amount_wkly_denom])"
+format: percent

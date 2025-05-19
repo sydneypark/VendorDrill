@@ -1,0 +1,7 @@
+unique_name: Str_Rcpts_Retail_LY
+object_type: metric
+label: Str Rcpts $ LY
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_SLS_RECPT.dataset
+column: D_LY_RETL_AMT

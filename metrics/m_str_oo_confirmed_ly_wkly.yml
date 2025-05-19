@@ -1,0 +1,12 @@
+unique_name: m_str_oo_confirmed_ly_wkly
+object_type: metric
+label: 'Str OO Confirmed $ LY Wkly (RDC) '
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_INV_RDC_WKLY.dataset_Time_Transformations_Internal
+    - VDRILL_INV_RDC_WKLY.dataset_Time
+dataset: VDRILL_INV_RDC_WKLY.dataset
+column: LY_CONF_ALLOC_AMT

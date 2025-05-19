@@ -1,0 +1,12 @@
+unique_name: Str_OO_LY_dly
+object_type: metric
+label: Str OO $ LY Dly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+semi_additive:
+  position: last
+  relationships:
+    - VDRILL_SLS_INV_DLY.dataset_Time_Transformations_Internal
+    - VDRILL_SLS_INV_DLY.dataset_Time
+dataset: VDRILL_SLS_INV_DLY.dataset
+column: LY_DLY_STR_OO_RETL_AMT

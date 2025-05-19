@@ -1,0 +1,7 @@
+unique_name: m_cmp_rtl_dly
+object_type: metric
+label: Competitor Retail $ Dly
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_CPI_DLY.dataset
+column: COMPETITOR_RETAIL

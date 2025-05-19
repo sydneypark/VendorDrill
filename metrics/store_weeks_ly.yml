@@ -1,0 +1,7 @@
+unique_name: store_weeks_ly
+object_type: metric
+label: Store Weeks LY
+calculation_method: sum
+format: "#,#;(#,#)"
+dataset: APSPW.dataset
+column: LY_STR_CNT

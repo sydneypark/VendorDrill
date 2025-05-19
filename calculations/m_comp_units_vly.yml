@@ -1,0 +1,7 @@
+unique_name: m_comp_units_vly
+object_type: metric_calc
+label: Comp Units v LY (1 Year)
+expression: "IIF (([Measures].[m_TY_COMP_SLS_UNITS_sum_new] +0=0 OR [Measures].[m_LY_COMP_SLS_UNITS_sum_new]\
+  \ +0=0),NULL,([Measures].[m_TY_COMP_SLS_UNITS_sum_new] -[Measures].[m_LY_COMP_SLS_UNITS_sum_new]\
+  \ ))"
+format: "#,##0;(#,##0);;"

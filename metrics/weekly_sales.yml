@@ -1,0 +1,8 @@
+unique_name: weekly_sales
+object_type: metric
+label: Weekly Sales $
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: APSPW.dataset
+column: TY_SLS

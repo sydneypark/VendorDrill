@@ -1,0 +1,33 @@
+unique_name: SKU Velocity +
+object_type: dimension
+label: SKU Velocity +
+type: standard
+
+hierarchies:
+
+  - unique_name: SKU Velocity +
+    label: SKU Velocity +
+
+    levels:
+
+      - unique_name: SKU Velocity Code
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_SKU_VLCTY_CD
+            label: SKU Velocity Code +
+            dataset: SKU_VLCTY.dataset
+            key_columns:
+              - SKU_VLCTY_CD
+            name_column: SKU_VLCTY_CD
+            sort_column: SKU_VLCTY_CD
+
+level_attributes:
+
+  - unique_name: SKU Velocity Code
+    label: SKU Velocity Code +
+    dataset: SKU_VLCTY.dataset
+    key_columns:
+      - SKU_VLCTY_CD
+    name_column: SKU_VLCTY_CD

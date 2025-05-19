@@ -1,0 +1,7 @@
+unique_name: Str_Rcpts_Units
+object_type: metric
+label: Str Rcpts Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: VDRILL_SLS_RECPT.dataset
+column: D_TY_RCVD_UNT_CNT

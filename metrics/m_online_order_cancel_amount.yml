@@ -1,0 +1,8 @@
+unique_name: m_online_order_cancel_amount
+object_type: metric
+label: Online Order Cancel $ +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: ORDER_LINE.dataset
+column: CANCEL_AMT

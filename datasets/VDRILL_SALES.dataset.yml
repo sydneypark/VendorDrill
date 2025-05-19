@@ -1,0 +1,93 @@
+unique_name: VDRILL_SALES.dataset
+object_type: dataset
+label: VDRILL_SALES.dataset
+connection_id: atscale_vendorcube_west_1.connection
+table: VDRILL_SALES
+
+columns:
+  - name: COMP_SLS_2YR
+    data_type: "decimal(38,9)"
+  - name: COMP_SLS_UNITS_2YR
+    data_type: "decimal(38,9)"
+  - name: FULL_FILL_CHNL
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: LLY_COMP_SLS_2YR
+    data_type: "decimal(38,9)"
+  - name: LLY_COMP_SLS_UNITS_2YR
+    data_type: "decimal(38,9)"
+  - name: LOC_NBR
+    data_type: string
+  - name: LY_COMP_SLS
+    data_type: "decimal(38,9)"
+  - name: LY_COMP_SLS_UNITS
+    data_type: "decimal(38,9)"
+  - name: LY_NET_CTNT_QTY
+    data_type: "decimal(38,9)"
+  - name: LY_RETURN_UNITS
+    data_type: "decimal(38,9)"
+    sql: CASE WHEN POS_TRANS_TYP_CD='R' THEN LY_SLS_UNITS ELSE 0 END
+  - name: LY_RETURNS
+    data_type: "decimal(38,9)"
+    sql: CASE WHEN POS_TRANS_TYP_CD='R' THEN LY_SLS ELSE 0 END
+  - name: LY_SELL_UOM_UNITS
+    data_type: "decimal(38,9)"
+  - name: LY_SL_UOM_QTY
+    data_type: long
+  - name: LY_SLS
+    data_type: "decimal(38,9)"
+  - name: LY_SLS_STR
+    data_type: string
+  - name: LY_SLS_UNITS
+    data_type: "decimal(38,9)"
+  - name: MVNDR_NBR
+    data_type: long
+  - name: MVNDR_NM
+    data_type: string
+  - name: MVNDR_NM_NBR
+    data_type: string
+  - name: MVNDR_SKU_STAT_CD
+    data_type: long
+  - name: NET_CTNT_UOM_CD
+    data_type: string
+  - name: PLANOGRAM_ID
+    data_type: long
+  - name: POS_TRANS_TYP_CD
+    data_type: string
+  - name: S_STR_NM
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SKU_VLCTY_CD
+    data_type: string
+  - name: SLS_DT
+    data_type: date
+  - name: STR_NM
+    data_type: string
+  - name: THD_SKU_STAT_CD
+    data_type: long
+  - name: TY_COMP_SLS
+    data_type: "decimal(38,9)"
+  - name: TY_COMP_SLS_UNITS
+    data_type: "decimal(38,9)"
+  - name: TY_NET_CTNT_QTY
+    data_type: "decimal(38,9)"
+  - name: TY_RETURN_UNITS
+    data_type: "decimal(38,9)"
+    sql: CASE WHEN POS_TRANS_TYP_CD='R' THEN TY_SLS_UNITS ELSE 0 END
+  - name: TY_RETURNS
+    data_type: "decimal(38,9)"
+    sql: CASE WHEN POS_TRANS_TYP_CD='R' THEN TY_SLS  ELSE 0 END
+  - name: TY_SELL_UOM_UNITS
+    data_type: "decimal(38,9)"
+  - name: TY_SL_UOM_QTY
+    data_type: long
+  - name: TY_SLS
+    data_type: "decimal(38,9)"
+  - name: TY_SLS_STR
+    data_type: string
+  - name: TY_SLS_UNITS
+    data_type: "decimal(38,9)"

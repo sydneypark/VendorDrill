@@ -1,0 +1,73 @@
+unique_name: ONTIME_WKLY.dataset
+object_type: dataset
+label: ONTIME_WKLY.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_VIEWS.connection
+table: ONTIME_WKLY
+
+columns:
+  - name: ACT_SHP_DT
+    data_type: date
+  - name: ADV_SHPNTC_ID
+    data_type: long
+  - name: ASN_SHP_BY_DT
+    data_type: date
+  - name: ASN_TRNSM_TS
+    data_type: datetime
+  - name: CHK_IN_TS
+    data_type: datetime
+  - name: DC_NBR
+    data_type: string
+    sql: "CASE WHEN PROGRAM IN (\"RDC\",\"DFC\") THEN LOC_NBR ELSE '0' END"
+  - name: DFC_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DFC" THEN SKU_COUNT ELSE 0 END
+  - name: DFC_TOT_SKU_ONTIME
+    data_type: double
+    sql: CASE WHEN PROGRAM = "DFC" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: DOC_TRACE_ID
+    data_type: string
+  - name: DTS_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "DTS" THEN SKU_COUNT ELSE 0 END
+  - name: DTS_TOT_SKU_ONTIME
+    data_type: double
+    sql: CASE WHEN PROGRAM = "DTS" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: EST_DLVRY_DT
+    data_type: date
+  - name: FRT_BILL_NBR
+    data_type: string
+  - name: FSCL_WK_END_DT
+    data_type: date
+  - name: LOC_NBR
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: ON_TIME
+    data_type: double
+  - name: PO_NBR
+    data_type: string
+  - name: PROGRAM
+    data_type: string
+  - name: RDC_SKU_COUNT
+    data_type: long
+    sql: CASE WHEN PROGRAM = "RDC" THEN SKU_COUNT ELSE 0 END
+  - name: RDC_TOT_SKU_ONTIME
+    data_type: double
+    sql: CASE WHEN PROGRAM = "RDC" THEN TOT_SKU_ONTIME ELSE 0 END
+  - name: RTSHP_DT
+    data_type: datetime
+  - name: SHP_RCVD_DT
+    data_type: date
+  - name: SHPMT_ID
+    data_type: string
+  - name: SKU_COUNT
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: STR_NBR
+    data_type: string
+    sql: CASE WHEN PROGRAM in ("DTS") THEN LOC_NBR ELSE '0' END
+  - name: TOT_SKU_ONTIME
+    data_type: double

@@ -1,0 +1,19 @@
+unique_name: Fill Rate Flags.dataset
+object_type: dataset
+label: Fill Rate Flags.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: FILL_RATE_FLAGS
+
+columns:
+  - name: COMPLIANT_FR_MV_FLAG
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: PERFECT_FR_PO_FLAG
+    data_type: string
+  - name: PERFECT_FR_SKU_FLAG
+    data_type: string
+  - name: PO_NBR
+    data_type: string
+  - name: SHIP_IND
+    data_type: string

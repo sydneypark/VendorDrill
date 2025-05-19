@@ -1,0 +1,7 @@
+unique_name: m_weight
+object_type: metric
+label: Weight
+calculation_method: maximum
+format: "#,##0.00;(#,##0.00);;"
+dataset: STR_SKU_ATTRIBUTES_REPORT.dataset
+column: BUY_PK_WT

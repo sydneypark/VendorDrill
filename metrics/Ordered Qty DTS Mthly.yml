@@ -1,0 +1,7 @@
+unique_name: Ordered Qty DTS Mthly
+object_type: metric
+label: Ordered Qty DTS Mthly +
+calculation_method: sum
+format: "#,###"
+dataset: DTS_FILL_RATE_MONTHLY.dataset
+column: SKU_ORDER_QUANTITY

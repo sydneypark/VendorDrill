@@ -1,0 +1,8 @@
+unique_name: m_ty_iss_cap_sls_sum_wkly
+object_type: metric
+label: TY ISS CAP SLS W
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: VDRILL_ISS_WKLY.dataset
+column: TY_CAPTURED_RT_SALES

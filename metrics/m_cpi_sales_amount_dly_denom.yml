@@ -1,0 +1,7 @@
+unique_name: m_cpi_sales_amount_dly_denom
+object_type: metric
+label: CPI Sales Cov $ Dly Denom
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: VDRILL_CPI_DLY.dataset
+column: COMP_SLS_COV_DENOM

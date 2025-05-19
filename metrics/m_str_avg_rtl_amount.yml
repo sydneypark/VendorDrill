@@ -1,0 +1,7 @@
+unique_name: m_str_avg_rtl_amount
+object_type: metric
+label: Store Avg Retail $
+calculation_method: average
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: SUOF_STR_AVG_UNITS.dataset
+column: AVG_RETL_AMT

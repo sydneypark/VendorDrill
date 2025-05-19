@@ -1,0 +1,75 @@
+unique_name: QuoteCenter Sales.dataset
+object_type: dataset
+label: QuoteCenter Sales.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_PLUS_FACT.connection
+table: HDQC_SALES
+
+columns:
+  - name: _PARTITIONTIME
+    data_type: datetime
+  - name: AliasCd
+    data_type: string
+  - name: BranchId
+    data_type: string
+  - name: COMOrderNbr
+    data_type: string
+  - name: DEPT_NBR
+    data_type: long
+  - name: ExternalReferenceNbr
+    data_type: string
+  - name: EXTNL_REF_LINE_NBR
+    data_type: long
+  - name: LY_SLS_AMT
+    data_type: double
+  - name: LY_SLS_UNITS
+    data_type: double
+  - name: MappedOrderSrc
+    data_type: string
+  - name: MVNDR_NBR
+    data_type: long
+  - name: offering_branch
+    data_type: string
+  - name: OrderHeaderId
+    data_type: string
+  - name: OrderLineId
+    data_type: string
+  - name: POS_MVNDR_NBR
+    data_type: long
+  - name: POS_TRANS_TYP_CD
+    data_type: string
+  - name: ProductId
+    data_type: long
+  - name: ProductOfferingId
+    data_type: string
+  - name: ProductSourceId
+    data_type: long
+  - name: ProductSourceSystemCd
+    data_type: string
+  - name: QC_Sales_MVNDR
+    data_type: long
+  - name: QC_SOLD_DT
+    data_type: date
+  - name: QCOrderLineReferenceId
+    data_type: string
+  - name: quote_branch
+    data_type: long
+  - name: Quote_MVNDR
+    data_type: long
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SLS_DT
+    data_type: date
+  - name: STR_NBR
+    data_type: string
+  - name: SupplierProuductID
+    data_type: string
+  - name: TY_SLS_AMT
+    data_type: double
+  - name: TY_SLS_UNITS
+    data_type: double
+  - name: UOM_CD
+    data_type: string
+  - name: UPC_CD
+    data_type: string

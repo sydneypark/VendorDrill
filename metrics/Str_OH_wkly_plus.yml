@@ -1,0 +1,8 @@
+unique_name: Str_OH_wkly_plus
+object_type: metric
+label: Str OH $ Wkly +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: APSPW.dataset
+column: TY_WKLY_OH

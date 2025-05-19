@@ -1,0 +1,9 @@
+unique_name: In_Stock__v_LY
+object_type: metric_calc
+label: In Stock % v LY
+expression: |-
+  IIF ( IsEmpty ( [Measures].[In_Stock__LY] )
+         ,  null
+         ,  ( [Measures].[In_Stock_] - [Measures].[In_Stock__LY] ) / [Measures].[In_Stock__LY]
+         )
+format: 0.00%;(0.00%)

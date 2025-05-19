@@ -1,0 +1,62 @@
+unique_name: 'Fill Rate DC Hier + '
+object_type: dimension
+label: 'Fill Rate DC Hier + '
+type: standard
+
+hierarchies:
+
+  - unique_name: Fill Rate DC Hier
+    label: 'Fill Rate DC Hier + '
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Fill Rate DC Hier new
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_fill_dc_number
+            label: DC Number +
+            folder: More Fields
+            dataset: DC_HIER.dataset
+            key_columns:
+              - DC_NBR
+            name_column: DC_NBR
+            sort_column: DC_NBR
+
+          - unique_name: DC Name
+            label: 'DC Name + '
+            folder: More Fields
+            dataset: DC_HIER.dataset
+            key_columns:
+              - DC_NM
+            name_column: DC_NM
+            sort_column: DC_NM
+
+          - unique_name: DC Type Code
+            label: 'DC Type Code + '
+            folder: More Fields
+            dataset: DC_HIER.dataset
+            key_columns:
+              - DC_TYP_CD
+            name_column: DC_TYP_CD
+            sort_column: DC_TYP_CD
+
+          - unique_name: DC
+            label: 'DC + '
+            folder: More Fields
+            dataset: DC_HIER.dataset
+            key_columns:
+              - DC
+            name_column: DC
+            sort_column: DC
+
+level_attributes:
+
+  - unique_name: Fill Rate DC Hier new
+    label: DC Number +
+    dataset: DC_HIER.dataset
+    key_columns:
+      - DC_NBR
+    name_column: DC_NBR

@@ -1,0 +1,21 @@
+unique_name: EV_CYCLE.dataset
+object_type: dataset
+label: EV_CYCLE.dataset
+connection_id: atscale_vendorcube_west_1_VENDORDRILL_DIM.connection
+table: EV_CYCLE
+
+columns:
+  - name: E1
+    data_type: string
+  - name: E2
+    data_type: string
+  - name: E3
+    data_type: string
+  - name: E4
+    data_type: string
+  - name: EV_CYCLE
+    data_type: string
+  - name: PRE_E
+    data_type: string
+  - name: SORT_ORDER
+    data_type: string

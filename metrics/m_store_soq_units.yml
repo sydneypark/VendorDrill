@@ -1,0 +1,7 @@
+unique_name: m_store_soq_units
+object_type: metric
+label: Store SOQ Units
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+dataset: SUOF_STR.dataset
+column: SOQ_UNITS

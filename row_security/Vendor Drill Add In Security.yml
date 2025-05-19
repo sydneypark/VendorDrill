@@ -1,0 +1,9 @@
+unique_name: Vendor Drill Add In Security
+label: Vendor Drill Add In Security
+object_type: row_security
+dataset: VDRILL_VNDR_CUBE_XREF.dataset
+filter_key_column: USER_ID
+use_filter_key: true
+ids_column: USER_ID
+id_type: user
+scope: fact

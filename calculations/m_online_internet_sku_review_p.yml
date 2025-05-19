@@ -1,0 +1,9 @@
+unique_name: m_online_internet_sku_review_p
+object_type: metric_calc
+label: Online % Internet SKU with review
+expression: |-
+  IIF([Measures].[m_tot_online_sku_count] + 0 = 0
+  , NULL,
+  [Measures].[m_online_review_sku_count]/[Measures].[m_tot_online_sku_count]
+   )
+format: 0.00%;(0.00%)

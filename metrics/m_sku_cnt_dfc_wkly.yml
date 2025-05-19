@@ -1,0 +1,8 @@
+unique_name: m_sku_cnt_dfc_wkly
+object_type: metric
+label: SKU Count DFC Wkly
+calculation_method: sum
+format: "#,##0;(#,##0);;"
+visible: false
+dataset: DFC_ONTIME_WKLY.dataset
+column: SKU_COUNT

@@ -1,0 +1,5 @@
+unique_name: Sales__before_Returns_LY
+object_type: metric_calc
+label: 'Sales $ before Returns LY '
+expression: "[Measures].[sales_ly] -[Measures].[m_ly_returns_sum] "
+format: "$ #,##0.00;($ #,##0.00);;"

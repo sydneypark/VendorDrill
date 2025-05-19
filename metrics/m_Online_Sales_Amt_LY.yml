@@ -1,0 +1,7 @@
+unique_name: m_Online_Sales_Amt_LY
+object_type: metric
+label: Online Sales $ LY +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+dataset: ONLINE_SALES.dataset
+column: LY_SALES_AMT

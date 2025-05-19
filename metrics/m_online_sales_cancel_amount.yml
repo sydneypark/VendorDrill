@@ -1,0 +1,8 @@
+unique_name: m_online_sales_cancel_amount
+object_type: metric
+label: Online Sales Cancel $ +
+calculation_method: sum
+format: "$ #,##0.00;($ #,##0.00);;"
+visible: false
+dataset: ONLINE_SALES.dataset
+column: TY_CANCEL_AMT

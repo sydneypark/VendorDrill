@@ -1,0 +1,7 @@
+unique_name: Received Qty FDC Wkly
+object_type: metric
+label: Received Qty FDC Wkly +
+calculation_method: sum
+format: "#,###0"
+dataset: FDC_FILL_RATE_WKLY.dataset
+column: ADJ_RCVD_QTY

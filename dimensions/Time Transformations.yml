@@ -1,0 +1,26 @@
+unique_name: Time Transformations
+object_type: dimension
+label: Time Transformations
+type: standard
+
+hierarchies:
+
+  - unique_name: Time_Transformations
+    label: Time Transformations
+
+    levels:
+
+      - unique_name: Time_Calculations
+
+level_attributes:
+
+  - unique_name: Time_Calculations
+    label: Time Calculations
+    exclude_from_dim_agg: true
+    exclude_from_fact_agg: true
+    create_excludes_on_key: true
+    dataset: VDRILL_TIME_TRNS.dataset
+    key_columns:
+      - S_TRNSFM_TYP_DESC
+    name_column: S_TRNSFM_TYP_DESC
+    sort_column: SORTING_ID

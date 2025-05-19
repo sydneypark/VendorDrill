@@ -1,0 +1,53 @@
+unique_name: Online Rating Review.dataset
+object_type: dataset
+label: Online Rating Review.dataset
+connection_id: atscale_vendorcube_west_1_SSR_VIEWS.connection
+table: RATING_REVIEW_FACT
+
+columns:
+  - name: COUNT_OF_1_STAR_REVIEWS
+    data_type: long
+  - name: COUNT_OF_2_STAR_REVIEWS
+    data_type: long
+  - name: COUNT_OF_3_STAR_REVIEWS
+    data_type: long
+  - name: COUNT_OF_4_STAR_REVIEWS
+    data_type: long
+  - name: COUNT_OF_5_STAR_REVIEWS
+    data_type: long
+  - name: COUNT_OF_NOT_RECOMMENDED_REVIEWS
+    data_type: long
+  - name: COUNT_OF_RECOMMENDED_REVIEWS
+    data_type: long
+  - name: LAST_UPD_TS
+    data_type: datetime
+  - name: MVNDR_NBR
+    data_type: long
+  - name: OMS_ID
+    data_type: long
+  - name: PVNDR_NBR
+    data_type: long
+  - name: RATING
+    data_type: long
+  - name: REVIEW_ID
+    data_type: string
+  - name: REVIEWER_ID
+    data_type: string
+  - name: SKU_CRT_DT
+    data_type: date
+  - name: SKU_NBR
+    data_type: long
+  - name: SUBMISSION_DATE
+    data_type: date
+  - name: SUBMISSION_TIME
+    data_type: datetime
+  - name: SUBMISSION_TIME_ID
+    data_type: long
+  - name: UNIQUE_PRODUCTS_REVIEWED
+    data_type: long
+  - name: UNIQUE_REVIEWERS
+    data_type: long
+  - name: UNIQUE_REVIEWS
+    data_type: long
+  - name: UPC_CD
+    data_type: string
